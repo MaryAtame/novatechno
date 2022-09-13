@@ -1,0 +1,45 @@
+body {
+	font-size: rem(18);
+	line-height: rem(22);
+	font-family: 'Montserrat', sans-serif;
+	color: $mainText;
+	background-color: #F5F5F5;
+}
+
+main {
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1320px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.btn {
+	background-color: $gold;
+	color: $white;
+	border-radius: 8px;
+	padding: 20px 0px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: rem(18);
+	font-weight: 600;
+}
+
+.mb-10 {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.common-title {
+	font-size: rem(44);
+	line-height: rem(54);
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $boldText;
+
+	@media(max-width:1000px) {
+		font-size: rem(24);
+		line-height: 29px;
+	}
+}

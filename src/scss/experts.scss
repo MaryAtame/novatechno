@@ -1,0 +1,74 @@
+.experts {}
+
+.slider-body {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card {
+	width: 410px;
+	height: 380px;
+
+	background-color: $white;
+	border: 1px solid #F9F9F9;
+	border-radius: 8px;
+	padding: 20px 20px 56px;
+	margin: 35px 5px 0 5px;
+
+	font-weight: 300;
+	color: #555555;
+
+	position: relative;
+
+	&__person {
+		display: flex;
+		align-items: center;
+		margin: 0 0 20px 0;
+	}
+
+	&__person-userpic {
+		width: 80px;
+		height: 80px;
+		object-fit: cover;
+		border-radius: 50%;
+		margin: 0 20px 0 0;
+	}
+
+	&__person-info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__person-name {
+		font-size: rem(24);
+		line-height: 29px;
+	}
+
+	&__person-prof {
+		font-size: rem(14);
+		line-height: 17px;
+	}
+
+	&__text {
+		font-style: italic;
+		font-size: rem(14);
+		line-height: 17px;
+		position: relative;
+	}
+}
+
+.quotes {
+	position: absolute;
+	width: 41px;
+	height: 34px;
+	bottom: -32px;
+	right: 0;
+
+
+}
+
+.quotes--top {
+	top: -35px;
+	left: 0;
+	transform: rotate(180deg);
+}

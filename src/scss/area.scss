@@ -1,0 +1,161 @@
+.area-inner {
+	display: flex;
+	align-items: center;
+	margin: 0 0 80px;
+
+	@media(max-width:985px) {
+		flex-direction: column;
+	}
+
+
+	&__order {
+		position: relative;
+		max-width: 635px;
+		width: 100%;
+	}
+
+	&__img-wrapper {
+		max-width: 555px;
+		width: 100%;
+		height: 646px;
+		position: relative;
+		right: -100px;
+		z-index: 1;
+
+		@media(max-width:1000px) {
+			right: -70px;
+		}
+
+		@media(max-width:540px) {
+			right: 20px;
+			width: 90%;
+		}
+	}
+
+	&__img {
+		object-fit: cover;
+		width: 100%;
+		max-width: 555px;
+		height: 100%;
+		border-radius: 8px;
+
+		@media(max-width:1000px) {
+			height: 90%;
+		}
+
+		@media(max-width:985px) {
+			height: 100%;
+		}
+
+		@media(max-width:540px) {
+			height: 80%;
+		}
+	}
+
+	&__info {
+		width: 45%;
+		margin-left: 130px;
+
+		@media(max-width:1000px) {
+			margin-left: 100px;
+		}
+
+		@media(max-width:985px) {
+			margin: 40px auto;
+			width: 100%;
+			max-width: 480px;
+		}
+
+		@media(max-width:540px) {
+			margin: 0 auto 40px;
+		}
+	}
+
+	&__text {
+		margin: 20px 0 0 0;
+		max-width: 440px;
+	}
+}
+
+.order-group {
+
+	font-family: 'Noir Pro';
+	color: $boldText;
+
+	position: absolute;
+	top: 15%;
+	left: 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 30px;
+
+	background: rgba(218, 191, 119, 0.9);
+	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.1);
+
+	border: 2px solid $white;
+	border-radius: 8px;
+	width: 332px;
+	height: 369px;
+	z-index: 2;
+
+	@media(max-width:540px) {
+		top: -10%;
+		left: -30px;
+		background-color: $gold;
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: rem(16);
+		line-height: 23px;
+		margin-bottom: 6px;
+	}
+
+	&__text {
+		font-weight: 300;
+		font-size: rem(14);
+		line-height: 19px;
+		margin-bottom: 22px;
+	}
+
+	&__btn-wrapper {
+		font-family: 'Noir Pro';
+		font-weight: 500;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__or {
+		font-size: rem(20);
+		margin: 20px;
+	}
+}
+
+
+.btn--order {
+	font-size: rem(16);
+	width: 272px;
+	background-color: $white;
+	padding: 20px 0 16px;
+	color: $boldText;
+
+	&:hover {
+		font-size: rem(15);
+	}
+}
+
+.btn--link {
+	border: 1px solid $boldText;
+	background-color: $gold;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+
+	&:hover {
+		font-family: 'Noir Pro';
+		font-size: rem(16);
+		font-weight: 500;
+	}
+}

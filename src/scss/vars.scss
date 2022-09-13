@@ -1,0 +1,14 @@
+$mainText: #505050;
+$boldText: #362A27;
+$gray: #666666;
+$dark: #1E1E1E;
+$gold: #DABF77;
+$white: #fff;
+
+
+// convert px to rem
+
+@function rem($px) {
+	$result: calc($px / 16)+rem;
+	@return $result;
+}
