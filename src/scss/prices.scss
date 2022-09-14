@@ -2,6 +2,16 @@
 	display: flex;
 	justify-content: space-between;
 	margin: 0 0 20px;
+
+	@media(max-width:750px) {
+		flex-direction: column;
+	}
+
+	&__right {
+		@media(max-width:750px) {
+			margin-top: 30px;
+		}
+	}
 }
 
 .prices-cards {
