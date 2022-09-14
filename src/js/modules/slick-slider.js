@@ -48,3 +48,49 @@ $(function () {
 });
 
 
+
+
+
+var locationSlider = null;
+var mediaQuerySize = 800;
+
+function locationSliderInit() {
+	if (!locationSlider) {
+		$(function () {
+			$(".location-inner").slick({
+				infinite: true,
+				slidesToShow: 5,
+				slidesToScroll: 3,
+				responsive: [
+					{
+						breakpoint: 580,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 1
+						}
+					}
+				]
+			});
+		});
+
+	}
+}
+
+function locationSliderDestroy() {
+	if (locationSlider) {
+		locationSlider.destroy();
+		locationSlider = null;
+	}
+}
+
+$(window).on('load resize', function () {
+
+	let windowWidth = $(this).innerWidth();
+
+	if (windowWidth <= mediaQuerySize) {
+		locationSliderInit()
+	} else {
+		locationSliderDestroy()
+	}
+});
+
