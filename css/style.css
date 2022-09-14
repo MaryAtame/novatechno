@@ -516,6 +516,10 @@ body {
   height: 10px;
 }
 
+.prices-cards > .slick-arrow {
+  display: none;
+}
+
 .tabs {
   margin: 40px 0 80px;
 }
@@ -1556,6 +1560,16 @@ body {
   }
 }
 
+@media (max-width: 800px) {
+  .location-inner__info-title {
+    font-size: 1.125rem;
+  }
+
+  .location-inner__info-num {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 750px) {
   .prices-top {
     -webkit-box-orient: vertical;
@@ -1582,17 +1596,6 @@ body {
   }
 }
 
-@media (max-width: 640px) {
-  .location-inner__item {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 @media (max-width: 630px) {
   .header-info__btn {
     -webkit-transform: translate3d(40px, -76px, 0);
@@ -1609,6 +1612,18 @@ body {
   .payment-progressbar__info {
     font-size: 1rem;
     line-height: 1.25rem;
+  }
+
+  .location-inner__item {
+    margin: 30px 10px;
+  }
+
+  .location-inner__item-icon {
+    width: 50px;
+  }
+
+  .location-inner__info-suptitle {
+    font-size: 0.875rem;
   }
 
   .contact-inner__info {
