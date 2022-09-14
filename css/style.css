@@ -114,6 +114,7 @@
   font-size: 0;
   background-repeat: no-repeat;
   background-size: contain;
+  background-color: transparent;
 }
 
 .no-webp .slick-prev {
