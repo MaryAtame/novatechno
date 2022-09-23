@@ -1,0 +1,111 @@
+.seo {}
+
+.seo-title {
+	margin: 0 0 20px 0;
+}
+
+.seo-text {
+	line-height: 32px;
+	font-weight: 400;
+}
+
+.seo-cards {
+	margin: 100px 0;
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 30px;
+		margin: 50px 0 0;
+
+
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		padding: 45px 100px 45px 35px;
+		background-color: $gray;
+		max-width: 285px;
+		max-height: 120px;
+		border: 1px solid $gray;
+		border-radius: 5px;
+
+		&:hover {
+			border: 1px solid $purple;
+		}
+	}
+
+	&__icon {
+		max-width: 31px;
+		min-width: 29px;
+		max-height: 31px;
+		margin: 0 25px 0 0;
+	}
+
+	&__text {
+		font-size: rem(18);
+		color: #000;
+		font-weight: 600;
+		line-height: 28px;
+	}
+}
+
+.seo-cards__item-btn {
+	padding: 45px 87px;
+}
+
+.seo-order {
+	&__wrapper {
+		background-color: $purple;
+		border-radius: 30px;
+		padding: 60px 0 60px 90px;
+	}
+
+	&__content {
+		max-width: 390px;
+	}
+}
+
+.content-text--invert {}
+
+.intro-inner {
+
+	&__form-wrapper {}
+}
+
+.form-call {
+
+	&__wrapper {}
+
+	&__form {}
+
+	&__input {
+		color: #fff;
+		outline: none;
+
+		&::placeholder {
+			color: #D9D9D9;
+		}
+
+	}
+
+	&__btn {}
+}
+
+.seo-clients {
+	margin: 86px 0 95px;
+
+	&__wrapper {
+		width: 100%;
+		max-width: 1130px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		width: 100%;
+		max-width: 190px;
+		max-height: 86px;
+	}
+}
