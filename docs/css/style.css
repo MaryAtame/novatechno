@@ -1629,6 +1629,7 @@ body {
   grid-template-columns: minmax(280px, 390px) minmax(280px, 390px) minmax(280px, 390px);
   -ms-grid-rows: minmax(230px, 339px) minmax(230px, 339px);
   grid-template-rows: minmax(230px, 339px) minmax(230px, 339px);
+  gap: 30px;
 }
 
 .marketing-cards__item-icon {
