@@ -1,0 +1,90 @@
+.services-cards {
+	margin: 0 0 100px;
+	display: grid;
+	grid-template-columns: minmax(280px, 390px) minmax(280px, 390px) minmax(280px, 390px);
+	grid-column-gap: 30px;
+
+	&__item {
+		padding: 44px 42px 50px 50px;
+		box-shadow: -20px 10px 50px 0px rgba(0, 0, 0, .2);
+		position: relative;
+
+		&:hover {
+			&::before {
+				transform: translateX(10deg);
+			}
+		}
+
+		&::before {
+			content: "";
+			display: inline-block;
+			position: absolute;
+			width: 98%;
+			height: 98%;
+			top: 1px;
+			left: 1px;
+			z-index: -10;
+
+			max-width: 390px;
+			max-height: 339px;
+			border-radius: 20px;
+			background-color: $purple;
+
+		}
+	}
+}
+
+
+.cards-item {
+	&__icon {
+		max-width: 41px;
+		max-height: 42px;
+	}
+
+	&__title {
+		margin: 27px 0 20px;
+		font-weight: 700;
+		color: #000;
+	}
+
+	&__text {
+		color: $text-gray;
+	}
+}
+
+
+
+.seo-wrapper {
+	background-image: url("../img/seo-bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.seo {
+	padding: 107px 0 102px;
+
+	&__img {
+		width: 100%;
+		max-width: 600px;
+		object-fit: contain;
+	}
+}
+
+.seo-info {
+
+	&__subtitle {
+		color: $text-gray;
+	}
+
+	&__title {
+		margin: 8px 0 40px;
+	}
+
+	&__text {
+		margin: 0 0 40px 0;
+	}
+
+	&__btn {}
+}
