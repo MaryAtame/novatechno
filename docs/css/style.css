@@ -1842,6 +1842,10 @@ body {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+
+  .mobile-menu {
+    display: none;
+  }
 }
 
 @media (min-width: 1300px) {
