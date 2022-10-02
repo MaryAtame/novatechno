@@ -25,10 +25,13 @@ body {
 	font-weight: 600;
 }
 
+// Стили кнопок и в папке components и тут
 .btn-purple {
 	background: $purple;
 
 	&:hover {
+        // Если напрямую добавить градиент при активном состоянии, как здесь, то ты не сможешь сделать плавный переход
+        // подумай, какие варианты могут быть еще
 		background: linear-gradient(90deg, rgba(131, 60, 250, 1) 0%, rgba(189, 60, 250, 1) 100%);
 	}
 }
@@ -75,6 +78,7 @@ body {
 	background-color: $gray;
 }
 
+// Опять кнопки
 .bg-purple {
 	background-color: $purple;
 }
