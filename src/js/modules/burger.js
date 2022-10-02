@@ -6,7 +6,7 @@ burgerIcon.addEventListener("click", burgerhandler);
 function burgerhandler(e) {
 	e.preventDefault();
 	burgerIcon.classList.toggle('active');
-	navbody.classList.toggle('menu-open');
+	navbody.classList.toggle('header-menu--open');
 
 }
 

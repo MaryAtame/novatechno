@@ -1,0 +1,50 @@
+.title {
+	font-size: rem(55);
+	color: #784CD7;
+	font-weight: 700;
+	line-height: 75px;
+
+	@media(max-width:1000px) {
+		font-size: calc(2rem + 1vw);
+		line-height: calc(3rem + 1vw);
+	}
+}
+
+.content-title {
+	font-size: rem(55);
+	font-weight: 800;
+	line-height: 65px;
+
+	@media(max-width:1000px) {
+		font-size: calc(2rem + 1vw);
+		line-height: calc(2.3rem + 1vw);
+	}
+}
+
+.content-text--md,
+.content-text--lg {
+	line-height: 27px;
+	color: $text-gray;
+
+	@media(max-width:1000px) {
+		font-size: calc(.8rem + 1vw);
+		line-height: calc(1.5rem + 1vw);
+	}
+}
+
+.content-text--lg {
+	font-size: rem(20);
+}
+
+.content-text--md {
+	font-size: rem(16);
+}
+
+.content-text--black {
+	line-height: 32px;
+	color: #000;
+}
+
+.content-text--white {
+	color: #fff;
+}

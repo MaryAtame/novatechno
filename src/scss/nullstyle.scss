@@ -32,6 +32,11 @@ input,
 button,
 textarea {
 	font-family: inherit;
+	outline: none;
+
+	&:focus {
+		outline: $light-gray;
+	}
 }
 
 input::-ms-clear {
@@ -47,22 +52,35 @@ button::-moz-focus-inner {
 	border: 0;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+	font-style: normal;
+}
+
 a:visited {
 	text-decoration: inherit;
 	font-family: inherit;
+	color: inherit;
 }
 
-a:hover {
+a:hover,
+a:focus {
 	color: inherit;
 	font-family: inherit;
+	text-decoration: underline;
+	color: inherit;
 }
+
 
 ul,
 li {
 	list-style: none;
 }
 
-img {
+img,
+picture {
+	display: block;
 	vertical-align: top;
 }
 
