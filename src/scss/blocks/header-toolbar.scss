@@ -6,13 +6,19 @@
 	padding: 17px 0;
 
 	@media(max-width:1200px) {
-		grid-template-columns: 180px 1fr 2fr;
+		grid-template-columns: repeat(3, 1fr);
 	}
 
 	&__btn {
 		margin: 0 21px 0 0;
 	}
+
+	&__btn--mobile {
+		margin: 30px 0;
+		width: 264px;
+	}
 }
+
 
 .form-search {
 	width: 100%;
@@ -61,14 +67,22 @@
 
 }
 
+.callback__wrapper--desc {
+	@media(max-width:1200px) {
+		display: none;
+	}
+}
+
+.callback__wrapper--mobile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .callback-form {
 	font-weight: 600;
 	color: #000;
 	margin: 0 40px 0 0;
-
-	@media(max-width:1100px) {
-		margin: 0 10px 0 0;
-	}
 
 	&__icon {
 		width: 18px;
@@ -78,32 +92,31 @@
 	}
 }
 
+.callback-form--mobile {
+	margin: 30px 0 0;
+
+}
+
 .header-social {
 
 	&__icons {
-		display: none;
-
-
-		@media(max-width:1000px) {
-			display: flex;
-		}
+		text-align: center;
 	}
 
 	&__icon {
-		@media(max-width:1000px) {
-			width: 100%;
-			height: 100%;
-			max-width: 34px;
-			max-height: 34px;
+		width: 100%;
+		height: 100%;
+		max-width: 34px;
+		max-height: 34px;
 
-			margin: 0 15px 0 0;
+		margin: 0 15px 0 0;
 
-			&:last-child {
-				margin: 0;
-			}
+		&:last-child {
+			margin: 0;
 		}
 	}
 }
+
 
 
 .header-menu {
@@ -223,6 +236,7 @@
 	column-gap: 230px;
 
 	@media(max-width:1200px) {
+		padding: 40px 0 50px;
 		grid-template-columns: 1fr;
 		justify-items: center;
 	}
