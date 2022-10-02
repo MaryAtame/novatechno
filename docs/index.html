@@ -5,163 +5,204 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="manifest" href="files/site.webmanifest">
 	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
-	<link href="css/style.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
 	<title>Novatechno</title>
 </head>
 
 <body>
 	<div class="header-wrapper bg-grey">
-	<div class="container">
-		<header class="header row">
-			<div class="col-lg-6 col-md-4">
-				<span class="header__description">Ваше новое Digital-агентство</span>
-			</div>
-			<div class="header__contact col-lg-6 col-md-8">
-				<a class="header-mail" href="mailto:hello@novatechno.ru" target="_blank">hello@novatechno.ru</a>
-				<address class="header-adress">
-					<a class="header-adress__link" href="https://yandex.ru/maps/-/CCUVbZryKD" target="_blank">г.
-						Калининград, ул. Менделеева 61Б</a>
-				</address>
-			</div>
-		</header>
+		<div class="container">
+			<div class="header">
+	<div class="header__conpany">
+		<span class="header__conpany-name">Ваше новое Digital-агентство</span>
+	</div>
+	<div class="header__contact">
+		<a class="header-mail mr100" href="mailto:hello@novatechno.ru" target="_blank">hello@novatechno.ru</a>
+		<address class="header-adress">
+			<a class="header-adress__link" href="https://yandex.ru/maps/-/CCUVbZryKD" target="_blank">г.
+				Калининград, ул. Менделеева 61Б</a>
+		</address>
 	</div>
 </div>
-<div class="container">
-	<div class="header-body s-b row">
-		<div class="logo col-2">
-			<svg class="logo">
-				<use xlink:href="img/icons/icons.svg#logo"></use>
-			</svg>
 		</div>
-		<div class="col-3 col-lg-2">
-			<form class="form-search" method="get" action="/search" target="_blank">
-				<input class="form-search__input" type="text" placeholder="Поиск...">
-			</form>
-		</div>
-		<div class="col-6 col-lg-7 d-f s-b">
-			<a class="callback-form header-body__tel" href="tel:+79133223911">
+
+	</div>
+	<div class="container">
+		<header class="header-body">
+	<div class="logo">
+		<svg class="logo__icon">
+			<use xlink:href="img/icons/icons.svg#logo"></use>
+		</svg>
+	</div>
+	<div class="search">
+		<form class="form-search" method="get" action="/search" target="_blank">
+			<input class="form-search__input" type="text" placeholder="Поиск...">
+			<button class="form-search__btn" type="submit">
+				<svg class="form-search__icon">
+					<use xlink:href="img/icons/icons.svg#search"></use>
+				</svg>
+			</button>
+		</form>
+	</div>
+	<div class="callback">
+		<div class="callback__wrapper">
+			<a class="callback-form content-text--lg header-body__tel" href="tel:+79133223911">
 				<svg class="callback-form__icon">
 					<use xlink:href="img/icons/icons.svg#phone"></use>
 				</svg>+7 (913) 322-3911</a>
-			<button class="btn btn-purple header-body__btn">Заказать звонок</button>
-			<nav class="header-menu">
-				<div class="header-menu__menu menu-icon">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-			</nav>
-		</div>
-	</div>
+			<span class="header-social__icons">
+				<svg class="header-social__icon">
+					<use xlink:href="img/icons/icons.svg#insta"></use>
+				</svg>
+				<svg class="header-social__icon">
+					<use xlink:href="img/icons/icons.svg#tg"></use>
+				</svg>
+				<svg class="header-social__icon">
+					<use xlink:href="img/icons/icons.svg#vk"></use>
+				</svg>
+			</span>
 
-	<nav class="header-menu__inner">
-		<div class="header-menu__wrapper">
-			<ul class="header-menu__list">
-				<li class="header-menu__item"><a class="header-menu__item-link" href="#">О компании</a></li>
-				<li class="header-menu__item"><a class="header-menu__item-link" href="#">наши услуги</a></li>
-				<li class="header-menu__item"><a class="header-menu__item-link" href="#">отрасли</a></li>
-				<li class="header-menu__item"><a class="header-menu__item-link" href="#">проекты</a></li>
-				<li class="header-menu__item"><a class="header-menu__item-link" href="#">Наши клиенты</a></li>
-				<li class="header-menu__item"><a class="header-menu__item-link" href="#">Отзывы</a></li>
-				<li class="header-menu__item"><a class="header-menu__item-link" href="#">Цены</a></li>
-				<li class="header-menu__item"><a class="header-menu__item-link" href="#">Акции</a></li>
-				<li class="header-menu__item"><a class="header-menu__item-link" href="#">Гарантии</a></li>
-				<li class="header-menu__item"><a class="header-menu__item-link" href="#">Вакансии</a></li>
-				<li class="header-menu__item"><a class="header-menu__item-link" href="#">Блог</a></li>
-				<li class="header-menu__item"><a class="header-menu__item-link" href="#">Контакты</a></li>
-			</ul>
-			<button class="btn header-menu__btn">Партнерская программа</button>
+			<button class="btn btn-purple header-body__btn" type="submit">Заказать звонок</button>
 		</div>
-		<ul class="header-menu__sublist">
-			<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">Программирование</a></li>
-			<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">Графический и
-					веб-дизайн</a></li>
-			<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">Производство рекламы</a>
-			</li>
-			<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">Видеосъемка</a></li>
-			<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">Продвижение на картах</a>
-			</li>
-			<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">SMM и таргетинг</a></li>
-			<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">Ведение Яндекс.Дзен</a>
-			</li>
-			<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">Контекстная реклама</a>
-			</li>
-			<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">SEO-продвижение</a></li>
-			<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">Продвижение на
-					маркетплейсах</a></li>
-			<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">SEO-продвижение
-					приложений</a></li>
-			<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">Маркетинговый надзор</a>
-			</li>
-		</ul>
 
-	</nav>
-</div>
-	<main>
-		<div class="intro-wrapper">
-	<div class="container">
-		<section class="intro row">
-			<div class="intro-inner col-6">
-				<h1 class="intro-inner__title title">
-					аудит сайта<br><span class="intro-inner__title intro-inner__title--actient title">бесплатно</span>
-				</h1>
-				<p class="content-text content-text--white">Позиции сайта падают? Пользователи покидают ресурс, проведя на
-					нем
-					всего десяток
-					секунд? Есть трафик, но нет обращений? Закажите бесплатный аудит сайта </p>
-				<div class="intro-inner__form-wrapper form-call__wrapper">
-					<form class="form-call__form" name="back-call">
-						<input class="form-call__input" name="telephone" type="tel" maxlength="20"
-							placeholder="+7 (___) ___-__-__" required />
-						<button class="btn btn-purple form-call__btn" form="back-call">Заказать аудит</button>
-					</form>
-				</div>
+		<nav class="header-menu">
+			<div class="header-menu__menu menu-icon">
+				<span></span>
+				<span></span>
+				<span></span>
 			</div>
-		</section>
+		</nav>
 	</div>
-</div>
+</header>
+
+<nav class="header-menu__inner">
+	<div class="header-menu__wrapper">
+		<ul class="header-menu__list">
+			<li class="header-menu__item"><a class="header-menu__item-link" href="#">О компании</a></li>
+			<li class="header-menu__item header-menu-item--open"><a class="header-menu__item-link" data-name="services"
+					href="#services">наши
+					услуги</a>
+				<ul class="header-menu__sublist" id="services">
+					<li class="header-menu__subitem"><a class="header-menu__subitem-link"
+							href="#develop">Программирование</a></li>
+					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#design">Графический и
+							веб-дизайн</a></li>
+					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#ad">Производство рекламы</a>
+					</li>
+					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#video">Видеосъемка</a></li>
+					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">Продвижение на картах</a>
+					</li>
+					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">SMM и таргетинг</a></li>
+					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">Ведение Яндекс.Дзен</a>
+					</li>
+					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">Контекстная реклама</a>
+					</li>
+					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">SEO-продвижение</a></li>
+					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">Продвижение на
+							маркетплейсах</a></li>
+					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">SEO-продвижение
+							приложений</a></li>
+					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">Маркетинговый надзор</a>
+					</li>
+				</ul>
+			</li>
+			<li class="header-menu__item"><a class="header-menu__item-link" href="#sectors">отрасли</a></li>
+			<li class="header-menu__item"><a class="header-menu__item-link" href="#portfolio">проекты</a></li>
+			<li class="header-menu__item"><a class="header-menu__item-link" href="#clients">Наши клиенты</a></li>
+			<li class="header-menu__item"><a class="header-menu__item-link" href="#views">Отзывы</a></li>
+			<li class="header-menu__item"><a class="header-menu__item-link" href="#prices">Цены</a></li>
+			<li class="header-menu__item"><a class="header-menu__item-link" href="#sales">Акции</a></li>
+			<li class="header-menu__item"><a class="header-menu__item-link" href="#guarantees">Гарантии</a></li>
+			<li class="header-menu__item"><a class="header-menu__item-link" href="#job">Вакансии</a>
+				<ul class="header-menu__sublist header-menu-sublist--open" id="job">
+					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#developers">Программисты</a>
+					</li>
+					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#disigners">Веб-дизайнеры</a>
+					</li>
+					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#seo">SEO-продвижение</a>
+					</li>
+					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#marketers">Маркетологи</a>
+					</li>
+				</ul>
+			</li>
+			<li class="header-menu__item"><a class="header-menu__item-link" href="#blog">Блог</a></li>
+			<li class="header-menu__item"><a class="header-menu__item-link" href="#contacts">Контакты</a></li>
+		</ul>
+		<button class="btn header-menu__btn">Партнерская программа</button>
+	</div>
+</nav>
+	</div>
+
+	<main class="layout">
+		<div class="intro-wrapper">
+			<div class="container">
+				<section class="intro-inner">
+	<h1 class="title intro-inner__title">
+		аудит сайта<br><span class="intro-inner__title intro-inner__title--actient title">бесплатно</span>
+	</h1>
+	<p class="content-text--lg content-text--white intro-inner__text">Позиции сайта падают? Пользователи покидают ресурс,
+		проведя на
+		нем
+		всего десяток
+		секунд? Есть трафик, но нет обращений? Закажите бесплатный аудит сайта </p>
+	<div class="mt50 intro-inner__form-wrapper">
+		<form class="form-call__form" name="back-call">
+			<input class="form-call__input" name="telephone" type="tel" maxlength="20" placeholder="+7 (___) ___-__-__"
+				required>
+		</form>
+		<button class="btn btn-purple form-call__btn">Заказать аудит</button>
+	</div>
+</section>
+			</div>
+		</div>
 		<div class="container">
-	<div class="services-cards cards">
+	<div class="mt100 mb100 services-cards">
 		<div class="services-cards__item cards-item">
-			<svg class="cards-item__icon">
-				<use xlink:href="img/icons/icons.svg#plane"></use>
-			</svg>
-			<h2 class="cards-item__title content-text">РАЗРАБОТАЕМ СТРАТЕГИЮ ПРОДВИЖЕНИЯ</h2>
-			<p class="cards-item__text">Мы разработаем и реализуем стратегию продвижения вашей компании в интернете
-			</p>
+			<a href="#">
+				<svg class="cards-item__icon">
+					<use xlink:href="img/icons/icons.svg#plane"></use>
+				</svg>
+				<h2 class="cards-item__title content-text--lg">РАЗРАБОТАЕМ СТРАТЕГИЮ ПРОДВИЖЕНИЯ</h2>
+				<p class="cards-item__text">Мы разработаем и реализуем стратегию продвижения вашей компании в интернете
+				</p>
+			</a>
 		</div>
 		<div class="services-cards__item cards-item">
-			<svg class="cards-item__icon">
-				<use xlink:href="img/icons/icons.svg#client"></use>
-			</svg>
-			<h2 class="cards-item__title content-text">ПРИВЕДЕМ КЛИЕНТОВ<br>ЗА РУКУ</h2>
-			<p class="cards-item__text">Стратегия и упаковка помогут привести вам клиентов из интернета.</p>
+			<a href="#">
+				<svg class="cards-item__icon">
+					<use xlink:href="img/icons/icons.svg#client"></use>
+				</svg>
+				<h2 class="cards-item__title content-text--lg">ПРИВЕДЕМ КЛИЕНТОВ<br>ЗА РУКУ</h2>
+				<p class="cards-item__text">Стратегия и упаковка помогут привести вам клиентов из интернета.</p>
+			</a>
 		</div>
 		<div class="services-cards__item cards-item">
-			<svg class="cards-item__icon">
-				<use xlink:href="img/icons/icons.svg#conversion"></use>
-			</svg>
-			<h2 class="cards-item__title content-text">ПРОРАБОТАЕМ<br>КОНВЕРСИЮ</h2>
-			<p class="cards-item__text">Проработка конверсии сайта поможет снизить стоимость клиента</p>
+			<a href="#">
+				<svg class="cards-item__icon">
+					<use xlink:href="img/icons/icons.svg#conversion"></use>
+				</svg>
+				<h2 class="cards-item__title content-text--lg">ПРОРАБОТАЕМ<br>КОНВЕРСИЮ</h2>
+				<p class="cards-item__text">Проработка конверсии сайта поможет снизить стоимость клиента</p>
+			</a>
 		</div>
 	</div>
 </div>
 <section class="seo-wrapper">
 	<div class="container">
-		<div class="seo row gx-5">
-			<img class="seo__img col-lg-6" src="img/seo__img.png" alt="">
-			<div class="seo-info col-lg-6">
+		<div class="seo pt100 pb100">
+			<img class="seo__img" src="img/seo__img.png" alt="">
+			<div class="seo-info">
 				<h3 class="seo-info__subtitle content-subtitle">Увеличим не только трафик, но и продажи</h3>
 				<h1 class="seo-info__title content-title">Вы готовы оказаться<br>в топе поиска?</h1>
 				<p class="seo-info__text">Мы много лет занимаемся созданием и продвижением сайтов. За годы накопилось
@@ -173,237 +214,289 @@
 	</div>
 </section>
 		<div class="marketing-wrapper bg-purple">
-	<div class="container">
-		<div class="marketing gx-md-5 row">
-			<div class="marketing-info content-text--white col-6">
-				<h3 class="content-text content-text--white marketing-top__inner-text">Наша основная специальность - это
-				</h3>
-				<h2 class="content-title">интернет-маркетинг<br>и всё, что с ним<br>связано</h2>
-			</div>
-			<ul class="marketing-list flex-md-column content-text--white col-5">
-				<li class="marketing-list__item">
-					<svg class="marketing-list__icon">
-						<use xlink:href="img/icons/icons.svg#seo"></use>
-					</svg>SEO ПРОДВИЖЕНИЕ
-				</li>
-				<li class="marketing-list__item">
-					<svg class="marketing-list__icon">
-						<use xlink:href="img/icons/icons.svg#ya"></use>
-					</svg>ЯНДЕКС ДЗЕН
-				</li>
-				<li class="marketing-list__item">
-					<svg class="marketing-list__icon">
-						<use xlink:href="img/icons/icons.svg#target"></use>
-					</svg>ТАРГЕТИНГОВАЯ РЕКЛАМА
-				</li>
-				<li class="marketing-list__item">
-					<svg class="marketing-list__icon">
-						<use xlink:href="img/icons/icons.svg#context"></use>
-					</svg>КОНТЕКСТНАЯ РЕКЛАМА
-				</li>
-			</ul>
-		</div>
+			<div class="container">
+				<div class="marketing pt100 pb100">
+	<div class="marketing-info content-text--white">
+		<h3 class="content-text content-text--white marketing-top__inner-text">Наша основная специальность - это
+		</h3>
+		<h2 class="content-title">интернет-маркетинг<br>и всё, что с ним<br>связано</h2>
 	</div>
+	<ul class="marketing-list flex-md-column content-text--white">
+		<li class="marketing-list__item content-text--md">
+			<svg class="marketing-list__icon">
+				<use xlink:href="img/icons/icons.svg#seo"></use>
+			</svg>SEO ПРОДВИЖЕНИЕ
+		</li>
+		<li class="marketing-list__item content-text--md">
+			<svg class="marketing-list__icon">
+				<use xlink:href="img/icons/icons.svg#ya"></use>
+			</svg>ЯНДЕКС ДЗЕН
+		</li>
+		<li class="marketing-list__item content-text--md">
+			<svg class="marketing-list__icon">
+				<use xlink:href="img/icons/icons.svg#target"></use>
+			</svg>ТАРГЕТИНГОВАЯ РЕКЛАМА
+		</li>
+		<li class="marketing-list__item content-text--md">
+			<svg class="marketing-list__icon">
+				<use xlink:href="img/icons/icons.svg#context"></use>
+			</svg>КОНТЕКСТНАЯ РЕКЛАМА
+		</li>
+	</ul>
 </div>
-<div class="container">
-	<div class="marketing-cards__header">
-		<h3 class="content-text text-center capital">Это не все наши услуги, их на много больше!</h3>
-		<h2 class="content-title text-center marketing-cards__title">Мы готовы полностью заменить вам отдел
-			разработки
-			и маркетинга</h2>
-		<p class="content-text text-center">Мы можем не только продвигать, но и создавать! Не только сайты, но и
-			приложения,
-			плагины и модули для CMS-систем. Мы уже делали это и еще не раз сделаем. </p>
-	</div>
-	<div class="marketing-cards__wrapper cards">
-		<div class="marketing-cards__item cards-item">
-			<svg class="marketing-cards__item-icon cards-item__icon">
-				<use xlink:href="img/icons/icons.svg#m-site"></use>
+			</div>
+		</div>
+		<div class="container">
+			<div class="marketing-cards__header">
+	<h3 class="content-text text-center capital">Это не все наши услуги, их на много больше!</h3>
+	<h2 class="content-title text-center marketing-cards__title">Мы готовы полностью заменить вам отдел
+		разработки
+		и маркетинга</h2>
+	<p class="content-text text-center">Мы можем не только продвигать, но и создавать! Не только сайты, но и
+		приложения,
+		плагины и модули для CMS-систем. Мы уже делали это и еще не раз сделаем. </p>
+</div>
+<div class="marketing-cards__wrapper cards">
+	<div class="marketing-cards__item cards-item">
+		<a class="marketing-cards__link" href="#">
+			<svg class="marketing-cards__item-icon">
+				<use xlink:href="img/icons/icons.svg#msite"></use>
 			</svg>
 			<h2 class="cards-item__title">Создание сайтов</h2>
 			<p class="cards-item__text">Разработаем для вас продающий сайт, который работает быстро</p>
-		</div>
-		<div class="marketing-cards__item cards-item">
+		</a>
+	</div>
+	<div class="marketing-cards__item cards-item">
+		<a class="marketing-cards__link" href="#">
 			<svg class="marketing-cards__item-icon cards-item__icon">
-				<use xlink:href="img/icons/icons.svg#m-admin"></use>
+				<use xlink:href="img/icons/icons.svg#1"></use>
 			</svg>
 			<h2 class="cards-item__title">Поддержка сайта </h2>
 			<p class="cards-item__text">Уже есть сайт? Мы с радостью возьмем его на техническую поддержку</p>
-		</div>
-		<div class="marketing-cards__item cards-item">
+		</a>
+	</div>
+	<div class="marketing-cards__item cards-item">
+		<a class="marketing-cards__link" href="#">
 			<svg class="marketing-cards__item-icon cards-item__icon">
-				<use xlink:href="img/icons/icons.svg#m-map"></use>
+				<use xlink:href="../img/icons/icons.svg#mmap"></use>
 			</svg>
 			<h2 class="cards-item__title">Продвижение на картах</h2>
 			<p class="cards-item__text">Добавим и продвинем вашу компанию во всех сервисах карт</p>
-		</div>
-		<div class="marketing-cards__item cards-item">
+		</a>
+	</div>
+	<div class="marketing-cards__item cards-item">
+		<a class="marketing-cards__link" href="#">
 			<svg class="marketing-cards__item-icon cards-item__icon">
-				<use xlink:href="img/icons/icons.svg#m-copyright"></use>
+				<use xlink:href="img/icons/icons.svg#mcopyright"></use>
 			</svg>
 			<h2 class="cards-item__title">Копирайтинг</h2>
 			<p class="cards-item__text">Напишем для вас качественные продающие или информационные тексты</p>
-		</div>
-		<div class="marketing-cards__item cards-item">
+		</a>
+	</div>
+	<div class="marketing-cards__item cards-item">
+		<a class="marketing-cards__link" href="#">
 			<svg class="marketing-cards__item-icon cards-item__icon">
-				<use xlink:href="img/icons/icons.svg#m-video"></use>
+				<use xlink:href="img/icons/icons.svg#mvideo"></use>
 			</svg>
 			<h2 class="cards-item__title">Монтаж видео</h2>
 			<p class="cards-item__text">Снимем и проведем монтаж видео любой сложности</p>
-		</div>
-		<div class="marketing-cards__item cards-item">
+		</a>
+	</div>
+	<div class="marketing-cards__item cards-item">
+		<a class="marketing-cards__link" href="#">
 			<svg class="marketing-cards__item-icon cards-item__icon">
-				<use xlink:href="img/icons/icons.svg#m-marketing"></use>
+				<use xlink:href="img/icons/icons.svg#mmarketing"></use>
 			</svg>
 			<h2 class="cards-item__title">Маркетинговый надзор</h2>
 			<p class="cards-item__text">Проверим работу вашего подрядчика по маркетингу</p>
-		</div>
-	</div>
-	<button class="btn btn-purple marketing-cards__btn">Бесплатная консультация</button>
-</div>
-		<div class="feedback-wrapper bg-grey">
-	<div class="container">
-		<div class="certificates">
-			<h2 class="content-title text-center certificates__title">Сертификаты</h2>
-			<div class="certificates-inner slider-wrapper">
-				<div class="certificates-item slider-item">
-					<img class="certificates-item__img" src="img/cert.jpg" alt="Сертификат">
-				</div>
-				<div class="certificates-item slider-item">
-					<img class="certificates-item__img" src="img/cert.jpg" alt="Сертификат">
-				</div>
-				<div class="certificates-item slider-item">
-					<img class="certificates-item__img" src="img/cert.jpg" alt="Сертификат">
-				</div>
-				<div class="certificates-item slider-item">
-					<img class="certificates-item__img" src="img/cert.jpg" alt="Сертификат">
-				</div>
-			</div>
-		</div>
+		</a>
 	</div>
 </div>
-
-<div class="reviews-wrapper bg-purple">
-	<div class="container">
-		<div class="reviews">
-			<h2 class="content-title content-text--white">Отзывы</h2>
-			<nav class="reviews-navigation">
-				<button class="reviews-navigation__prev reviews-navigation__btn">
-					<svg class="arrow arrow__prev">
-						<use xlink:href="img/icons/icons.svg#arrow"></use>
-					</svg>
-				</button>
-				<button class="reviews-navigation__next reviews-navigation__btn">
-					<svg class="arrow arrow__next">
-						<use xlink:href="img/icons/icons.svg#arrow"></use>
-					</svg>
-				</button>
-			</nav>
+<button class="btn btn-purple marketing-cards__btn">Бесплатная консультация</button>
 		</div>
-		<div class="slider-body">
-			<div class="cards reviews-body">
-				<div class="cards-item reviews-item slider-item">
-					<div class="reviews-item__info">
-						<img class="reviews-item__img" src="img/reviews-item__img.jpg" alt="">
-						<div class="reviews-item__info-content">
-							<p class="reviews-item__conpany">ООО “Литана”</p>
-							<p class="reviews-item__name">Анастасия Брут</p>
-						</div>
-					</div>
-					<p class="cards-item__text-reviews">ООО «Литана» занимается управлением строительных объектов,
-						изготовлением
-						металлоконструкций, проектированием промышленных и гражданских объектов.
-					</p>
-					<a class="reviews-item__full" href="#">Читать весь отзыв</a>
-				</div>
-				<div class="cards-item reviews-item reviews-item--video slider-item">
-					<div class="reviews-item__video-info d-f-column">
-						<svg class="video-play">
-							<use xlink:href="img/icons/icons.svg#play"></use>
-						</svg>
-						<time class="reviews-item__video-date" datetime="2021-10-14">14.10.21</time>
-						<p class="reviews-item__conpany reviews-item__conpany--video">ООО “Литана”</p>
-					</div>
-					<video class="reviews-video" width="390" height="347" poster="img/reviews-img1.jpg">
-						<source src="#" type='video/ogg; codecs="theora, vorbis"'>
-						<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-						<source src="#" type='video/webm; codecs="vp8, vorbis"'>
-					</video>
-				</div>
-				<div class="cards-item reviews-item slider-item">
-					<div class="reviews-item__info">
-						<img class="reviews-item__img" src="img/reviews-item__img.jpg" alt="">
-						<div class="reviews-item__info-content">
-							<p class="reviews-item__conpany">ООО “Литана”</p>
-							<p class="reviews-item__name">Анастасия Брут</p>
-						</div>
-					</div>
-					<p class="cards-item__text-reviews">ООО «Литана» занимается управлением строительных объектов,
-						изготовлением
-						металлоконструкций, проектированием промышленных и гражданских объектов.
-					</p>
-					<a class="reviews-item__full" href="#">Читать весь отзыв</a>
-				</div>
-				<div class="cards-item reviews-item reviews-item--video slider-item">
-					<div class="reviews-item__video-info d-f-column">
-						<svg class="video-play">
-							<use xlink:href="img/icons/icons.svg#play"></use>
-						</svg>
-						<time class="reviews-item__video-date" datetime="2021-10-14">14.10.21</time>
-						<p class="reviews-item__conpany reviews-item__conpany--video">ООО “Литана”</p>
-
-					</div>
-					<video class="reviews-video" width="390" height="347" poster="img/reviews-img2.jpg">
-						<source src="#" type='video/ogg; codecs="theora, vorbis"'>
-						<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-						<source src="#" type='video/webm; codecs="vp8, vorbis"'>
-					</video>
-				</div>
+		<div class="certificates-wrapper pt100 pb100 bg-grey">
+			<div class="container">
+				<h2 class="content-title text-center certificates__title">Сертификаты</h2>
+<div class="certificates mt50 mb100">
+	<button class="swiper-button-prev btn-nav certificates-btn certificates-btn__prev"></button>
+	<div class="certificates-slider-container swiper swiper-certificate">
+		<div class="certificates-inner swiper-wrapper">
+			<div class="certificates-item swiper-slide">
+				<img class="certificates-item__img swiper-slide__img" src="img/cert.jpg" alt="Сертификат">
 			</div>
-		</div>
-
-		<button class="btn btn-orange reviews__btn">Все отзывы</button>
-	</div>
-</div>
-
-<div class="credits bg-grey">
-	<div class="container">
-		<div class="credits-top">
-			<div class="credits-top__header">
-				<h2 class="credits-top__title content-title">благодарности</h2>
-				<h3 class="content-subtitle content-text">от наших клиентов</h3>
+			<div class="certificates-item swiper-slide">
+				<img class="certificates-item__img swiper-slide__img" src="img/cert.jpg" alt="Сертификат">
 			</div>
-			<button class="btn btn-purple credits-top__btn">Все благодарности</button>
-		</div>
-
-
-		<div class="credits-slider row">
-			<div class="credits-slider__text col-5">
-				<p class="content-text credits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
-					tempor sem lorem nec. <br>
-					<br><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
-						tempor sem lorem nec.</span>
-				</p>
+			<div class="certificates-item swiper-slide">
+				<img class="certificates-item__img swiper-slide__img" src="img/cert.jpg" alt="Сертификат">
 			</div>
-			<div class="credits-slider__body-wrapper col-7">
-				<div class="credits-slider__body">
-					<div class="credits-slider__item credits-slider__item--active">
-						<img class="credits-slider__img" src="img/credits__img.jpg" alt="">
-					</div>
-					<div class="cards credits-slider__item">
-						<img class="credits-slider__img" src="img/credits__img.jpg" alt="">
-					</div>
-					<div class="cards credits-slider__item">
-						<img class="credits-slider__img" src="img/credits__img.jpg" alt="">
-					</div>
-					<div class="cards credits-slider__item">
-						<img class="credits-slider__img" src="img/credits__img.jpg" alt="">
-					</div>
-				</div>
+			<div class="certificates-item swiper-slide">
+				<img class="certificates-item__img swiper-slide__img" src="img/cert.jpg" alt="Сертификат">
+			</div>
+			<div class="certificates-item swiper-slide">
+				<img class="certificates-item__img swiper-slide__img" src="img/cert.jpg" alt="Сертификат">
+			</div>
+			<div class="certificates-item swiper-slide">
+				<img class="certificates-item__img swiper-slide__img" src="img/cert.jpg" alt="Сертификат">
 			</div>
 		</div>
 	</div>
+	<button class="swiper-button-next btn-nav certificates-btn certificates-btn__next"></button>
 </div>
+			</div>
+		</div>
+		<div class="reviews-wrapper bg-purple pt100 pb100">
+			<div class="container">
+	<div class="reviews-top mb50">
+		<h2 class="content-title content-text--white">Отзывы</h2>
+		<nav class="reviews-btn">
+			<button class="reviews-btn__next reviews-navigation__btn btn-nav">
+				<svg class="arrow arrow__next">
+					<use xlink:href="img/icons/icons.svg#arrow"></use>
+				</svg>
+			</button>
+			<button class="reviews-btn__prev reviews-navigation__btn btn-nav">
+				<svg class="arrow arrow__prev">
+					<use xlink:href="img/icons/icons.svg#arrow"></use>
+				</svg>
+			</button>
+
+		</nav>
+	</div>
+</div>
+
+<div class="slider-body swiper-reviews swiper">
+	<div class="reviews-body swiper-wrapper">
+		<div class="cards-item reviews-item swiper-slide">
+			<div class="reviews-item__info">
+				<img class="reviews-item__img" src="img/reviews-item__img.jpg" alt="">
+				<div class="reviews-item__info-content">
+					<p class="reviews-item__conpany">ООО “Литана”</p>
+					<p class="reviews-item__name">Анастасия Брут</p>
+				</div>
+			</div>
+			<p class="cards-item__text-reviews">ООО «Литана» занимается управлением строительных объектов,
+				изготовлением
+				металлоконструкций, проектированием промышленных и гражданских объектов.
+			</p>
+			<a class="reviews-item__full" href="#">Читать весь отзыв</a>
+		</div>
+		<div class="cards-item reviews-item reviews-item--video swiper-slide">
+			<div class="reviews-item__video-info">
+				<svg class="video-play">
+					<use xlink:href="img/icons/icons.svg#play"></use>
+				</svg>
+				<time class="reviews-item__video-date" datetime="2021-10-14">14.10.21</time>
+				<p class="reviews-item__conpany reviews-item__conpany--video">ООО “Литана”</p>
+			</div>
+			<video class="reviews-video" width="390" height="347" poster="img/reviews-img1.jpg">
+				<source src="#" type='video/ogg; codecs="theora, vorbis"'>
+				<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				<source src="#" type='video/webm; codecs="vp8, vorbis"'>
+			</video>
+		</div>
+		<div class="cards-item reviews-item swiper-slide">
+			<div class="reviews-item__info">
+				<img class="reviews-item__img" src="img/reviews-item__img.jpg" alt="">
+				<div class="reviews-item__info-content">
+					<p class="reviews-item__conpany">ООО “Литана”</p>
+					<p class="reviews-item__name">Анастасия Брут</p>
+				</div>
+			</div>
+			<p class="cards-item__text-reviews">ООО «Литана» занимается управлением строительных объектов,
+				изготовлением
+				металлоконструкций, проектированием промышленных и гражданских объектов.
+			</p>
+			<a class="reviews-item__full" href="#">Читать весь отзыв</a>
+		</div>
+		<div class="cards-item reviews-item reviews-item--video slider-item">
+			<div class="reviews-item__video-info">
+				<svg class="video-play">
+					<use xlink:href="img/icons/icons.svg#play"></use>
+				</svg>
+				<time class="reviews-item__video-date" datetime="2021-10-14">14.10.21</time>
+				<p class="reviews-item__conpany reviews-item__conpany--video">ООО “Литана”</p>
+			</div>
+			<video class="reviews-video" width="390" height="347" poster="img/reviews-img1.jpg">
+				<source src="#" type='video/ogg; codecs="theora, vorbis"'>
+				<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				<source src="#" type='video/webm; codecs="vp8, vorbis"'>
+			</video>
+		</div>
+		<div class="cards-item reviews-item swiper-slide">
+			<div class="reviews-item__info">
+				<img class="reviews-item__img" src="img/reviews-item__img.jpg" alt="">
+				<div class="reviews-item__info-content">
+					<p class="reviews-item__conpany">ООО “Литана”</p>
+					<p class="reviews-item__name">Анастасия Брут</p>
+				</div>
+			</div>
+			<p class="cards-item__text-reviews">ООО «Литана» занимается управлением строительных объектов,
+				изготовлением
+				металлоконструкций, проектированием промышленных и гражданских объектов.
+			</p>
+			<a class="reviews-item__full" href="#">Читать весь отзыв</a>
+		</div>
+		<div class="cards-item reviews-item reviews-item--video swiper-slide">
+			<div class="reviews-item__video-info">
+				<svg class="video-play">
+					<use xlink:href="img/icons/icons.svg#play"></use>
+				</svg>
+				<time class="reviews-item__video-date" datetime="2021-10-14">14.10.21</time>
+				<p class="reviews-item__conpany reviews-item__conpany--video">ООО “Литана”</p>
+
+			</div>
+			<video class="reviews-video" width="390" height="347" poster="img/reviews-img2.jpg">
+				<source src="#" type='video/ogg; codecs="theora, vorbis"'>
+				<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				<source src="#" type='video/webm; codecs="vp8, vorbis"'>
+			</video>
+		</div>
+	</div>
+</div>
+
+<button class="btn btn-orange reviews__btn">Все отзывы</button>
+		</div>
+		<div class="credits bg-grey">
+			<div class="container">
+				<div class="credits-top">
+	<div class="credits-top__header">
+		<h2 class="credits-top__title content-title">благодарности</h2>
+		<h3 class="credits-top__text">от наших клиентов</h3>
+	</div>
+	<button class="btn btn-purple credits-top__btn">Все благодарности</button>
+</div>
+
+
+<div class="credits-wrapper">
+	<div class="credits-slider__text">
+		<p class="content-text credits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
+			tempor sem lorem nec. <br>
+			<br><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
+				tempor sem lorem nec.</span>
+		</p>
+	</div>
+	<div class="credits-slider__wrapper">
+		<div class="credits-slider swiper">
+			<div class="credits-slider__body swiper-wrapper">
+				<div class="credits-slider__item swiper-slide">
+					<img class="credits-slider__img swiper-slide__img" src="img/credits__img.jpg" alt="">
+				</div>
+				<div class="credits-slider__item swiper-slide">
+					<img class="credits-slider__img swiper-slide__img" src="img/credits__img.jpg" alt="">
+				</div>
+				<div class="credits-slider__item swiper-slide">
+					<img class="credits-slider__img swiper-slide__img" src="img/credits__img.jpg" alt="">
+				</div>
+				<div class="credits-slider__item swiper-slide">
+					<img class="credits-slider__img swiper-slide__img" src="img/credits__img.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+			</div>
+		</div>
 		<div class="seo-cards">
 	<div class="container">
 		<h2 class="content-title text-center">Seo по тематикам</h2>
@@ -484,14 +577,13 @@
 					бесплатно
 				</p>
 			</div>
-			<div class="intro-inner__form-wrapper form-call__wrapper">
-				<form class="form-call__form" name="back-call">
-					<input class="form-call__input" name="telephone" type="tel" maxlength="20"
-						placeholder="+7 (___) ___-__-__" required />
-					<button class="btn btn-orange form-call__btn" form="back-call">Заказать звонок</button>
+			<div class="seo-order__form-wrapper intro-inner__form-wrapper form-call__wrapper">
+				<form class="seo-order__form " name="telephone">
+					<input class="seo-order__input form-call__input" name="telephone" type="tel" maxlength="20"
+						placeholder="+7 (___) ___-__-__" required>
+					<button class="seo-order__btn btn btn-orange form-call__btn">Заказать звонок</button>
 				</form>
 			</div>
-
 		</div>
 	</div>
 </div>
@@ -509,180 +601,192 @@
 	</div>
 </div>
 		<div class="portfolio bg-grey">
-	<div class="container">
-		<div class="portfolio-top d-f s-b">
-			<h2 class="content-title">Наши кейсы</h2>
-			<button class="btn btn-purple portfolio-top__btn">Все проекты</button>
+			<div class="container">
+				<div class="portfolio-top mb50">
+	<h2 class="content-title">Наши кейсы</h2>
+	<button class="btn btn-purple portfolio-top__btn">Все проекты</button>
+</div>
+
+<div class="swiper-portfolio swiper cards">
+	<div class="portfolio-body swiper-wrapper">
+		<div class="portfolio-item slider-item cards-item cards-item--big swiper-slide">
+			<div class="portfolio-item__img">
+				<img class="portfolio-cards__img" src="img/portfolio-cards__img-1.jpg" alt="">
+			</div>
+			<div class="portfolio-item__info">
+				<p class="portfolio-item__title">Продвижение сайта официального дистрибьютора медицинского
+					оборудования
+				</p>
+				<p class="portfolio-item__text">Увеличение коммерческого трафика из поисковых систем в 4 раза</p>
+				<a class="portfolio-item__full" href="#">Подробнее</a>
+			</div>
+		</div>
+		<div class="portfolio-item slider-item cards-item cards-item--big swiper-slide">
+			<div class="portfolio-item__img">
+				<img class="portfolio-cards__img" src="img/portfolio-cards__img-2.jpg" alt="">
+			</div>
+			<div class="portfolio-item__info">
+				<p class="portfolio-item__title">Продвижение сайта ПЦР тестов и КТ в Калининграде</p>
+				<p class="portfolio-item__text">Снизили CPL по услуге ПЦР-тесты</p>
+				<a class="portfolio-item__full" href="#">Подробнее</a>
+			</div>
+		</div>
+		<div class="portfolio-item slider-item cards-item cards-item--big swiper-slide">
+			<div class="portfolio-item__img">
+				<img class="portfolio-cards__img" src="img/portfolio-cards__img-3.jpg" alt="">
+			</div>
+			<div class="portfolio-item__info">
+				<p class="portfolio-item__title">Магазин керамической плитки в Калининграде</p>
+				<p class="portfolio-item__text">Снизили стоимость клиента на 50%</p>
+				<a class="portfolio-item__full" href="#">Подробнее</a>
+			</div>
+		</div>
+		<div class="portfolio-item slider-item cards-item cards-item--big swiper-slide">
+			<div class="portfolio-item__img">
+				<img class="portfolio-cards__img" src="img/portfolio-cards__img-4.jpg" alt="">
+			</div>
+			<div class="portfolio-item__info">
+				<p class="portfolio-item__title">Продвижение интернет- магазина кислородного оборудования”</p>
+				<p class="portfolio-item__text">Снизили стоимость клиента на 50%</p>
+				<a class="portfolio-item__full" href="#">Подробнее</a>
+			</div>
+		</div>
+	</div>
+</div>
+			</div>
+		</div>
+		<div class="blog">
+			<div class="container">
+				<div class="blog-top">
+	<h2 class="content-title">Блог</h2>
+	<button class="btn btn-purple blog-top__btn">Перейти в раздел</button>
+</div>
+<div class="blog-body">
+	<div class="blog-item blog-item--lg">
+		<div class="blog-item__img-wrapper blog-item__img-wrapper--lg">
+			<img class="blog-item__img blog-item__img--lg" src="img/blog-img--big.jpg" alt="">
+		</div>
+		<div class="blog-item__info blog-item__info--lg content-text--white">
+			<h5 class="blog-item__title content-text--white"><a href="#" class="blog-item__link">Хакеры протестировали
+					эксплойт
+					уязвимости нулевого дня в Nginx LDAP</a></h5>
+			<p class="blog-item__text">В начале апреля хакерская группа BlueHornet заявила об уязвимости нулевого дня
+				в ПО В начале апреля
+				хакерская группа BlueHornet заявила об уязвимости нулевого дня в ПО .В начале апреля хакерская группа
+				BlueHornet заявила об уязвимости нулевого дня в читать далее</p>
+			<time class="blog-item__date blog-item__date--white btn btn-purple" datetime="2022-07-15 08:15">15 июля |
+				08:15</time>
+		</div>
+	</div>
+	<div class="blog-item">
+		<div class="blog-item__img-wrapper">
+			<img class="blog-item__img" src="img/blog-img-1.jpg" alt="">
+		</div>
+		<div class="blog-item__info">
+			<h5 class="blog-item__title"><a href="#" class="blog-item__link">Хакеры протестировали эксплойт уязвимости
+					нулевого дня в Nginx LDAP</a></h5>
+			<time class="blog-item__date" datetime="2022-07-15 08:15">15:00 | 08:15 </time>
+		</div>
+	</div>
+	<div class="blog-item">
+		<div class="blog-item__img-wrapper">
+			<img class="blog-item__img" src="img/blog-img-2.jpg" alt="">
+		</div>
+		<div class="blog-item__info">
+			<h5 class="blog-item__title"><a href="#" class="blog-item__link">Хакеры протестировали эксплойт уязвимости
+					нулевого дня в Nginx LDAP</a></h5>
+			<time class="blog-item__date" datetime="2022-07-15 08:15">15:00 | 08:15 </time>
+		</div>
+	</div>
+	<div class="blog-item">
+		<div class="blog-item__img-wrapper">
+			<img class="blog-item__img" src="img/blog-img-3.jpg" alt="">
+		</div>
+		<div class="blog-item__info">
+			<h5 class="blog-item__title"><a href="#" class="blog-item__link">Хакеры протестировали эксплойт уязвимости
+					нулевого дня в Nginx LDAP</a></h5>
+			<time class="blog-item__date" datetime="2022-07-15 08:15">15:00 | 08:15 </time>
+		</div>
+	</div>
+	<div class="blog-item">
+		<div class="blog-item__img-wrapper">
+			<img class="blog-item__img" src="img/blog-img-4.jpg" alt="">
+		</div>
+		<div class="blog-item__info">
+			<h5 class="blog-item__title"><a href="#" class="blog-item__link">Хакеры протестировали эксплойт уязвимости
+					нулевого дня в Nginx LDAP</a></h5>
+			<time class="blog-item__date" datetime="2022-07-15 08:15">15:00 | 08:15 </time>
+		</div>
+	</div>
+</div>
+			</div>
 		</div>
 
-		<div class="slider-body cards">
-			<div class="cards portfolio-body">
-				<div class="portfolio-item slider-item cards-item cards-item--big">
-					<div class="portfolio-body__img">
-						<img class="portfolio-cards__img" src="img/portfolio-cards__img-1.jpg" alt="">
-					</div>
-					<div class="portfolio-item__info">
-						<p class="portfolio-item__title">Продвижение сайта официального дистрибьютора медицинского
-							оборудования
-						</p>
-						<p class="portfolio-item__text">Увеличение коммерческого трафика из поисковых систем в 4 раза</p>
-						<a class="portfolio-item__full" href="#">Подробнее</a>
-					</div>
-				</div>
-				<div class="portfolio-item slider-item cards-item cards-item--big">
-					<div class="portfolio-body__img">
-						<img class="portfolio-cards__img" src="img/portfolio-cards__img-2.jpg" alt="">
-					</div>
-					<div class="portfolio-item__info">
-						<p class="portfolio-item__title">Продвижение сайта ПЦР тестов и КТ в Калининграде</p>
-						<p class="portfolio-item__text">Снизили CPL по услуге ПЦР-тесты</p>
-						<a class="portfolio-item__full" href="#">Подробнее</a>
-					</div>
-				</div>
-				<div class="portfolio-item slider-item cards-item cards-item--big">
-					<div class="portfolio-body__img">
-						<img class="portfolio-cards__img" src="img/portfolio-cards__img-3.jpg" alt="">
-					</div>
-					<div class="portfolio-item__info">
-						<p class="portfolio-item__title">Магазин керамической плитки в Калининграде</p>
-						<p class="portfolio-item__text">Снизили стоимость клиента на 50%</p>
-						<a class="portfolio-item__full" href="#">Подробнее</a>
-					</div>
-				</div>
-				<div class="portfolio-item slider-item cards-item cards-item--big">
-					<div class="portfolio-body__img">
-						<img class="portfolio-cards__img" src="img/portfolio-cards__img-4.jpg" alt="">
-					</div>
-					<div class="portfolio-item__info">
-						<p class="portfolio-item__title">Продвижение интернет- магазина кислородного оборудования”</p>
-						<p class="portfolio-item__text">Снизили стоимость клиента на 50%</p>
-						<a class="portfolio-item__full" href="#">Подробнее</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-		<div class="blog">
-	<div class="container">
-		<div class="blog-top d-f s-b">
-			<h2 class="content-title">Блог</h2>
-			<button class="btn btn-purple blog-top__btn">Перейти в раздел</button>
-		</div>
-		<div class="blog-body">
-			<div class="blog-item  blog-card blog-card--big">
-				<div class="blog-body__img blog-body__img-big">
-					<img class="blog__img-big" src="img/blog-img--big.jpg" alt="">
-				</div>
-				<div class="blog-item__info blog-item__info--big content-text--white">
-					<h5 class="blog-item__title blog-item__title--big content-text--white">Хакеры протестировали эксплойт
-						уязвимости нулевого дня в
-						Nginx LDAP</h5>
-					<p class="blog-item__text">В начале апреля хакерская группа BlueHornet заявила об уязвимости нулевого дня
-						в ПО В начале апреля
-						хакерская группа BlueHornet заявила об уязвимости нулевого дня в ПО .В начале апреля хакерская группа
-						BlueHornet заявила об уязвимости нулевого дня в читать далее</p>
-					<date class="blog-item__date blog-item__date--white btn btn-purple">15 июля | 08:15</date>
-				</div>
-			</div>
-			<div class="blog-item blog-card blog-card--s">
-				<div class="blog-body__img">
-					<img class="blog__img" src="img/blog-img-1.jpg" alt="">
-				</div>
-				<div class="blog-item__info">
-					<h5 class="blog-item__title">Хакеры протестировали эксплойт уязвимости нулевого дня в Nginx LDAP</h5>
-					<date class="blog-item__date">15:00 | 08:15 </date>
-				</div>
-			</div>
-			<div class="blog-item blog-card blog-card--s">
-				<div class="blog-body__img">
-					<img class="blog__img" src="img/blog-img-2.jpg" alt="">
-				</div>
-				<div class="blog-item__info">
-					<h5 class="blog-item__title">Хакеры протестировали эксплойт уязвимости нулевого дня в Nginx LDAP</h5>
-					<date class="blog-item__date">15:00 | 08:15 </date>
-				</div>
-			</div>
-			<div class="blog-item blog-card blog-card--s">
-				<div class="blog-body__img">
-					<img class="blog__img" src="img/blog-img-3.jpg" alt="">
-				</div>
-				<div class="blog-item__info">
-					<h5 class="blog-item__title">Хакеры протестировали эксплойт уязвимости нулевого дня в Nginx LDAP</h5>
-					<date class="blog-item__date">15:00 | 08:15 </date>
-				</div>
-			</div>
-			<div class="blog-item blog-card--s">
-				<div class="blog-body__img">
-					<img class="blog__img" src="img/blog-img-4.jpg" alt="">
-				</div>
-				<div class="blog-item__info">
-					<h5 class="blog-item__title">Хакеры протестировали эксплойт уязвимости нулевого дня в Nginx LDAP</h5>
-					<date class="blog-item__date">15:00 | 08:15 </date>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
 	</main>
-	<div class="footer-top__wrapper">
+	<div class="footer__wrapper">
 	<div class="container">
-		<footer class="footer">
-			<div class="footer-top row">
-				<div class="footer-contact col-3 content-text--white">
-					<div class="logo">
-						<svg class="logo logo-footer">
-							<use xlink:href="img/icons/icons.svg#logo-footer"></use>
-						</svg>
-					</div>
-					<div class="footer-contact__info">
-						<a class="callback-form footer-contact__tel" href="tel:+79133223911">+7 (913)
-							322-3911</a>
-						<p class="footer-contact__timetable">Пн-Пт 09:00-18:00</p>
-					</div>
-					<button class="btn btn-purple footer-contact__btn">Оставить заявку</button>
-					<a class="mail-footer" href="mailto:hello@novatechno.ru" target="_blank">
-						<svg class="mail-footer__icon">
-							<use xlink:href="img/icons/icons.svg#mail"></use>
-						</svg>
-						hello@novatechno.ru</a>
+		<footer class="footer-top">
+			<div class="footer-contact content-text--white">
+				<div class="logo">
+					<svg class="logo logo-footer">
+						<use xlink:href="img/icons/icons.svg#logo-footer"></use>
+					</svg>
 				</div>
-				<div class="footer-service col-8 content-text--white">
-					<ul class="footer-service__list">
-						<li class="footer-service__item">О компании
-							<ul class="footer-service__sublist">
-								<li class="footer-service__subitem">Наши услуги</li>
-								<li class="footer-service__subitem">Цены</li>
-								<li class="footer-service__subitem">Проекты</li>
-								<li class="footer-service__subitem">Отзывы</li>
-								<li class="footer-service__subitem">Блог</li>
-								<li class="footer-service__subitem">Вакансии</li>
-							</ul>
-						</li>
-						<li class="footer-service__item">Услуги
-							<ul class="footer-service__sublist">
-								<li class="footer-service__subitem">Программирование</li>
-								<li class="footer-service__subitem">Графический и веб-дизайн</li>
-								<li class="footer-service__subitem">Производство рекламы</li>
-								<li class="footer-service__subitem">Видеосъемка</li>
-								<li class="footer-service__subitem">Продвижение на картах</li>
-								<li class="footer-service__subitem">SMM и таргетинг</li>
-								<li class="footer-service__subitem">Ведение Яндекс.Дзен</li>
-							</ul>
-						</li>
-						<li class="footer-service__item">
-							<ul class="footer-service__sublist">
-								<li class="footer-service__subitem">Контекстная реклама</li>
-								<li class="footer-service__subitem">Калькулятор стоимости</li>
-								<li class="footer-service__subitem">SEO-продвижение</li>
-								<li class="footer-service__subitem">Продвижение на маркетплейсах</li>
-								<li class="footer-service__subitem">ASO-продвижение приложений</li>
-								<li class="footer-service__subitem">Копирайтинг</li>
-								<li class="footer-service__subitem">Маркетинговый надзор</li>
-							</ul>
-						</li>
-					</ul>
+				<div class="footer-contact__info">
+					<a class="callback-form footer-contact__tel" href="tel:+79133223911">+7 (913)
+						322-3911</a>
+					<p class="footer-contact__timetable">Пн-Пт 09:00-18:00</p>
 				</div>
+				<button class="btn btn-purple footer-contact__btn">Оставить заявку</button>
+				<a class="mail-footer" href="mailto:hello@novatechno.ru" target="_blank">
+					<svg class="mail-footer__icon">
+						<use xlink:href="img/icons/icons.svg#mail"></use>
+					</svg>
+					hello@novatechno.ru</a>
+			</div>
+			<div class="footer-menu content-text--white">
+				<ul class="footer-menu__list">
+					<li class="footer-menu__item"><a class="footer-menu__item-link" href="#">О компании</a>
+						<ul class="footer-menu__sublist footer-menu__sublist--col1">
+							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Наши услуги</a></li>
+							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Цены</a></li>
+							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Проекты</a></li>
+							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Отзывы</a></li>
+							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Блог</a></li>
+							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Вакансии</a></li>
+						</ul>
+					</li>
+					<li class="footer-menu__item"><a class="footer-menu__item-link" href="#">Услуги</a>
+						<ul class="footer-menu__sublist footer-menu__sublist--col2">
+							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Программирование</a>
+							</li>
+							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Графический и
+									веб-дизайн</a></li>
+							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Производство
+									рекламы</a></li>
+							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Видеосъемка</a></li>
+							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Продвижение на
+									картах</a></li>
+							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">SMM и таргетинг</a>
+							</li>
+							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Ведение
+									Яндекс.Дзен</a></li>
+							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Контекстная
+									реклама</a></li>
+							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Калькулятор
+									стоимости</a></li>
+							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">SEO-продвижение</a>
+							</li>
+							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Продвижение на
+									маркетплейсах</a></li>
+							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">ASO-продвижение
+									приложений</a></li>
+							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Копирайтинг</a></li>
+							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Маркетинговый
+									надзор</a></li>
+						</ul>
+					</li>
+				</ul>
 			</div>
 		</footer>
 	</div>
@@ -691,8 +795,8 @@
 
 	<div class="footer-bottom__wrapper">
 		<div class="container">
-			<div class="footer-bottom row">
-				<div class="footer-bottom__social col-xl-3 col-12">
+			<div class="footer-bottom">
+				<div class="footer-bottom__social">
 					<svg class="footer-bottom__social-icon">
 						<use xlink:href="img/icons/icons.svg#insta"></use>
 					</svg>
@@ -706,11 +810,11 @@
 						<use xlink:href="img/icons/icons.svg#youtube"></use>
 					</svg>
 				</div>
-				<div class="copyright col-xl-7 col-12 content-text--white">
+				<div class="copyright content-text--white">
 					<span>©2014-2022 Novatechno.ru</span>
 					<a class="copyright__link" href="#">Политика конфиденциальности</a>
 				</div>
-				<div class="sign col-xl-2 col-12 content-text--white">
+				<div class="sign content-text--white">
 					<p>Разработано</p>
 					<svg class="diez-icon">
 						<use xlink:href="img/icons/icons.svg#diez"></use>
@@ -720,7 +824,9 @@
 		</div>
 	</div>
 </div>
-
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	<!-- main JS -->
 	<script src="js/app.min.js"></script>
 </body>
 
