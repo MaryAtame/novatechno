@@ -272,3 +272,9 @@
 		color: #fff;
 	}
 }
+
+.mobile-menu {
+	@media(min-width:1201px) {
+		display: none;
+	}
+}
