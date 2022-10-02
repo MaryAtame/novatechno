@@ -15,7 +15,7 @@
 	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+	<!-- CSS-файл должен быть один для всего сайта, все остальное импортируется в него --> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	<title>Novatechno</title>
 </head>
@@ -74,7 +74,8 @@
 	</main>
 	@@include('html/footer.html', {})
 	<!-- Swiper JS -->
-	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	<!-- JS-файл должен быть один, все библиотеки импортируются в него --> <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 	<!-- main JS -->
 	<script src="js/app.min.js"></script>
 </body>

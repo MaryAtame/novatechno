@@ -1,7 +1,9 @@
 .header-body {
 	width: 100%;
 	display: grid;
-	grid-template-columns: .7fr 1fr 1.6fr;
+	//Зачем каждый раз делать новую grid-сетку?
+    // Сделай блок columns и используй его везде, где нужна сетка
+    grid-template-columns: .7fr 1fr 1.6fr;
 	align-items: center;
 	padding: 17px 0;
 

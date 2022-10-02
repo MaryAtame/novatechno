@@ -37,6 +37,7 @@
 	box-shadow: -20px 10px 50px 0px rgba(0, 0, 0, .2);
 
 	&:first-child {
+        // медиазапросы перекрывают друг друга в 666-667px
 		@media(min-width:666px) {
 			grid-row: auto/span 2;
 			grid-column: auto/span 2;
@@ -58,6 +59,7 @@
 		width: max-content;
 
 		&::before {
+            // Без position у родителя этот блок свалит в неведомые дали
 			content: "";
 			display: block;
 			position: absolute;

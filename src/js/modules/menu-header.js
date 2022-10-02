@@ -1,10 +1,12 @@
 
 export function menuOpen() {
-	const anchors = document.querySelector('.heafer-menu__item-link');
+	const anchors = document.querySelector('.heafer-menu__item-link'); // heaFer?
 	const subMenuItems = document.getAttribute('id');
 
 	anchors.forEach(function (item) {
+	    // Незачем дублировать все это в цике, вынеси функцию за пределы цикла
 		item.addEventListener("click", function () {
+		    // Когда не подразумевается изменение переменной, всегда используем const
 			let currentItem = item;
 			let menuLink = currentItem.getAttribute('data-name');
 
