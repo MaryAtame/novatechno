@@ -88,7 +88,6 @@
 
 	@media(max-width:992px) {
 		grid-template-columns: 1fr;
-		grid-template-rows: repeat(2, 1fr);
 		grid-row-gap: 45px;
 		justify-items: center;
 	}

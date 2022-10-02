@@ -15,9 +15,9 @@
 .reviews-body {
 	display: flex;
 
-	@media(max-width:768px) {
-		flex-direction: column;
-	}
+	// @media(max-width:768px) {
+	// 	flex-direction: column;
+	// }
 }
 
 .reviews-navigation {
@@ -102,9 +102,7 @@
 		margin: 0 15px 0 0;
 	}
 
-	&__info-content {}
-
-	&__conpany {
+	&__company {
 		margin: 0 0 5px 0;
 		font-size: rem(20);
 		color: #000;
