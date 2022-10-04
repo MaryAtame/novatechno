@@ -47,6 +47,13 @@ button {
 	cursor: pointer;
 }
 
+button:hover,
+button:active,
+button:focus {
+	transition: all .3s ease;
+	;
+}
+
 button::-moz-focus-inner {
 	padding: 0;
 	border: 0;
@@ -70,6 +77,7 @@ a:focus {
 	font-family: inherit;
 	text-decoration: underline;
 	color: inherit;
+	transition: all .3s linear;
 }
 
 

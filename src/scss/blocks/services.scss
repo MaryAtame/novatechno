@@ -2,6 +2,9 @@
 	display: flex;
 	width: 100%;
 
+	&__link {
+		text-decoration: none;
+	}
 
 	&__item {
 		width: 390px;
@@ -41,13 +44,15 @@
 }
 
 
-
-
 .cards-item {
 	&__icon {
 		max-width: 41px;
 		max-height: 42px;
 		position: relative;
+
+		@media(max-width:1200px) {
+			left: 25px;
+		}
 	}
 
 	&__title {
@@ -67,4 +72,9 @@
 	&__text {
 		color: $text-gray;
 	}
+}
+
+.swiper-services {
+	padding: 50px 0;
+	max-width: 90vw;
 }

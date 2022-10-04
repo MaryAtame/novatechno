@@ -17,18 +17,12 @@
 		text-transform: lowercase;
 	}
 
-	&__btn {
-		@media(max-width:768px) {
-			display: none;
-		}
-	}
-
 	&__btn--mobile {
 		display: none;
 
-		@media(max-width:768px) {
+		@media(max-width:1200px) {
 			display: flex;
-			margin: 30px auto 0;
+			margin: 40px auto 0;
 			max-width: 300px;
 			justify-content: center;
 		}
@@ -45,7 +39,6 @@
 }
 
 .credits-slider {
-
 	&__text {
 		width: 100%;
 		max-width: 495px;

@@ -92,6 +92,12 @@ body {
 	}
 }
 
+.gallery-wrapper {
+	@media(max-width:1200px) {
+		padding: 20px 0 40px;
+	}
+}
+
 
 .reviews-wrapper {
 	padding: 100px 0 100px;

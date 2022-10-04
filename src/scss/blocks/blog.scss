@@ -3,6 +3,17 @@
 	justify-content: space-between;
 	align-items: center;
 	margin: 100px 0 60px;
+
+	&__btn--mobile {
+		display: none;
+
+		@media(max-width:1200px) {
+			display: flex;
+			margin: 40px auto 0;
+			max-width: 300px;
+			justify-content: center;
+		}
+	}
 }
 
 

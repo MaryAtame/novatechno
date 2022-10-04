@@ -92,9 +92,9 @@
 			margin: 0 auto 50px;
 
 			background-image: url("../img/svgicons/round-bg-mobile.svg"), url("../img/svgicons/round-bg-mobile.svg");
-			background-position: right calc(80% + 150px) top calc(95% + 40px), left calc(70% + 150px) top calc(12% + 220px);
+			background-position: right calc(180% + 131px) top calc(84% + 17px), left calc(70% + 150px) top calc(14% + 220px);
 			background-repeat: no-repeat;
-			background-size: calc(50% + 20px), calc(50% + 20px);
+			background-size: calc(90% + 20px), calc(85% + 20px);
 		}
 
 		&::before {
@@ -188,5 +188,10 @@
 }
 
 .logos-slider {
-	margin: 89px 0 95px;
+	margin: 89px auto 95px;
+	max-width: 90vw;
+
+	@media(max-width:1200px) {
+		margin: 20px auto;
+	}
 }

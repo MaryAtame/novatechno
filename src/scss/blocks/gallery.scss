@@ -5,6 +5,10 @@
 	justify-content: space-between;
 	align-items: center;
 
+	@media(max-width:1200px) {
+		margin: 0;
+	}
+
 	&__title {
 		text-align: center;
 	}
@@ -20,9 +24,7 @@
 
 	&__icon--next {}
 
-	&__icon--prev {
-		transform: rotateY(180deg);
-	}
+	&__icon--prev {}
 }
 
 
@@ -78,8 +80,6 @@
 	top: 0;
 	left: 0;
 
-	&__buttons {}
-
 	&__pagination {
 		display: flex;
 		justify-content: center;
@@ -98,4 +98,12 @@
 
 .bullet--active {
 	background-color: $purple;
+}
+
+.swiper-button-next--100right {
+	right: -90px;
+}
+
+.swiper-button-prev--100left {
+	left: -90px;
 }

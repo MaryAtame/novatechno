@@ -87,7 +87,7 @@
 	margin: 0 0 0 150px;
 
 	@media(max-width:1200px) {
-		margin: 0 0 0 60px;
+		margin: 0;
 	}
 
 	&__list {
@@ -125,7 +125,7 @@
 		column-gap: 110px;
 
 		@media(max-width:1200px) {
-			column-gap: calc(17% + 3px);
+			column-gap: 10%;
 		}
 	}
 
