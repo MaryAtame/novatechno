@@ -2327,6 +2327,13 @@ body {
   }
 }
 
+@media (max-width: 1450px) {
+  .gallery-nav__buttons {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 @media (max-width: 1350px) {
   .blog-body {
     -ms-grid-columns: (300px)[2];
