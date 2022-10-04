@@ -21,10 +21,6 @@
 		top: 0;
 		left: 0;
 	}
-
-	&__icon--next {}
-
-	&__icon--prev {}
 }
 
 
@@ -79,6 +75,13 @@
 	height: 100%;
 	top: 0;
 	left: 0;
+
+	&__buttons {
+		@media(max-width:1450px) {
+			display: none;
+			visibility: hidden;
+		}
+	}
 
 	&__pagination {
 		display: flex;

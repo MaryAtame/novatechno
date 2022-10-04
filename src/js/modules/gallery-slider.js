@@ -10,7 +10,7 @@ export const gallerySlider = new Swiper(".swiper-gallery", {
 	loop: true,
 	mousewheel: true,
 	pagination: {
-		el: ".swiper-pagination",
+		el: ".bullet",
 		clickable: true,
 	},
 	navigation: {
