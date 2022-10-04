@@ -15,7 +15,6 @@
 	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	<title>Novatechno</title>
 </head>
@@ -28,7 +27,8 @@
 		<span class="header__conpany-name">Ваше новое Digital-агентство</span>
 	</div>
 	<div class="header__contact">
-		<a class="header-mail mr100" href="mailto:hello@novatechno.ru" target="_blank">hello@novatechno.ru</a>
+		<a class="header-mail mr100" rel="nofollow" href="mailto:hello@novatechno.ru"
+			target="_blank">hello@novatechno.ru</a>
 		<address class="header-adress">
 			<a class="header-adress__link" href="https://yandex.ru/maps/-/CCUVbZryKD" target="_blank">г.
 				Калининград, ул. Менделеева 61Б</a>
@@ -61,11 +61,11 @@
 				<svg class="callback-form__icon">
 					<use xlink:href="img/icons/icons.svg#phone"></use>
 				</svg>+7 (913) 322-3911</a>
-			<button class="btn btn-purple header-body__btn" type="submit">Заказать звонок</button>
+			<button class="btn btn-purple header-body__btn">Заказать звонок</button>
 		</div>
 
-		<nav class="header-menu">
-			<div class="header-menu__menu menu-icon">
+		<nav class="menu">
+			<div class="menu__menu menu-icon">
 				<span></span>
 				<span></span>
 				<span></span>
@@ -74,58 +74,56 @@
 	</div>
 </header>
 
-<nav class="header-menu__inner">
-	<div class="header-menu__wrapper">
-		<ul class="header-menu__list">
-			<li class="header-menu__item"><a class="header-menu__item-link" href="#">О компании</a></li>
-			<li class="header-menu__item header-menu-item--open"><a class="header-menu__item-link" data-name="services"
-					href="#services">наши
+<nav class="menu__inner">
+	<div class="menu__wrapper">
+		<ul class="menu__list">
+			<li class="menu__item"><a class="menu__item-link" href="#">О компании</a></li>
+			<li class="menu__item"><a class="menu__item-link" data-name="services" href="#services">наши
 					услуги</a>
-				<ul class="header-menu__sublist" id="services">
-					<li class="header-menu__subitem"><a class="header-menu__subitem-link"
-							href="#develop">Программирование</a></li>
-					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#design">Графический и
+				<ul class="menu__sublist" id="services">
+					<li class="menu__subitem"><a class="menu__subitem-link" href="#develop">Программирование</a></li>
+					<li class="menu__subitem"><a class="menu__subitem-link" href="#design">Графический и
 							веб-дизайн</a></li>
-					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#ad">Производство рекламы</a>
+					<li class="menu__subitem"><a class="menu__subitem-link" href="#ad">Производство рекламы</a>
 					</li>
-					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#video">Видеосъемка</a></li>
-					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">Продвижение на картах</a>
+					<li class="menu__subitem"><a class="menu__subitem-link" href="#video">Видеосъемка</a></li>
+					<li class="menu__subitem"><a class="menu__subitem-link" href="#">Продвижение на картах</a>
 					</li>
-					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">SMM и таргетинг</a></li>
-					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">Ведение Яндекс.Дзен</a>
+					<li class="menu__subitem"><a class="menu__subitem-link" href="#">SMM и таргетинг</a></li>
+					<li class="menu__subitem"><a class="menu__subitem-link" href="#">Ведение Яндекс.Дзен</a>
 					</li>
-					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">Контекстная реклама</a>
+					<li class="menu__subitem"><a class="menu__subitem-link" href="#">Контекстная реклама</a>
 					</li>
-					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">SEO-продвижение</a></li>
-					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">Продвижение на
+					<li class="menu__subitem"><a class="menu__subitem-link" href="#">SEO-продвижение</a></li>
+					<li class="menu__subitem"><a class="menu__subitem-link" href="#">Продвижение на
 							маркетплейсах</a></li>
-					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">SEO-продвижение
+					<li class="menu__subitem"><a class="menu__subitem-link" href="#">SEO-продвижение
 							приложений</a></li>
-					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#">Маркетинговый надзор</a>
+					<li class="menu__subitem"><a class="menu__subitem-link" href="#">Маркетинговый надзор</a>
 					</li>
 				</ul>
 			</li>
-			<li class="header-menu__item"><a class="header-menu__item-link" href="#sectors">отрасли</a></li>
-			<li class="header-menu__item"><a class="header-menu__item-link" href="#portfolio">проекты</a></li>
-			<li class="header-menu__item"><a class="header-menu__item-link" href="#clients">Наши клиенты</a></li>
-			<li class="header-menu__item"><a class="header-menu__item-link" href="#views">Отзывы</a></li>
-			<li class="header-menu__item"><a class="header-menu__item-link" href="#prices">Цены</a></li>
-			<li class="header-menu__item"><a class="header-menu__item-link" href="#sales">Акции</a></li>
-			<li class="header-menu__item"><a class="header-menu__item-link" href="#guarantees">Гарантии</a></li>
-			<li class="header-menu__item"><a class="header-menu__item-link" href="#job">Вакансии</a>
-				<ul class="header-menu__sublist header-menu-sublist--open" id="job">
-					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#developers">Программисты</a>
+			<li class="menu__item"><a class="menu__item-link" href="#sectors">отрасли</a></li>
+			<li class="menu__item"><a class="menu__item-link" href="#portfolio">проекты</a></li>
+			<li class="menu__item"><a class="menu__item-link" href="#clients">Наши клиенты</a></li>
+			<li class="menu__item"><a class="menu__item-link" href="#views">Отзывы</a></li>
+			<li class="menu__item"><a class="menu__item-link" href="#prices">Цены</a></li>
+			<li class="menu__item"><a class="menu__item-link" href="#sales">Акции</a></li>
+			<li class="menu__item"><a class="menu__item-link" href="#guarantees">Гарантии</a></li>
+			<li class="menu__item"><a class="menu__item-link" href="#job">Вакансии</a>
+				<ul class="menu__sublist menu-sublist--open" id="job">
+					<li class="menu__subitem"><a class="menu__subitem-link" href="#developers">Программисты</a>
 					</li>
-					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#disigners">Веб-дизайнеры</a>
+					<li class="menu__subitem"><a class="menu__subitem-link" href="#disigners">Веб-дизайнеры</a>
 					</li>
-					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#seo">SEO-продвижение</a>
+					<li class="menu__subitem"><a class="menu__subitem-link" href="#seo">SEO-продвижение</a>
 					</li>
-					<li class="header-menu__subitem"><a class="header-menu__subitem-link" href="#marketers">Маркетологи</a>
+					<li class="menu__subitem"><a class="menu__subitem-link" href="#marketers">Маркетологи</a>
 					</li>
 				</ul>
 			</li>
-			<li class="header-menu__item"><a class="header-menu__item-link" href="#blog">Блог</a></li>
-			<li class="header-menu__item"><a class="header-menu__item-link" href="#contacts">Контакты</a></li>
+			<li class="menu__item"><a class="menu__item-link" href="#blog">Блог</a></li>
+			<li class="menu__item"><a class="menu__item-link" href="#contacts">Контакты</a></li>
 		</ul>
 		<button class="btn header-menu__btn">Партнерская программа</button>
 	</div>
@@ -149,7 +147,6 @@
 				</svg>+7 (913) 322-3911</a>
 		</div>
 	</div>
-
 </nav>
 	</div>
 
@@ -176,8 +173,9 @@
 			</div>
 		</div>
 		<div class="container">
-	<div class="mt100 mb100 services-cards">
-		<div class="services-cards__item cards-item">
+			<div class="mt100 mb100 swiper swiper-services">
+	<div class="swiper-wrapper">
+		<div class="services-cards__item cards-item swiper-slide">
 			<a href="#">
 				<svg class="cards-item__icon">
 					<use xlink:href="img/icons/icons.svg#plane"></use>
@@ -187,7 +185,7 @@
 				</p>
 			</a>
 		</div>
-		<div class="services-cards__item cards-item">
+		<div class="services-cards__item cards-item swiper-slide">
 			<a href="#">
 				<svg class="cards-item__icon">
 					<use xlink:href="img/icons/icons.svg#client"></use>
@@ -196,7 +194,7 @@
 				<p class="cards-item__text">Стратегия и упаковка помогут привести вам клиентов из интернета.</p>
 			</a>
 		</div>
-		<div class="services-cards__item cards-item">
+		<div class="services-cards__item cards-item swiper-slide">
 			<a href="#">
 				<svg class="cards-item__icon">
 					<use xlink:href="img/icons/icons.svg#conversion"></use>
@@ -207,33 +205,35 @@
 		</div>
 	</div>
 </div>
-<section class="seo-wrapper">
-	<div class="container">
-		<div class="seo pt100 pb100">
-			<img class="seo__img" src="img/seo__img.png" alt="">
-			<div class="seo-info">
-				<h3 class="seo-info__subtitle content-subtitle">Увеличим не только трафик, но и продажи</h3>
-				<h1 class="seo-info__title content-title">Вы готовы оказаться<br>в топе поиска?</h1>
-				<p class="seo-info__text">Мы много лет занимаемся созданием и продвижением сайтов. За годы накопилось
-					очень много работающих способов продвинуть сайт и настроить поток клиентов в бизнес, мы готовы
-					поделиться ими с вами.</p>
-				<button class="btn btn-purple seo-info__btn">Узнать подробнее</button>
+		</div>
+
+		<div class="article-wrapper">
+			<div class="container">
+				<div class="article pt100 pb100">
+	<img class="article__img" src="img/seo__img.png" alt="Фото: Увеличим не только трафик, но и продажи">
+	<div class="article-info">
+		<h3 class="article-info__subtitle content-subtitle">Увеличим не только трафик, но и продажи</h3>
+		<h1 class="article-info__title content-title">Вы готовы оказаться<br>в топе поиска?</h1>
+		<p class="article-info__text">Мы много лет занимаемся созданием и продвижением сайтов. За годы накопилось
+			очень много работающих способов продвинуть сайт и настроить поток клиентов в бизнес, мы готовы
+			поделиться ими с вами.</p>
+		<button class="btn btn-purple article-info__btn">Узнать подробнее</button>
+	</div>
+</div>
 			</div>
 		</div>
-	</div>
-</section>
 		<div class="marketing-wrapper bg-purple">
 			<div class="container">
 				<div class="marketing pt100 pb100">
 	<div class="marketing-info content-text--white">
-		<h3 class="content-text content-text--white marketing-top__inner-text">Наша основная специальность - это
+		<h3 class="content-text content-text--white marketing-info__text">Наша основная специальность - это
 		</h3>
 		<h2 class="content-title">интернет-маркетинг<br>и всё, что с ним<br>связано</h2>
 	</div>
 	<ul class="marketing-list flex-md-column content-text--white">
 		<li class="marketing-list__item content-text--md">
 			<svg class="marketing-list__icon">
-				<use xlink:href="img/icons/icons.svg#seo"></use>
+				<use xlink:href="./img/icons/icons.svg#seo"></use>
 			</svg>SEO ПРОДВИЖЕНИЕ
 		</li>
 		<li class="marketing-list__item content-text--md">
@@ -257,11 +257,11 @@
 		</div>
 		<div class="container">
 			<div class="marketing-cards__header">
-	<h3 class="content-text text-center capital">Это не все наши услуги, их на много больше!</h3>
-	<h2 class="content-title text-center marketing-cards__title">Мы готовы полностью заменить вам отдел
+	<h3 class="marketing-cards__suptitle">Это не все наши услуги, их на много больше!</h3>
+	<h2 class="marketing-cards__title content-title marketing-cards__title">Мы готовы полностью заменить вам отдел
 		разработки
 		и маркетинга</h2>
-	<p class="content-text text-center">Мы можем не только продвигать, но и создавать! Не только сайты, но и
+	<p class="content-text">Мы можем не только продвигать, но и создавать! Не только сайты, но и
 		приложения,
 		плагины и модули для CMS-систем. Мы уже делали это и еще не раз сделаем. </p>
 </div>
@@ -269,88 +269,106 @@
 	<div class="marketing-cards__item cards-item">
 		<a class="marketing-cards__link" href="#">
 			<svg class="marketing-cards__item-icon">
-				<use xlink:href="img/icons/icons.svg#msite"></use>
+				<use xlink:href="img/icons/icons.svg#m-site"></use>
 			</svg>
-			<h2 class="cards-item__title">Создание сайтов</h2>
-			<p class="cards-item__text">Разработаем для вас продающий сайт, который работает быстро</p>
+			<h2 class="marketing-cards__item-title">Создание сайтов</h2>
+			<p class="marketing-cards__item-text">Разработаем для вас продающий сайт, который работает быстро</p>
 		</a>
 	</div>
 	<div class="marketing-cards__item cards-item">
 		<a class="marketing-cards__link" href="#">
 			<svg class="marketing-cards__item-icon cards-item__icon">
-				<use xlink:href="img/icons/icons.svg#1"></use>
+				<use xlink:href="img/icons/icons.svg#m-admin"></use>
 			</svg>
-			<h2 class="cards-item__title">Поддержка сайта </h2>
-			<p class="cards-item__text">Уже есть сайт? Мы с радостью возьмем его на техническую поддержку</p>
+			<h2 class="marketing-cards__item-title">Поддержка сайта </h2>
+			<p class="marketing-cards__item-text">Уже есть сайт? Мы с радостью возьмем его на техническую поддержку</p>
 		</a>
 	</div>
 	<div class="marketing-cards__item cards-item">
 		<a class="marketing-cards__link" href="#">
 			<svg class="marketing-cards__item-icon cards-item__icon">
-				<use xlink:href="../img/icons/icons.svg#mmap"></use>
+				<use xlink:href="img/icons/icons.svg#m-map"></use>
 			</svg>
-			<h2 class="cards-item__title">Продвижение на картах</h2>
-			<p class="cards-item__text">Добавим и продвинем вашу компанию во всех сервисах карт</p>
+			<h2 class="marketing-cards__item-title">Продвижение на картах</h2>
+			<p class="marketing-cards__item-text">Добавим и продвинем вашу компанию во всех сервисах карт</p>
 		</a>
 	</div>
 	<div class="marketing-cards__item cards-item">
 		<a class="marketing-cards__link" href="#">
 			<svg class="marketing-cards__item-icon cards-item__icon">
-				<use xlink:href="img/icons/icons.svg#mcopyright"></use>
+				<use xlink:href="img/icons/icons.svg#m-copyright"></use>
 			</svg>
-			<h2 class="cards-item__title">Копирайтинг</h2>
-			<p class="cards-item__text">Напишем для вас качественные продающие или информационные тексты</p>
+			<h2 class="marketing-cards__item-title">Копирайтинг</h2>
+			<p class="marketing-cards__item-text">Напишем для вас качественные продающие или информационные тексты</p>
 		</a>
 	</div>
 	<div class="marketing-cards__item cards-item">
 		<a class="marketing-cards__link" href="#">
 			<svg class="marketing-cards__item-icon cards-item__icon">
-				<use xlink:href="img/icons/icons.svg#mvideo"></use>
+				<use xlink:href="img/icons/icons.svg#m-video"></use>
 			</svg>
-			<h2 class="cards-item__title">Монтаж видео</h2>
-			<p class="cards-item__text">Снимем и проведем монтаж видео любой сложности</p>
+			<h2 class="marketing-cards__item-title">Монтаж видео</h2>
+			<p class="marketing-cards__item-text">Снимем и проведем монтаж видео любой сложности</p>
 		</a>
 	</div>
 	<div class="marketing-cards__item cards-item">
 		<a class="marketing-cards__link" href="#">
 			<svg class="marketing-cards__item-icon cards-item__icon">
-				<use xlink:href="img/icons/icons.svg#mmarketing"></use>
+				<use xlink:href="img/icons/icons.svg#m-marketing"></use>
 			</svg>
-			<h2 class="cards-item__title">Маркетинговый надзор</h2>
-			<p class="cards-item__text">Проверим работу вашего подрядчика по маркетингу</p>
+			<h2 class="marketing-cards__item-title">Маркетинговый надзор</h2>
+			<p class="marketing-cards__item-text">Проверим работу вашего подрядчика по маркетингу</p>
 		</a>
 	</div>
 </div>
-<button class="btn btn-purple marketing-cards__btn">Бесплатная консультация</button>
+<div class="marketing-cards__nav">
+	<button class="btn btn-purple marketing-cards__btn">Бесплатная консультация</button>
+	<button class="btn btn-orange marketing-cards__btn--mobile">Посмотреть все услуги</button>
+</div>
 		</div>
-		<div class="certificates-wrapper pt100 pb100 bg-grey">
+		<div class="gallery-wrapper pt100 pb100 bg-grey">
 			<div class="container">
-				<h2 class="content-title text-center certificates__title">Сертификаты</h2>
-<div class="certificates mt50 mb100">
-	<button class="swiper-button-prev btn-nav certificates-btn certificates-btn__prev"></button>
-	<div class="certificates-slider-container swiper swiper-certificate">
-		<div class="certificates-inner swiper-wrapper">
-			<div class="certificates-item swiper-slide">
-				<img class="certificates-item__img swiper-slide__img" src="img/cert.jpg" alt="Сертификат">
+				<h2 class="content-title gallery__title">Сертификаты</h2>
+<div class="gallery mt50 mb100">
+	<div class="gallery-nav__buttons">
+		<button class="swiper-button-prev btn-slide gallery-btn gallery-btn__prev">
+			<svg class="button-icon button__icon--prev gallery__icon--prev">
+				<use xlink:href="img/icons/icons.svg#arrow"></use>
+			</svg>
+		</button>
+		<button class="swiper-button-next btn-slide gallery-btn gallery-btn__next">
+			<svg class="button__icon button__icon--next gallery__icon--next">
+				<use xlink:href="img/icons/icons.svg#arrow"></use>
+			</svg>
+		</button>
+	</div>
+	<div class="gallery-slider-container swiper swiper-gallery">
+		<div class="swiper-wrapper">
+			<div class="gallery-item swiper-slide">
+				<img class="gallery-item__img swiper-slide__img" src="img/cert.jpg" alt="Сертификат">
 			</div>
-			<div class="certificates-item swiper-slide">
-				<img class="certificates-item__img swiper-slide__img" src="img/cert.jpg" alt="Сертификат">
+			<div class="gallery-item swiper-slide">
+				<img class="gallery-item__img swiper-slide__img" src="img/cert.jpg" alt="Сертификат">
 			</div>
-			<div class="certificates-item swiper-slide">
-				<img class="certificates-item__img swiper-slide__img" src="img/cert.jpg" alt="Сертификат">
+			<div class="gallery-item swiper-slide">
+				<img class="gallery-item__img swiper-slide__img" src="img/cert.jpg" alt="Сертификат">
 			</div>
-			<div class="certificates-item swiper-slide">
-				<img class="certificates-item__img swiper-slide__img" src="img/cert.jpg" alt="Сертификат">
+			<div class="gallery-item swiper-slide">
+				<img class="gallery-item__img swiper-slide__img" src="img/cert.jpg" alt="Сертификат">
 			</div>
-			<div class="certificates-item swiper-slide">
-				<img class="certificates-item__img swiper-slide__img" src="img/cert.jpg" alt="Сертификат">
+			<div class="gallery-item swiper-slide">
+				<img class="gallery-item__img swiper-slide__img" src="img/cert.jpg" alt="Сертификат">
 			</div>
-			<div class="certificates-item swiper-slide">
-				<img class="certificates-item__img swiper-slide__img" src="img/cert.jpg" alt="Сертификат">
+			<div class="gallery-item swiper-slide">
+				<img class="gallery-item__img swiper-slide__img" src="img/cert.jpg" alt="Сертификат">
 			</div>
 		</div>
 	</div>
-	<button class="swiper-button-next btn-nav certificates-btn certificates-btn__next"></button>
+	<div class="gallery-nav__pagination swiper-pagination">
+		<span class="bullet"></span>
+		<span class="bullet"></span>
+		<span class="bullet bullet--active"></span>
+	</div>
 </div>
 			</div>
 		</div>
@@ -359,17 +377,16 @@
 	<div class="reviews-top mb50">
 		<h2 class="content-title content-text--white">Отзывы</h2>
 		<nav class="reviews-btn">
-			<button class="reviews-btn__next reviews-navigation__btn btn-nav">
-				<svg class="arrow arrow__next">
+			<button class="reviews-btn__next reviews-navigation__btn btn-slide">
+				<svg class="button__icon button__icon--next">
 					<use xlink:href="img/icons/icons.svg#arrow"></use>
 				</svg>
 			</button>
-			<button class="reviews-btn__prev reviews-navigation__btn btn-nav">
-				<svg class="arrow arrow__prev">
+			<button class="reviews-btn__prev reviews-navigation__btn btn-slide">
+				<svg class="button__icon button__icon--prev">
 					<use xlink:href="img/icons/icons.svg#arrow"></use>
 				</svg>
 			</button>
-
 		</nav>
 	</div>
 </div>
@@ -378,7 +395,7 @@
 	<div class="reviews-body swiper-wrapper">
 		<div class="cards-item reviews-item swiper-slide">
 			<div class="reviews-item__info">
-				<img class="reviews-item__img" src="img/reviews-item__img.jpg" alt="">
+				<img class="reviews-item__img" src="img/reviews-item__img.jpg" alt="Фото: отзыв">
 				<div class="reviews-item__info-content">
 					<p class="reviews-item__company">ООО “Литана”</p>
 					<p class="reviews-item__name">Анастасия Брут</p>
@@ -406,7 +423,7 @@
 		</div>
 		<div class="cards-item reviews-item swiper-slide">
 			<div class="reviews-item__info">
-				<img class="reviews-item__img" src="img/reviews-item__img.jpg" alt="">
+				<img class="reviews-item__img" src="img/reviews-item__img.jpg" alt="Фото: отзыв">
 				<div class="reviews-item__info-content">
 					<p class="reviews-item__company">ООО “Литана”</p>
 					<p class="reviews-item__name">Анастасия Брут</p>
@@ -434,7 +451,7 @@
 		</div>
 		<div class="cards-item reviews-item swiper-slide">
 			<div class="reviews-item__info">
-				<img class="reviews-item__img" src="img/reviews-item__img.jpg" alt="">
+				<img class="reviews-item__img" src="img/reviews-item__img.jpg" alt="Фото: отзыв">
 				<div class="reviews-item__info-content">
 					<p class="reviews-item__company">ООО “Литана”</p>
 					<p class="reviews-item__name">Анастасия Брут</p>
@@ -464,11 +481,11 @@
 	</div>
 </div>
 
-<button class="btn btn-orange reviews__btn">Все отзывы</button>
+<button class="btn btn-orange reviews-bottom__btn">Все отзывы</button>
 		</div>
 		<div class="credits bg-grey">
 			<div class="container">
-				<div class="credits-top">
+				<div class="section-header mb50">
 	<div class="credits-top__header">
 		<h2 class="credits-top__title content-title">благодарности</h2>
 		<h3 class="credits-top__text">от наших клиентов</h3>
@@ -489,20 +506,25 @@
 		<div class="credits-slider swiper">
 			<div class="credits-slider__body swiper-wrapper">
 				<div class="credits-slider__item swiper-slide">
-					<img class="credits-slider__img swiper-slide__img" src="img/credits__img.jpg" alt="">
+					<img class="credits-slider__img swiper-slide__img" src="img/credits__img.jpg"
+						alt="Фото: Благодарность клиента">
 				</div>
 				<div class="credits-slider__item swiper-slide">
-					<img class="credits-slider__img swiper-slide__img" src="img/credits__img.jpg" alt="">
+					<img class="credits-slider__img swiper-slide__img" src="img/credits__img.jpg"
+						alt="Фото: Благодарность клиента">
 				</div>
 				<div class="credits-slider__item swiper-slide">
-					<img class="credits-slider__img swiper-slide__img" src="img/credits__img.jpg" alt="">
+					<img class="credits-slider__img swiper-slide__img" src="img/credits__img.jpg"
+						alt="Фото: Благодарность клиента">
 				</div>
 				<div class="credits-slider__item swiper-slide">
-					<img class="credits-slider__img swiper-slide__img" src="img/credits__img.jpg" alt="">
+					<img class="credits-slider__img swiper-slide__img" src="img/credits__img.jpg"
+						alt="Фото: Благодарность клиента">
 				</div>
 			</div>
 		</div>
 	</div>
+	<button class="btn btn-purple credits-top__btn credits-top__btn--mobile">Все благодарности</button>
 </div>
 			</div>
 		</div>
@@ -597,21 +619,21 @@
 	</div>
 </div>
 
-<div class="seo-clients">
-	<div class="container">
-		<div class="seo-clients__wrapper">
-			<img class="seo-clients__item" src="img/seo-clients-1.png" alt="">
-			<img class="seo-clients__item" src="img/seo-clients-2.png" alt="">
-			<img class="seo-clients__item" src="img/seo-clients-3.png" alt="">
-			<img class="seo-clients__item" src="img/seo-clients-4.png" alt="">
-			<img class="seo-clients__item" src="img/seo-clients-5.png" alt="">
-			<img class="seo-clients__item" src="img/seo-clients-6.png" alt="">
+<div class="container">
+	<div class="swiper logos-slider">
+		<div class="logos__wrapper swiper-wrapper">
+			<img class="logos__item swiper-slide" src="img/seo-clients-1.png" alt="Наши клиенты">
+			<img class="logos__item swiper-slide" src="img/seo-clients-2.png" alt="Наши клиенты">
+			<img class="logos__item swiper-slide" src="img/seo-clients-3.png" alt="Наши клиенты">
+			<img class="logos__item swiper-slide" src="img/seo-clients-4.png" alt="Наши клиенты">
+			<img class="logos__item swiper-slide" src="img/seo-clients-5.png" alt="Наши клиенты">
+			<img class="logos__item swiper-slide" src="img/seo-clients-6.png" alt="Наши клиенты">
 		</div>
 	</div>
 </div>
 		<div class="portfolio bg-grey">
 			<div class="container">
-				<div class="portfolio-top mb50">
+				<div class="section-header mb50">
 	<h2 class="content-title">Наши кейсы</h2>
 	<button class="btn btn-purple portfolio-top__btn">Все проекты</button>
 </div>
@@ -620,7 +642,8 @@
 	<div class="portfolio-body swiper-wrapper">
 		<div class="portfolio-item slider-item cards-item cards-item--big swiper-slide">
 			<div class="portfolio-item__img">
-				<img class="portfolio-cards__img" src="img/portfolio-cards__img-1.jpg" alt="">
+				<img class="portfolio-cards__img" src="img/portfolio-cards__img-1.jpg" alt="Фото: Продвижение сайта официального дистрибьютора медицинского
+				оборудования">
 			</div>
 			<div class="portfolio-item__info">
 				<p class="portfolio-item__title">Продвижение сайта официального дистрибьютора медицинского
@@ -632,7 +655,8 @@
 		</div>
 		<div class="portfolio-item slider-item cards-item cards-item--big swiper-slide">
 			<div class="portfolio-item__img">
-				<img class="portfolio-cards__img" src="img/portfolio-cards__img-2.jpg" alt="">
+				<img class="portfolio-cards__img" src="img/portfolio-cards__img-2.jpg"
+					alt="Фото: Продвижение сайта ПЦР тестов и КТ в Калининграде">
 			</div>
 			<div class="portfolio-item__info">
 				<p class="portfolio-item__title">Продвижение сайта ПЦР тестов и КТ в Калининграде</p>
@@ -642,7 +666,8 @@
 		</div>
 		<div class="portfolio-item slider-item cards-item cards-item--big swiper-slide">
 			<div class="portfolio-item__img">
-				<img class="portfolio-cards__img" src="img/portfolio-cards__img-3.jpg" alt="">
+				<img class="portfolio-cards__img" src="img/portfolio-cards__img-3.jpg"
+					alt="Фото: Магазин керамической плитки в Калининграде">
 			</div>
 			<div class="portfolio-item__info">
 				<p class="portfolio-item__title">Магазин керамической плитки в Калининграде</p>
@@ -652,10 +677,11 @@
 		</div>
 		<div class="portfolio-item slider-item cards-item cards-item--big swiper-slide">
 			<div class="portfolio-item__img">
-				<img class="portfolio-cards__img" src="img/portfolio-cards__img-4.jpg" alt="">
+				<img class="portfolio-cards__img" src="img/portfolio-cards__img-4.jpg"
+					alt="Фото: Продвижение интернет- магазина кислородного оборудования">
 			</div>
 			<div class="portfolio-item__info">
-				<p class="portfolio-item__title">Продвижение интернет- магазина кислородного оборудования”</p>
+				<p class="portfolio-item__title">Продвижение интернет- магазина кислородного оборудования</p>
 				<p class="portfolio-item__text">Снизили стоимость клиента на 50%</p>
 				<a class="portfolio-item__full" href="#">Подробнее</a>
 			</div>
@@ -666,19 +692,23 @@
 		</div>
 		<div class="blog">
 			<div class="container">
-				<div class="blog-top">
+				<div class="section-header mt100 mb60">
 	<h2 class="content-title">Блог</h2>
 	<button class="btn btn-purple blog-top__btn">Перейти в раздел</button>
 </div>
 <div class="blog-body">
+
 	<div class="blog-item blog-item--lg">
 		<div class="blog-item__img-wrapper blog-item__img-wrapper--lg">
-			<img class="blog-item__img blog-item__img--lg" src="img/blog-img--big.jpg" alt="">
+			<img class="blog-item__img blog-item__img--lg" src="img/blog-img--big.jpg" alt="Фото:Хакеры протестировали
+			эксплойт уязвимости нулевого дня в Nginx LDAP">
 		</div>
 		<div class="blog-item__info blog-item__info--lg content-text--white">
-			<h5 class="blog-item__title content-text--white"><a href="#" class="blog-item__link">Хакеры протестировали
+			<h5 class="blog-item__title content-text--white">
+				<a href="#" class="blog-item__link">Хакеры протестировали
 					эксплойт
-					уязвимости нулевого дня в Nginx LDAP</a></h5>
+					уязвимости нулевого дня в Nginx LDAP</a>
+			</h5>
 			<p class="blog-item__text">В начале апреля хакерская группа BlueHornet заявила об уязвимости нулевого дня
 				в ПО В начале апреля
 				хакерская группа BlueHornet заявила об уязвимости нулевого дня в ПО .В начале апреля хакерская группа
@@ -687,9 +717,11 @@
 				08:15</time>
 		</div>
 	</div>
+
 	<div class="blog-item">
 		<div class="blog-item__img-wrapper">
-			<img class="blog-item__img" src="img/blog-img-1.jpg" alt="">
+			<img class="blog-item__img" src="img/blog-img-1.jpg" alt="Фото:Хакеры протестировали
+			эксплойт уязвимости нулевого дня в Nginx LDAP">
 		</div>
 		<div class="blog-item__info">
 			<h5 class="blog-item__title"><a href="#" class="blog-item__link">Хакеры протестировали эксплойт уязвимости
@@ -699,7 +731,8 @@
 	</div>
 	<div class="blog-item">
 		<div class="blog-item__img-wrapper">
-			<img class="blog-item__img" src="img/blog-img-2.jpg" alt="">
+			<img class="blog-item__img" src="img/blog-img-2.jpg" alt="Фото:Хакеры протестировали
+			эксплойт уязвимости нулевого дня в Nginx LDAP">
 		</div>
 		<div class="blog-item__info">
 			<h5 class="blog-item__title"><a href="#" class="blog-item__link">Хакеры протестировали эксплойт уязвимости
@@ -709,7 +742,8 @@
 	</div>
 	<div class="blog-item">
 		<div class="blog-item__img-wrapper">
-			<img class="blog-item__img" src="img/blog-img-3.jpg" alt="">
+			<img class="blog-item__img" src="img/blog-img-3.jpg" alt="Фото:Хакеры протестировали
+			эксплойт уязвимости нулевого дня в Nginx LDAP">
 		</div>
 		<div class="blog-item__info">
 			<h5 class="blog-item__title"><a href="#" class="blog-item__link">Хакеры протестировали эксплойт уязвимости
@@ -719,7 +753,8 @@
 	</div>
 	<div class="blog-item">
 		<div class="blog-item__img-wrapper">
-			<img class="blog-item__img" src="img/blog-img-4.jpg" alt="">
+			<img class="blog-item__img" src="img/blog-img-4.jpg" alt="Фото:Хакеры протестировали
+			эксплойт уязвимости нулевого дня в Nginx LDAP">
 		</div>
 		<div class="blog-item__info">
 			<h5 class="blog-item__title"><a href="#" class="blog-item__link">Хакеры протестировали эксплойт уязвимости
@@ -730,111 +765,117 @@
 </div>
 			</div>
 		</div>
-
 	</main>
 	<div class="footer__wrapper">
-	<div class="container">
-		<footer class="footer-top">
-			<div class="footer-contact content-text--white">
-				<div class="logo">
-					<svg class="logo logo-footer">
-						<use xlink:href="img/icons/icons.svg#logo-footer"></use>
-					</svg>
-				</div>
-				<div class="footer-contact__info">
-					<a class="callback-form footer-contact__tel" href="tel:+79133223911">+7 (913)
-						322-3911</a>
-					<p class="footer-contact__timetable">Пн-Пт 09:00-18:00</p>
-				</div>
-				<button class="btn btn-purple footer-contact__btn">Оставить заявку</button>
-				<a class="mail-footer" href="mailto:hello@novatechno.ru" target="_blank">
-					<svg class="mail-footer__icon">
-						<use xlink:href="img/icons/icons.svg#mail"></use>
-					</svg>
-					hello@novatechno.ru</a>
-			</div>
-			<div class="footer-menu content-text--white">
-				<ul class="footer-menu__list">
-					<li class="footer-menu__item"><a class="footer-menu__item-link" href="#">О компании</a>
-						<ul class="footer-menu__sublist footer-menu__sublist--col1">
-							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Наши услуги</a></li>
-							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Цены</a></li>
-							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Проекты</a></li>
-							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Отзывы</a></li>
-							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Блог</a></li>
-							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Вакансии</a></li>
-						</ul>
-					</li>
-					<li class="footer-menu__item"><a class="footer-menu__item-link" href="#">Услуги</a>
-						<ul class="footer-menu__sublist footer-menu__sublist--col2">
-							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Программирование</a>
-							</li>
-							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Графический и
-									веб-дизайн</a></li>
-							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Производство
-									рекламы</a></li>
-							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Видеосъемка</a></li>
-							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Продвижение на
-									картах</a></li>
-							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">SMM и таргетинг</a>
-							</li>
-							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Ведение
-									Яндекс.Дзен</a></li>
-							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Контекстная
-									реклама</a></li>
-							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Калькулятор
-									стоимости</a></li>
-							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">SEO-продвижение</a>
-							</li>
-							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Продвижение на
-									маркетплейсах</a></li>
-							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">ASO-продвижение
-									приложений</a></li>
-							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Копирайтинг</a></li>
-							<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Маркетинговый
-									надзор</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</footer>
-	</div>
-
-
-
-	<div class="footer-bottom__wrapper">
 		<div class="container">
-			<div class="footer-bottom">
-				<div class="footer-bottom__social">
-					<svg class="footer-bottom__social-icon">
-						<use xlink:href="img/icons/icons.svg#insta"></use>
-					</svg>
-					<svg class="footer-bottom__social-icon">
-						<use xlink:href="img/icons/icons.svg#tg"></use>
-					</svg>
-					<svg class="footer-bottom__social-icon">
-						<use xlink:href="img/icons/icons.svg#vk"></use>
-					</svg>
-					<svg class="footer-bottom__social-icon">
-						<use xlink:href="img/icons/icons.svg#youtube"></use>
-					</svg>
-				</div>
-				<div class="copyright content-text--white">
-					<span>©2014-2022 Novatechno.ru</span>
-					<a class="copyright__link" href="#">Политика конфиденциальности</a>
-				</div>
-				<div class="sign content-text--white">
-					<p>Разработано</p>
-					<svg class="diez-icon">
-						<use xlink:href="img/icons/icons.svg#diez"></use>
-					</svg>
-				</div>
+			<footer class="footer-menu__wrapper">
+	<div class="footer-contact content-text--white">
+		<div class="logo">
+			<a class="logo-footer__link" href="#">
+				<svg class="logo logo-footer">
+					<use xlink:href="img/icons/icons.svg#logo-footer"></use>
+				</svg>
+			</a>
+		</div>
+		<div class="footer-contact__info">
+			<a class="callback-form footer-contact__tel" href="tel:+79133223911">+7 (913)
+				322-3911</a>
+			<p class="footer-contact__timetable">Пн-Пт 09:00-18:00</p>
+		</div>
+		<button class="btn btn-purple footer-contact__btn">Оставить заявку</button>
+		<a class="mail-footer" href="mailto:hello@novatechno.ru" target="_blank">
+			<svg class="mail-footer__icon">
+				<use xlink:href="img/icons/icons.svg#mail"></use>
+			</svg>
+			hello@novatechno.ru</a>
+	</div>
+	<div class="footer-menu content-text--white">
+		<ul class="footer-menu__list">
+			<li class="footer-menu__item"><a class="footer-menu__item-link" href="#">О компании</a>
+				<ul class="footer-menu__sublist footer-menu__sublist--col1">
+					<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Наши услуги</a></li>
+					<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Цены</a></li>
+					<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Проекты</a></li>
+					<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Отзывы</a></li>
+					<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Блог</a></li>
+					<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Вакансии</a></li>
+				</ul>
+			</li>
+			<li class="footer-menu__item"><a class="footer-menu__item-link" href="#">Услуги</a>
+				<ul class="footer-menu__sublist footer-menu__sublist--col2">
+					<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Программирование</a>
+					</li>
+					<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Графический и
+							веб-дизайн</a></li>
+					<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Производство
+							рекламы</a></li>
+					<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Видеосъемка</a></li>
+					<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Продвижение на
+							картах</a></li>
+					<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">SMM и таргетинг</a>
+					</li>
+					<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Ведение
+							Яндекс.Дзен</a></li>
+					<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Контекстная
+							реклама</a></li>
+					<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Калькулятор
+							стоимости</a></li>
+					<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">SEO-продвижение</a>
+					</li>
+					<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Продвижение на
+							маркетплейсах</a></li>
+					<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">ASO-продвижение
+							приложений</a></li>
+					<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Копирайтинг</a></li>
+					<li class="footer-menu__subitem"><a class="footer-menu__subitem-link" href="#">Маркетинговый
+							надзор</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</footer>
+		</div>
+		<div class="footer-bottom__wrapper">
+			<div class="container">
+				<div class="footer-bottom">
+	<div class="footer-bottom__social">
+		<a class="footer-bottom__social-link" href="#">
+			<svg class="footer-bottom__social-icon">
+				<use xlink:href="img/icons/icons.svg#insta"></use>
+			</svg>
+		</a>
+		<a class="footer-bottom__social-link" href="#">
+			<svg class="footer-bottom__social-icon">
+				<use xlink:href="img/icons/icons.svg#tg"></use>
+			</svg>
+		</a>
+		<a class="footer-bottom__social-link" href="#">
+			<svg class="footer-bottom__social-icon">
+				<use xlink:href="img/icons/icons.svg#vk"></use>
+			</svg>
+		</a>
+		<a class="footer-bottom__social-link" href="#">
+			<svg class="footer-bottom__social-icon">
+				<use xlink:href="img/icons/icons.svg#youtube"></use>
+			</svg>
+		</a>
+	</div>
+	<div class="copyright content-text--white">
+		<span>©2014-2022 Novatechno.ru</span>
+		<a class="copyright__link" href="#">Политика конфиденциальности</a>
+	</div>
+	<div class="sign content-text--white">
+		<p>Разработано</p>
+		<a class="footer-bottom__diez-link" href="#">
+			<svg class="diez-icon">
+				<use xlink:href="img/icons/icons.svg#diez"></use>
+			</svg>
+		</a>
+	</div>
+</div>
 			</div>
 		</div>
 	</div>
-</div>
-	<!-- Swiper JS -->
-	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 	<!-- main JS -->
 	<script src="js/app.min.js"></script>
 </body>
