@@ -176,7 +176,7 @@
 			<div class="mt100 mb100 swiper swiper-services">
 	<div class="swiper-wrapper">
 		<div class="services-cards__item cards-item swiper-slide">
-			<a href="#">
+			<a class="services-cards__link" href="#">
 				<svg class="cards-item__icon">
 					<use xlink:href="img/icons/icons.svg#plane"></use>
 				</svg>
@@ -186,7 +186,7 @@
 			</a>
 		</div>
 		<div class="services-cards__item cards-item swiper-slide">
-			<a href="#">
+			<a class="services-cards__link" href="#">
 				<svg class="cards-item__icon">
 					<use xlink:href="img/icons/icons.svg#client"></use>
 				</svg>
@@ -195,7 +195,7 @@
 			</a>
 		</div>
 		<div class="services-cards__item cards-item swiper-slide">
-			<a href="#">
+			<a class="services-cards__link" href="#">
 				<svg class="cards-item__icon">
 					<use xlink:href="img/icons/icons.svg#conversion"></use>
 				</svg>
@@ -330,13 +330,13 @@
 			<div class="container">
 				<h2 class="content-title gallery__title">Сертификаты</h2>
 <div class="gallery mt50 mb100">
-	<div class="gallery-nav__buttons">
-		<button class="swiper-button-prev btn-slide gallery-btn gallery-btn__prev">
+	<div class="gallery-nav__buttons mobile--disable">
+		<button class="swiper-button-prev swiper-button-prev--100left btn__nav-slide gallery-btn gallery-btn__prev">
 			<svg class="button-icon button__icon--prev gallery__icon--prev">
 				<use xlink:href="img/icons/icons.svg#arrow"></use>
 			</svg>
 		</button>
-		<button class="swiper-button-next btn-slide gallery-btn gallery-btn__next">
+		<button class="swiper-button-next swiper-button-next--100right btn__nav-slide gallery-btn gallery-btn__next">
 			<svg class="button__icon button__icon--next gallery__icon--next">
 				<use xlink:href="img/icons/icons.svg#arrow"></use>
 			</svg>
@@ -377,13 +377,13 @@
 	<div class="reviews-top mb50">
 		<h2 class="content-title content-text--white">Отзывы</h2>
 		<nav class="reviews-btn">
-			<button class="reviews-btn__next reviews-navigation__btn btn-slide">
-				<svg class="button__icon button__icon--next">
+			<button class="reviews-btn__prev reviews-navigation__btn btn__nav-slide">
+				<svg class="button__icon button__icon--prev">
 					<use xlink:href="img/icons/icons.svg#arrow"></use>
 				</svg>
 			</button>
-			<button class="reviews-btn__prev reviews-navigation__btn btn-slide">
-				<svg class="button__icon button__icon--prev">
+			<button class="reviews-btn__next reviews-navigation__btn btn__nav-slide">
+				<svg class="button__icon button__icon--next">
 					<use xlink:href="img/icons/icons.svg#arrow"></use>
 				</svg>
 			</button>
@@ -524,8 +524,8 @@
 			</div>
 		</div>
 	</div>
-	<button class="btn btn-purple credits-top__btn credits-top__btn--mobile">Все благодарности</button>
 </div>
+<button class="btn btn-purple credits-top__btn credits-top__btn--mobile">Все благодарности</button>
 			</div>
 		</div>
 		<div class="seo-cards">
@@ -635,7 +635,7 @@
 			<div class="container">
 				<div class="section-header mb50">
 	<h2 class="content-title">Наши кейсы</h2>
-	<button class="btn btn-purple portfolio-top__btn">Все проекты</button>
+	<button class="btn btn-purple portfolio-top__btn mobile--disable">Все проекты</button>
 </div>
 
 <div class="swiper-portfolio swiper cards">
@@ -688,16 +688,17 @@
 		</div>
 	</div>
 </div>
+
+<button class="btn btn-purple portfolio-top__btn--mobile">Все проекты</button>
 			</div>
 		</div>
 		<div class="blog">
 			<div class="container">
 				<div class="section-header mt100 mb60">
 	<h2 class="content-title">Блог</h2>
-	<button class="btn btn-purple blog-top__btn">Перейти в раздел</button>
+	<button class="btn btn-purple blog-top__btn mobile--disable">Перейти в раздел</button>
 </div>
 <div class="blog-body">
-
 	<div class="blog-item blog-item--lg">
 		<div class="blog-item__img-wrapper blog-item__img-wrapper--lg">
 			<img class="blog-item__img blog-item__img--lg" src="img/blog-img--big.jpg" alt="Фото:Хакеры протестировали
@@ -763,6 +764,7 @@
 		</div>
 	</div>
 </div>
+<button class="btn btn-purple blog-top__btn--mobile">Перейти в раздел</button>
 			</div>
 		</div>
 	</main>
