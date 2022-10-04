@@ -15,7 +15,6 @@
 	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	<title>Novatechno</title>
 </head>
@@ -37,7 +36,15 @@
 				@@include('html/partials/intro.html', {})
 			</div>
 		</div>
-		@@include('html/partials/services.html', {})
+		<div class="container">
+			@@include('html/partials/services.html', {})
+		</div>
+
+		<div class="article-wrapper">
+			<div class="container">
+				@@include('html/partials/article.html', {})
+			</div>
+		</div>
 		<div class="marketing-wrapper bg-purple">
 			<div class="container">
 				@@include('html/partials/marketing.html', {})
@@ -46,9 +53,9 @@
 		<div class="container">
 			@@include('html/partials/marketing-cards.html')
 		</div>
-		<div class="certificates-wrapper pt100 pb100 bg-grey">
+		<div class="gallery-wrapper pt100 pb100 bg-grey">
 			<div class="container">
-				@@include('html/partials/certificates.html', {})
+				@@include('html/partials/gallery.html', {})
 			</div>
 		</div>
 		<div class="reviews-wrapper bg-purple pt100 pb100">
@@ -70,11 +77,17 @@
 				@@include('html/partials/blog.html', {})
 			</div>
 		</div>
-
 	</main>
-	@@include('html/footer.html', {})
-	<!-- Swiper JS -->
-	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	<div class="footer__wrapper">
+		<div class="container">
+			@@include('html/footer-menu.html', {})
+		</div>
+		<div class="footer-bottom__wrapper">
+			<div class="container">
+				@@include('html/footer-bottom.html', {})
+			</div>
+		</div>
+	</div>
 	<!-- main JS -->
 	<script src="js/app.min.js"></script>
 </body>
