@@ -46,14 +46,14 @@
 		</svg>
 	</div>
 	<div class="search">
-		<form class="form-search" method="get" action="/search" target="_blank">
+		<form class="form-search mobile--disable" method="get" action="/search" target="_blank">
 			<input class="form-search__input" type="text" placeholder="Поиск...">
-			<button class="form-search__btn" type="submit">
-				<svg class="form-search__icon">
-					<use xlink:href="img/icons/icons.svg#search"></use>
-				</svg>
-			</button>
 		</form>
+		<button class="form-search__btn" type="submit">
+			<svg class="form-search__icon">
+				<use xlink:href="img/icons/icons.svg#search"></use>
+			</svg>
+		</button>
 	</div>
 	<div class="callback">
 		<div class="callback__wrapper callback__wrapper--desc">
@@ -73,7 +73,6 @@
 		</nav>
 	</div>
 </header>
-
 <nav class="menu__inner">
 	<div class="menu__wrapper">
 		<ul class="menu__list">
@@ -173,10 +172,10 @@
 			</div>
 		</div>
 		<div class="container">
-			<div class="mt100 mb100 swiper swiper-services">
+			<div class="swiper swiper-services">
 	<div class="swiper-wrapper">
 		<div class="services-cards__item cards-item swiper-slide">
-			<a href="#">
+			<a class="services-cards__link" href="#">
 				<svg class="cards-item__icon">
 					<use xlink:href="img/icons/icons.svg#plane"></use>
 				</svg>
@@ -186,7 +185,7 @@
 			</a>
 		</div>
 		<div class="services-cards__item cards-item swiper-slide">
-			<a href="#">
+			<a class="services-cards__link" href="#">
 				<svg class="cards-item__icon">
 					<use xlink:href="img/icons/icons.svg#client"></use>
 				</svg>
@@ -195,7 +194,7 @@
 			</a>
 		</div>
 		<div class="services-cards__item cards-item swiper-slide">
-			<a href="#">
+			<a class="services-cards__link" href="#">
 				<svg class="cards-item__icon">
 					<use xlink:href="img/icons/icons.svg#conversion"></use>
 				</svg>
@@ -209,12 +208,13 @@
 
 		<div class="article-wrapper">
 			<div class="container">
-				<div class="article pt100 pb100">
+				<div class="article">
 	<img class="article__img" src="img/seo__img.png" alt="Фото: Увеличим не только трафик, но и продажи">
 	<div class="article-info">
 		<h3 class="article-info__subtitle content-subtitle">Увеличим не только трафик, но и продажи</h3>
 		<h1 class="article-info__title content-title">Вы готовы оказаться<br>в топе поиска?</h1>
-		<p class="article-info__text">Мы много лет занимаемся созданием и продвижением сайтов. За годы накопилось
+		<p class="article-info__text content-text--lg">Мы много лет занимаемся созданием и продвижением сайтов. За годы
+			накопилось
 			очень много работающих способов продвинуть сайт и настроить поток клиентов в бизнес, мы готовы
 			поделиться ими с вами.</p>
 		<button class="btn btn-purple article-info__btn">Узнать подробнее</button>
@@ -226,27 +226,27 @@
 			<div class="container">
 				<div class="marketing pt100 pb100">
 	<div class="marketing-info content-text--white">
-		<h3 class="content-text content-text--white marketing-info__text">Наша основная специальность - это
+		<h3 class="content-text--white marketing-info__text">Наша основная специальность - это
 		</h3>
-		<h2 class="content-title">интернет-маркетинг<br>и всё, что с ним<br>связано</h2>
+		<h2 class="content-title marketing-info__title">интернет-маркетинг<br>и всё, что с ним<br>связано</h2>
 	</div>
 	<ul class="marketing-list flex-md-column content-text--white">
-		<li class="marketing-list__item content-text--md">
+		<li class="marketing-list__item content-text--lg">
 			<svg class="marketing-list__icon">
 				<use xlink:href="./img/icons/icons.svg#seo"></use>
 			</svg>SEO ПРОДВИЖЕНИЕ
 		</li>
-		<li class="marketing-list__item content-text--md">
+		<li class="marketing-list__item content-text--lg">
 			<svg class="marketing-list__icon">
 				<use xlink:href="img/icons/icons.svg#ya"></use>
 			</svg>ЯНДЕКС ДЗЕН
 		</li>
-		<li class="marketing-list__item content-text--md">
+		<li class="marketing-list__item content-text--lg">
 			<svg class="marketing-list__icon">
 				<use xlink:href="img/icons/icons.svg#target"></use>
 			</svg>ТАРГЕТИНГОВАЯ РЕКЛАМА
 		</li>
-		<li class="marketing-list__item content-text--md">
+		<li class="marketing-list__item content-text--lg">
 			<svg class="marketing-list__icon">
 				<use xlink:href="img/icons/icons.svg#context"></use>
 			</svg>КОНТЕКСТНАЯ РЕКЛАМА
@@ -258,12 +258,11 @@
 		<div class="container">
 			<div class="marketing-cards__header">
 	<h3 class="marketing-cards__suptitle">Это не все наши услуги, их на много больше!</h3>
-	<h2 class="marketing-cards__title content-title marketing-cards__title">Мы готовы полностью заменить вам отдел
+	<h2 class="marketing-cards__title content-title marketing-cards__title">Мы готовы полностью заменить вам<br>отдел
 		разработки
 		и маркетинга</h2>
-	<p class="content-text">Мы можем не только продвигать, но и создавать! Не только сайты, но и
-		приложения,
-		плагины и модули для CMS-систем. Мы уже делали это и еще не раз сделаем. </p>
+	<p class="marketing-cards__text content-text">Мы можем не только продвигать, но и создавать! Не только сайты, но и
+		приложения, плагины и модули для CMS-систем. Мы уже делали это и еще не раз сделаем. </p>
 </div>
 <div class="marketing-cards__wrapper cards">
 	<div class="marketing-cards__item cards-item">
@@ -326,23 +325,23 @@
 	<button class="btn btn-orange marketing-cards__btn--mobile">Посмотреть все услуги</button>
 </div>
 		</div>
-		<div class="gallery-wrapper pt100 pb100 bg-grey">
+		<div class="gallery-wrapper bg-grey">
 			<div class="container">
 				<h2 class="content-title gallery__title">Сертификаты</h2>
-<div class="gallery mt50 mb100">
-	<div class="gallery-nav__buttons">
-		<button class="swiper-button-prev btn-slide gallery-btn gallery-btn__prev">
+<div class="gallery">
+	<div class="gallery-nav__buttons mobile--disable">
+		<button class="swiper-button-prev swiper-button-prev--100left btn__nav-slide gallery-btn gallery-btn__prev">
 			<svg class="button-icon button__icon--prev gallery__icon--prev">
 				<use xlink:href="img/icons/icons.svg#arrow"></use>
 			</svg>
 		</button>
-		<button class="swiper-button-next btn-slide gallery-btn gallery-btn__next">
+		<button class="swiper-button-next swiper-button-next--100right btn__nav-slide gallery-btn gallery-btn__next">
 			<svg class="button__icon button__icon--next gallery__icon--next">
 				<use xlink:href="img/icons/icons.svg#arrow"></use>
 			</svg>
 		</button>
 	</div>
-	<div class="gallery-slider-container swiper swiper-gallery">
+	<div class="gallery-slider-container swiper swiper-gallery" data-slider>
 		<div class="swiper-wrapper">
 			<div class="gallery-item swiper-slide">
 				<img class="gallery-item__img swiper-slide__img" src="img/cert.jpg" alt="Сертификат">
@@ -365,25 +364,25 @@
 		</div>
 	</div>
 	<div class="gallery-nav__pagination swiper-pagination">
-		<span class="bullet"></span>
-		<span class="bullet"></span>
-		<span class="bullet bullet--active"></span>
+		<span class="slider-pagination__bullet"></span>
+		<span class="slider-pagination__bullet"></span>
+		<span class="slider-pagination__bullet slider-pagination__bullet--active"></span>
 	</div>
 </div>
 			</div>
 		</div>
-		<div class="reviews-wrapper bg-purple pt100 pb100">
+		<div class="reviews-wrapper bg-purple">
 			<div class="container">
 	<div class="reviews-top mb50">
 		<h2 class="content-title content-text--white">Отзывы</h2>
 		<nav class="reviews-btn">
-			<button class="reviews-btn__next reviews-navigation__btn btn-slide">
-				<svg class="button__icon button__icon--next">
+			<button class="reviews-btn__prev reviews-navigation__btn btn__nav-slide">
+				<svg class="button__icon button__icon--prev">
 					<use xlink:href="img/icons/icons.svg#arrow"></use>
 				</svg>
 			</button>
-			<button class="reviews-btn__prev reviews-navigation__btn btn-slide">
-				<svg class="button__icon button__icon--prev">
+			<button class="reviews-btn__next reviews-navigation__btn btn__nav-slide">
+				<svg class="button__icon button__icon--next">
 					<use xlink:href="img/icons/icons.svg#arrow"></use>
 				</svg>
 			</button>
@@ -391,7 +390,7 @@
 	</div>
 </div>
 
-<div class="slider-body swiper-reviews swiper">
+<div class="slider-body swiper-reviews swiper" data-slider-desktop id="data-slider">
 	<div class="reviews-body swiper-wrapper">
 		<div class="cards-item reviews-item swiper-slide">
 			<div class="reviews-item__info">
@@ -490,7 +489,7 @@
 		<h2 class="credits-top__title content-title">благодарности</h2>
 		<h3 class="credits-top__text">от наших клиентов</h3>
 	</div>
-	<button class="btn btn-purple credits-top__btn">Все благодарности</button>
+	<button class="btn btn-purple credits-top__btn mobile--disable">Все благодарности</button>
 </div>
 
 
@@ -524,8 +523,8 @@
 			</div>
 		</div>
 	</div>
-	<button class="btn btn-purple credits-top__btn credits-top__btn--mobile">Все благодарности</button>
 </div>
+<button class="btn btn-purple credits-top__btn credits-top__btn--mobile">Все благодарности</button>
 			</div>
 		</div>
 		<div class="seo-cards">
@@ -612,8 +611,8 @@
 				<form class="seo-order__form " name="telephone">
 					<input class="seo-order__input form-call__input" name="telephone" type="tel" maxlength="20"
 						placeholder="+7 (___) ___-__-__" required>
-					<button class="seo-order__btn btn btn-orange form-call__btn">Заказать звонок</button>
 				</form>
+				<button class="seo-order__btn btn btn-orange form-call__btn">Заказать звонок</button>
 			</div>
 		</div>
 	</div>
@@ -635,7 +634,7 @@
 			<div class="container">
 				<div class="section-header mb50">
 	<h2 class="content-title">Наши кейсы</h2>
-	<button class="btn btn-purple portfolio-top__btn">Все проекты</button>
+	<button class="btn btn-purple portfolio-top__btn mobile--disable">Все проекты</button>
 </div>
 
 <div class="swiper-portfolio swiper cards">
@@ -688,16 +687,17 @@
 		</div>
 	</div>
 </div>
+
+<button class="btn btn-purple portfolio-top__btn--mobile">Все проекты</button>
 			</div>
 		</div>
 		<div class="blog">
 			<div class="container">
 				<div class="section-header mt100 mb60">
 	<h2 class="content-title">Блог</h2>
-	<button class="btn btn-purple blog-top__btn">Перейти в раздел</button>
+	<button class="btn btn-purple blog-top__btn mobile--disable">Перейти в раздел</button>
 </div>
 <div class="blog-body">
-
 	<div class="blog-item blog-item--lg">
 		<div class="blog-item__img-wrapper blog-item__img-wrapper--lg">
 			<img class="blog-item__img blog-item__img--lg" src="img/blog-img--big.jpg" alt="Фото:Хакеры протестировали
@@ -763,6 +763,7 @@
 		</div>
 	</div>
 </div>
+<button class="btn btn-purple blog-top__btn--mobile">Перейти в раздел</button>
 			</div>
 		</div>
 	</main>
@@ -861,7 +862,7 @@
 		</a>
 	</div>
 	<div class="copyright content-text--white">
-		<span>©2014-2022 Novatechno.ru</span>
+		<span class="copyright__text">©2014-2022 Novatechno.ru</span>
 		<a class="copyright__link" href="#">Политика конфиденциальности</a>
 	</div>
 	<div class="sign content-text--white">
