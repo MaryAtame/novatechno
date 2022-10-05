@@ -16,7 +16,11 @@ body {
 	margin: 0 auto;
 
 	@media(max-width:1200px) {
-		max-width: calc(1200px - 5%);
+		max-width: calc(100vw - 5%);
+	}
+
+	@media(max-width:600px) {
+		max-width: calc(100vw - 10px);
 	}
 
 }
@@ -44,8 +48,6 @@ body {
 }
 
 .header-wrapper {
-	align-items: center;
-	display: flex;
 	max-height: 35px;
 
 	@media(max-width:1200px) {
@@ -89,6 +91,14 @@ body {
 
 	@media(max-width:1200px) {
 		max-height: 100%;
+	}
+}
+
+.gallery-wrapper {
+	padding: 100px 0 10px;
+
+	@media(max-width:1200px) {
+		padding: 20px 0 40px;
 	}
 }
 

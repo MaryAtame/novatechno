@@ -3,15 +3,28 @@
 	justify-content: space-between;
 	align-items: center;
 	margin: 100px 0 60px;
+
+	&__btn--mobile {
+		display: none;
+
+		@media(max-width:1200px) {
+			display: flex;
+			margin: 40px auto 0;
+			max-width: 300px;
+			justify-content: center;
+		}
+	}
 }
 
 
 .blog-body {
 	display: grid;
-	grid-template-columns: repeat(4, 300px);
+	grid-template-columns: repeat(4, 285px);
 	grid-template-rows: repeat(2, 345px);
 	grid-auto-rows: 345px;
-	grid-gap: 30px;
+	grid-column-gap: 35px;
+	grid-row-gap: 45px;
+
 	justify-content: center;
 
 	grid-column: auto;
@@ -76,12 +89,12 @@
 	}
 
 	&__img--lg {
-		max-height: 720px;
+		max-height: 110%;
 		width: auto;
 	}
 
 	&__info {
-		padding: 0 5px 0 10px;
+		padding: 0 5px 0 5px;
 	}
 
 	&__info--lg {

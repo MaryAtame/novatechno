@@ -1,5 +1,5 @@
 .seo-cards {
-	margin: 100px 0;
+	margin: 90px 0;
 
 	&__wrapper {
 		display: grid;
@@ -73,13 +73,13 @@
 	&__wrapper {
 		background-color: $purple;
 		border-radius: 30px;
-		padding: 60px 0 60px 90px;
+		padding: 60px 0 80px 90px;
 		position: relative;
-		max-width: 95%;
+		max-width: 99%;
 		margin: 0 auto;
 
 		background-image: url("../img/svgicons/round-bg.svg");
-		background-position: right 7% top 13%;
+		background-position: right 46% top 8%;
 		background-repeat: no-repeat;
 		background-size: 120%;
 
@@ -92,39 +92,38 @@
 			margin: 0 auto 50px;
 
 			background-image: url("../img/svgicons/round-bg-mobile.svg"), url("../img/svgicons/round-bg-mobile.svg");
-			background-position: right calc(80% + 150px) top calc(95% + 40px), left calc(70% + 150px) top calc(12% + 220px);
+			background-position: right calc(180% + 131px) top calc(84% + 17px), left calc(70% + 150px) top calc(14% + 220px);
 			background-repeat: no-repeat;
-			background-size: calc(50% + 20px), calc(50% + 20px);
+			background-size: calc(90% + 20px), calc(85% + 20px);
 		}
 
 		&::before {
 			content: "";
 			display: block;
 			position: absolute;
-			width: 100%;
-			height: 100%;
-			left: 0;
+			width: 600px;
+			height: 450px;
+			right: -104px;
+			top: 60px;
 
 			background-image: url("../img/seo-human.png"), url(../img/seo-accent1.png), url(../img/seo-accent2.png);
-			background-size: 425px, 156px, 128px;
-			background-position: left 84% top calc(20% + 4px),
-				left 98% bottom calc(100% + 20px),
-				left 98% bottom calc(50% + 55px);
+			background-size: 432px, 215px, 216px;
+			background-position: left 20% top calc(21% - 11px), left calc(80% + 74px) bottom calc(94% + 36px), left calc(94% + 49px) bottom calc(42% + 22px);
 			background-repeat: no-repeat;
 
 			@media(max-width:1200px) {
+				top: 225px;
+				right: -50px;
 				background-size: 300px, 120px, 90px;
 				background-position: right calc(54% + 20px) top calc(95% + 4px), left calc(70% + 10px) bottom calc(28% + 20px), left calc(76% + 10px) top calc(67% + 54px);
 			}
 
 			@media(max-width:500px) {
-				background-size: 215px, 95px, 75px;
-				background-position: right calc(8% + 42px) top calc(93% + 4px), left 86% bottom calc(22% + 20px), left 94% top calc(71% + 55px);
+				background-size: 230px, 108px, 115px;
+
+				background-position: right calc(15% + 42px) top calc(93% + 4px), left 86% bottom calc(22% + 20px), left 94% top calc(71% + 55px);
 			}
 		}
-
-
-
 	}
 
 
@@ -137,8 +136,20 @@
 		}
 	}
 
-	&__form-wrapper {
+	&__form {
 		@media(max-width:1200px) {
+			width: 100%;
+		}
+	}
+
+	&__form-wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 237px);
+		grid-column-gap: 20px;
+
+		@media(max-width:1200px) {
+			display: flex;
+			flex-direction: column;
 			max-width: 350px;
 			align-items: flex-start;
 		}
@@ -147,7 +158,6 @@
 	&__input {
 		@media(max-width:1200px) {
 			margin: 0 0 20px 0;
-
 		}
 	}
 
@@ -188,5 +198,10 @@
 }
 
 .logos-slider {
-	margin: 89px 0 95px;
+	margin: 89px auto 95px;
+	max-width: 90vw;
+
+	@media(max-width:1200px) {
+		margin: 20px auto;
+	}
 }

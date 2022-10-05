@@ -4,6 +4,11 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	padding: 5px 0 90px;
+
+	@media(max-width:1200px) {
+		margin: 0;
+	}
 
 	&__title {
 		text-align: center;
@@ -16,12 +21,6 @@
 		height: 100%;
 		top: 0;
 		left: 0;
-	}
-
-	&__icon--next {}
-
-	&__icon--prev {
-		transform: rotateY(180deg);
 	}
 }
 
@@ -78,16 +77,21 @@
 	top: 0;
 	left: 0;
 
-	&__buttons {}
+	&__buttons {
+		@media(max-width:1450px) {
+			display: none;
+			visibility: hidden;
+		}
+	}
 
 	&__pagination {
 		display: flex;
 		justify-content: center;
-		margin: 51px 0 0;
+		margin: 30px 0 0;
 	}
 }
 
-.bullet {
+.swiper-pagination__bullet {
 	width: 40px;
 	height: 2px;
 	background-color: #BEBFDB;
@@ -96,6 +100,16 @@
 	transition: background-color 0.3s linear;
 }
 
-.bullet--active {
+.swiper-pagination__bullet--active {
 	background-color: $purple;
+}
+
+.swiper-button-next--100right {
+	right: -90px;
+	top: 250px;
+}
+
+.swiper-button-prev--100left {
+	left: -90px;
+	top: 250px;
 }

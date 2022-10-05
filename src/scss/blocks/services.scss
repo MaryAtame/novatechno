@@ -2,19 +2,26 @@
 	display: flex;
 	width: 100%;
 
+	@media(max-width:1200px) {
+		margin: 0;
+	}
+
+	&__link {
+		text-decoration: none;
+	}
 
 	&__item {
 		width: 390px;
 		height: 339px;
 		padding: 44px 42px 50px 50px;
-		box-shadow: -20px 10px 50px 0px rgba(0, 0, 0, .2);
+		box-shadow: -4px 5px 11px 0 rgb(0 0 0 / 5%);
 		position: relative;
-
 
 		@media(max-width:1200px) {
 			width: 240px;
 			height: 368px;
 			padding: 40px 23px 49px 25px;
+			box-shadow: -7px -4px 11px 0 rgb(0 0 0 / 5%);
 		}
 
 		&:hover {
@@ -41,13 +48,15 @@
 }
 
 
-
-
 .cards-item {
 	&__icon {
 		max-width: 41px;
 		max-height: 42px;
 		position: relative;
+
+		@media(max-width:1200px) {
+			left: 25px;
+		}
 	}
 
 	&__title {
@@ -66,5 +75,16 @@
 
 	&__text {
 		color: $text-gray;
+	}
+}
+
+.swiper-services {
+	padding: 50px 0;
+	margin: 70px 0 75px;
+	max-width: 90vw;
+
+	@media(max-width:1200px) {
+		padding: 15px 0;
+		margin: 10px 0;
 	}
 }
