@@ -5,10 +5,12 @@
 		display: grid;
 		justify-content: center;
 		grid-template-columns: repeat(3, 390px);
-		gap: 30px;
+		grid-gap: 30px;
 
 		@media(max-width:1200px) {
-			grid-template-columns: repeat(auto-fit, 240px);
+			display: flex;
+			margin: 50px auto 30px;
+			grid-gap: 0;
 		}
 	}
 
@@ -21,7 +23,7 @@
 		margin: 100px 0 0;
 
 		@media(max-width:1200px) {
-			margin: 100px 0 0;
+			margin: 75px 0 0;
 		}
 	}
 
@@ -76,6 +78,13 @@
 		padding: 44px 42px 77px 70px;
 		position: relative;
 
+		@media(max-width:1200px) {
+			width: 240px !important;
+			height: 280px !important;
+		}
+
+
+
 		&::before {
 			content: "";
 			position: absolute;
@@ -88,8 +97,11 @@
 			background-repeat: no-repeat;
 
 			@media(max-width:1200px) {
-				top: 5px;
-				left: 0;
+				top: -19px;
+				left: -31px;
+				width: 175px;
+				height: 140px;
+
 			}
 		}
 
@@ -124,8 +136,10 @@
 		max-height: 45px;
 
 		@media(max-width:1200px) {
-			top: 40px;
-			left: 50px;
+			top: 32px;
+			left: 40px;
+			max-width: 35px;
+			max-height: 35px;
 		}
 	}
 

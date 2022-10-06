@@ -31,10 +31,13 @@
 	grid-column: 1 / span 2;
 }
 
+.search {
+	max-height: 50px;
+}
+
 .form-search {
 	width: 100%;
 	max-width: 285px;
-	max-height: 50px;
 	background-color: transparent;
 	border: 1px solid #C5C9D0;
 	border-radius: 30px;

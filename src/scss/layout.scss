@@ -111,10 +111,15 @@ body {
 .credits {
 	padding: 100px 0;
 	overflow-x: hidden;
+
+	@media(max-width:1200px) {
+		padding: 0 0 30px;
+	}
 }
 
 .portfolio {
 	padding: 100px 0 160px;
+	overflow-x: hidden;
 }
 
 .article-wrapper {

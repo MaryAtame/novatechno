@@ -113,14 +113,14 @@
 
 			@media(max-width:1200px) {
 				top: 225px;
-				right: -50px;
+				right: 0;
 				background-size: 300px, 120px, 90px;
 				background-position: right calc(54% + 20px) top calc(95% + 4px), left calc(70% + 10px) bottom calc(28% + 20px), left calc(76% + 10px) top calc(67% + 54px);
 			}
 
 			@media(max-width:500px) {
+				right: -47px;
 				background-size: 230px, 108px, 115px;
-
 				background-position: right calc(15% + 42px) top calc(93% + 4px), left 86% bottom calc(22% + 20px), left 94% top calc(71% + 55px);
 			}
 		}

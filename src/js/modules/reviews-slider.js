@@ -1,43 +1,23 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation } from 'swiper';
 
 document.addEventListener('DOMContentLoaded', () => {
-	const elements = document.querySelectorAll('.slider-body')
-
-	if (elements.length) app.sliders = [];
-
-	elements.forEach((item) => {
-		app.sliders.push(createSlider(item));
-	});
+	const elements = document.querySelector('[data-slider]');
+	// elements.forEach((item) => {
+	// 	reviewsSliderInit(item);
+	// });
 });
 
-function createSlider(item) {
-	const type = item.hasAttribute('data-slider-desktop');
-	const desktop = window.matchMedia('(min-width: 1200px)');
-	const mobile = window.matchMedia('(min-width: 0px) and (max-width: 1199px)');
-	let swiper = Swiper;
-	let init = false;
 
+const reviewsSlider = null;
+const mediaQuerySize = 1200;
 
-	function initSlider() {
-		if (!type || type && desktop.matches) {
-			if (!init) {
-				init = true;
-				swiper = create();
-			}
-		} else if (type && mobile.matches) {
-			if (init) {
-				swiper.destroy();
-				init = false;
-			}
-		}
-	}
-
-	function create() {
-		return new Swiper(item.querySelector('.swiper-reviews'), {
-			modules: [Navigation, Pagination],
+function reviewsSliderInit() {
+	if (!reviewsSlider) {
+		reviewsSlider = new Swiper(('.swiper-reviews'), {
+			modules: [Navigation],
 			slidesPerView: 4,
 			spaceBetween: 30,
-			direction: 'horizontal',
+			grabCursor: true,
 			keyboard: true,
 			loop: true,
 			pagination: {
@@ -49,14 +29,42 @@ function createSlider(item) {
 			},
 		});
 	}
-
-	initSlider();
-
-	window.addEventListener('resize', () => {
-		initSlider();
-
-		return swiper;
-	});
-
-	return swiper;
 }
+
+function reviewsSliderDestroy() {
+	if (reviewsSlider) {
+		reviewsSlider.destroy();
+		document.querySelector('.reviews-slider').classList.remove('.swiper');
+		reviewsSlider = null;
+
+	}
+}
+
+function reviewsSliderRun() {
+	const windowWidth = innerWidth;
+	if (windowWidth <= mediaQuerySize) {
+		reviewsSliderDestroy()
+	} else {
+		reviewsSliderInit()
+	}
+}
+
+reviewsSliderRun()
+
+window.addEventListener('resize', function () {
+	reviewsSliderRun()
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
