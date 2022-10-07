@@ -1,0 +1,98 @@
+.footer-bottom__wrapper {
+	width: 100%;
+	background-color: #231E46;
+	padding: 40px 0;
+
+
+	@media(max-width:1200px) {
+		padding: 25px 0 40px;
+	}
+}
+
+.footer-bottom {
+	display: grid;
+	grid-template-columns: 2fr 3fr 1fr;
+	align-items: center;
+
+	@media(max-width:1200px) {
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
+
+
+	&__social {
+		max-height: 34px;
+
+		@media(max-width:1200px) {
+			margin: 0 0 20px 0;
+		}
+	}
+
+	&__social-icon {
+		width: 34px;
+		max-height: 34px;
+		margin: 0 15px 0 0;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	&__social-link {
+		margin: 0 15px 0 0;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+}
+
+.copyright {
+	font-size: rem(14);
+
+	@media(max-width:1200px) {
+		display: flex;
+		flex-direction: column;
+		margin: 0 0 20px 0;
+		align-items: center;
+
+	}
+
+	&__link {
+		color: #fff;
+		margin: 0 0 0 32px;
+		text-decoration: none;
+
+		@media(max-width:1200px) {
+			display: block;
+			margin: 0;
+		}
+	}
+
+	&__text {
+		@media(max-width:1200px) {
+			display: block;
+			margin: 0 0 20px 0;
+
+		}
+	}
+}
+
+.sign {
+	display: flex;
+	align-items: center;
+	font-size: rem(14);
+}
+
+.diez-icon {
+	width: 100%;
+	max-width: 81px;
+	height: 17px;
+
+	margin: 0 0 0 8px;
+}
+
+.logo-footer {
+	max-height: 46px;
+	width: 170px;
+}

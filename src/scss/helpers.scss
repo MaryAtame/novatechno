@@ -1,0 +1,29 @@
+.d-f {
+	display: flex;
+	align-items: center;
+}
+
+.d-f-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.s-b {
+	justify-content: space-between;
+}
+
+
+.capital {
+	text-transform: uppercase;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.mobile--hidden {
+	@media(max-width:1200px) {
+		visibility: hidden;
+		display: none;
+	}
+}

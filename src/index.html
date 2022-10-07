@@ -20,74 +20,36 @@
 </head>
 
 <body>
-	<div class="header-wrapper bg-grey">
-		<div class="container">
-			@@include('html/header.html', {})
-		</div>
-
-	</div>
-	<div class="container">
-		@@include('html/partials/header-toolbar.html')
-	</div>
-
+	<header class="header">
+		@@include('html/header-info.html', {})
+		@@include('html/header-toolbar.html')
+	</header>
 	<main class="layout">
-		<div class="intro-wrapper">
-			<div class="container">
-				@@include('html/partials/intro.html', {})
-			</div>
-		</div>
-		<div class="container">
-			@@include('html/partials/services.html', {})
-		</div>
+		@@include('html/partials/intro.html', {})
 
-		<div class="article-wrapper">
-			<div class="container">
-				@@include('html/partials/article.html', {})
-			</div>
-		</div>
-		<div class="marketing-wrapper bg-purple">
-			<div class="container">
-				@@include('html/partials/marketing.html', {})
-			</div>
-		</div>
-		<div class="container">
-			@@include('html/partials/marketing-cards.html')
-		</div>
-		<div class="gallery-wrapper pt100 pb100 bg-grey">
-			<div class="container">
-				@@include('html/partials/gallery.html', {})
-			</div>
-		</div>
-		<div class="reviews-wrapper bg-purple pt100 pb100">
-			@@include('html/partials/reviews.html')
-		</div>
-		<div class="credits bg-grey">
-			<div class="container">
-				@@include('html/partials/credits.html')
-			</div>
-		</div>
+		<!-- slider mobile -->
+		@@include('html/partials/services.html', {})
+		@@include('html/partials/article.html', {})
+		@@include('html/partials/marketing.html', {})
+		<!-- slider mobile -->
+		@@include('html/partials/marketing-cards.html')
+
+		<!-- slider -->
+		@@include('html/partials/gallery.html', {})
+
+		<!-- slider desc -->
+		@@include('html/partials/reviews.html')
+		<!-- slider -->
+		@@include('html/partials/credits.html')
 		@@include('html/partials/seo.html', {})
-		<div class="portfolio bg-grey">
-			<div class="container">
-				@@include('html/partials/portfolio.html', {})
-			</div>
-		</div>
-		<div class="blog">
-			<div class="container">
-				@@include('html/partials/blog.html', {})
-			</div>
-		</div>
+		<!-- slider desc -->
+		@@include('html/partials/portfolio.html', {})
+		@@include('html/partials/blog.html', {})
 	</main>
-	<div class="footer__wrapper">
-		<div class="container">
-			@@include('html/footer-menu.html', {})
-		</div>
-		<div class="footer-bottom__wrapper">
-			<div class="container">
-				@@include('html/footer-bottom.html', {})
-			</div>
-		</div>
-	</div>
+	<footer class="footer">
+		@@include('html/footer-menu.html', {})
+		@@include('html/footer-bottom.html', {})
+	</footer>
 	<!-- main JS -->
 	<script src="js/app.min.js"></script>
 </body>
