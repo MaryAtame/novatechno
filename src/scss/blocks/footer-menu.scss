@@ -1,4 +1,4 @@
-.footer__wrapper {
+.footer {
 	width: 100%;
 
 	background-color: $dark-blue;
@@ -6,19 +6,12 @@
 	margin: 100px 0 0 0;
 }
 
-.footer-bottom__wrapper {
-	width: 100%;
-	background-color: #231E46;
-	padding: 45px 0;
 
-	@media(max-width:1200px) {
-		padding: 25px 0 40px;
-	}
-}
 
 .footer-menu__wrapper {
 	display: flex;
 	justify-content: center;
+	color: #fff;
 
 	@media(max-width:1200px) {
 		flex-direction: column;

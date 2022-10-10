@@ -1,5 +1,5 @@
 const burgerIcon = document.querySelector('.menu-icon');
-const navbody = document.querySelector('.menu__inner');
+const navbody = document.querySelector('.menu-wrapper');
 
 burgerIcon.addEventListener("click", burgerhandler);
 
@@ -10,4 +10,3 @@ function burgerhandler(e) {
 
 }
 
-export { burgerhandler };

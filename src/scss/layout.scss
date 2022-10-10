@@ -7,124 +7,13 @@ body {
 .layout {
 	display: flex;
 	flex-direction: column;
+	overflow-x: hidden;
 	min-height: 100vh;
 }
 
 .container {
+	width: 100%;
 	max-width: 1260px;
 	padding: 0 15px;
 	margin: 0 auto;
-
-	@media(max-width:1200px) {
-		max-width: calc(100vw - 5%);
-	}
-
-	@media(max-width:600px) {
-		max-width: calc(100vw - 10px);
-	}
-
-}
-
-.logo {
-	&__icon {
-		width: 100%;
-		height: 100%;
-		max-height: 50px;
-		max-width: 170px;
-
-		@media(max-width:1200px) {
-			max-height: 24px;
-			max-width: 89px;
-		}
-	}
-}
-
-.bg-grey {
-	background-color: $gray;
-}
-
-.bg-purple {
-	background-color: $purple;
-}
-
-.header-wrapper {
-	max-height: 35px;
-
-	@media(max-width:1200px) {
-		display: none;
-	}
-}
-
-
-.intro-wrapper {
-	background-image: url("../img/intro-bg.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 100%;
-	max-height: 656px;
-
-	@media (max-width:1200px) {
-		background-position: 73% center;
-		max-height: 100vh;
-
-	}
-}
-
-.marketing-wrapper {
-	position: relative;
-	max-height: 529px;
-
-
-	&::before {
-		content: "";
-		position: absolute;
-		width: 100%;
-		height: 100%;
-
-		background-image: url(../img/icons/icons.svg#circles);
-		background-position: left calc(40% - 550px) top 102px;
-		background-size: 134px 62px;
-		background-repeat: no-repeat;
-	}
-
-	@media(max-width:1200px) {
-		max-height: 100%;
-	}
-}
-
-.gallery-wrapper {
-	padding: 100px 0 10px;
-
-	@media(max-width:1200px) {
-		padding: 20px 0 40px;
-	}
-}
-
-
-.reviews-wrapper {
-	padding: 100px 0 100px;
-	overflow: hidden;
-}
-
-.credits {
-	padding: 100px 0;
-	overflow-x: hidden;
-
-	@media(max-width:1200px) {
-		padding: 0 0 30px;
-	}
-}
-
-.portfolio {
-	padding: 100px 0 160px;
-	overflow-x: hidden;
-}
-
-.article-wrapper {
-	background-image: url("../img/seo-bg.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }

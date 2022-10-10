@@ -1,5 +1,5 @@
 .seo-cards {
-	margin: 90px 0;
+	margin: 110px 0;
 
 	&__wrapper {
 		display: grid;
@@ -20,12 +20,9 @@
 	}
 
 	&__item {
-		display: flex;
-		align-items: center;
-
 		max-width: 285px;
 		max-height: 120px;
-		background-color: $gray;
+		background-color: $light-gray;
 		border-radius: 5px;
 		padding: 44px 0 45px 35px;
 
@@ -33,16 +30,24 @@
 			padding: 44px 0 45px 15px;
 		}
 
-		@media(max-width:770px) {
+		@media(max-width:768px) {
 			max-width: 100%;
 			width: 100%;
-			justify-content: start;
 			padding: 19px 0 19px 30px;
 			font-weight: 700;
 		}
 
 		&:hover {
 			border: 1px solid $purple;
+		}
+	}
+
+	&__item-link {
+		display: flex;
+		align-items: center;
+
+		@media(max-width:768px) {
+			justify-content: start;
 		}
 	}
 
@@ -67,21 +72,28 @@
 			font-size: rem(16);
 		}
 	}
+
+	&__text {
+		font-size: rem(18);
+		line-height: 28px;
+		font-weight: 600;
+		color: #000;
+	}
 }
 
 .seo-order {
 	&__wrapper {
 		background-color: $purple;
 		border-radius: 30px;
-		padding: 60px 0 80px 90px;
+		padding: 60px 0 60px 90px;
 		position: relative;
 		max-width: 99%;
 		margin: 0 auto;
 
 		background-image: url("../img/svgicons/round-bg.svg");
-		background-position: right 46% top 8%;
+		background-position: center;
 		background-repeat: no-repeat;
-		background-size: 120%;
+		background-size: 100%;
 
 		@media(max-width:1200px) {
 			display: flex;
@@ -103,17 +115,23 @@
 			position: absolute;
 			width: 600px;
 			height: 450px;
-			right: -104px;
-			top: 60px;
+			right: -131px;
+			top: 45px;
 
 			background-image: url("../img/seo-human.png"), url(../img/seo-accent1.png), url(../img/seo-accent2.png);
-			background-size: 432px, 215px, 216px;
-			background-position: left 20% top calc(21% - 11px), left calc(80% + 74px) bottom calc(94% + 36px), left calc(94% + 49px) bottom calc(42% + 22px);
+			background-size: 415px, 215px, 216px;
+			background-position: left calc(0% + 3px) top calc(42% - 11px), left calc(74% + 70px) bottom calc(91% + 36px), left calc(85% + 70px) bottom calc(42% + 22px);
 			background-repeat: no-repeat;
+
+			@media(max-width:1400px) {
+				right: -70px;
+				background-position: left 10% top calc(42% - 11px), left calc(80% + 61px) bottom calc(90% + 36px), left calc(88% + 70px) bottom calc(42% + 22px);
+
+			}
 
 			@media(max-width:1200px) {
 				top: 225px;
-				right: 0;
+				right: -154px;
 				background-size: 300px, 120px, 90px;
 				background-position: right calc(54% + 20px) top calc(95% + 4px), left calc(70% + 10px) bottom calc(28% + 20px), left calc(76% + 10px) top calc(67% + 54px);
 			}
@@ -128,6 +146,7 @@
 
 
 	&__content {
+		color: #fff;
 		max-width: 390px;
 		margin: 0 0 40px 0;
 
@@ -170,25 +189,14 @@
 }
 
 .seo-title {
-	line-height: 65px;
-}
-
-.content-text {
-	margin: 20px 0 0;
+	margin: 0 0 15px 0;
 }
 
 
-.logos {
-
-	&__wrapper {
-		display: flex;
-		align-items: center;
-
-	}
-
-	&__item {
-		width: 100%;
-		max-width: 194px;
+.logos-item {
+	&__card-wrapper {
+		width: 194px;
+		max-height: 194px;
 		opacity: .5;
 
 		&:hover {
@@ -197,7 +205,13 @@
 	}
 }
 
-.logos-slider {
+.logo-seo {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.slider-seo {
 	margin: 89px auto 95px;
 	max-width: 90vw;
 

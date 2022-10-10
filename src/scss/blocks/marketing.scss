@@ -1,8 +1,19 @@
-.marketing {
+.fullscreen-wrapper__marketing {
+	@media(max-width:1200px) {
+		padding: 0 0 250px;
+	}
+}
+
+.marketing-wrapper {
+	position: relative;
+	max-height: 529px;
+	padding: 110px 0 80px;
+
 	display: grid;
 	grid-template-columns: minmax(400px, 600px) minmax(300px, 455px);
 	grid-column-gap: 175px;
 	position: relative;
+	color: #fff;
 
 	@media(max-width:1200px) {
 		padding: 35px 0 0 0;
@@ -13,20 +24,30 @@
 		position: absolute;
 		width: 100%;
 		height: 120%;
+		top: 170px;
 
 		background-image: url("../img/marketing-human.png");
-		background-position: left calc(40% + 23px) top 270px;
+		background-position: left calc(40% + 23px) top 100px;
 		background-size: 280px 336px;
 		background-repeat: no-repeat;
 
 
 		@media(max-width:1200px) {
-			background-position: left calc(62% + 15px) top calc(82% + 10px);
-			background-size: 213px 256px;
+			background-position: left calc(62% + 15px) top calc(73% + 100px);
+			background-size: 227px;
+		}
+
+		@media(max-width:992px) {
+			background-position: left calc(62% + 15px) top calc(112% - 40px);
+		}
+
+		@media(max-width:768px) {
+			top: calc(50% + 70px);
+			background-position: left calc(62% + 15px) top calc(82% - 59px);
+			background-size: 215px;
 		}
 
 	}
-
 
 	@media(max-width:1200px) {
 		grid-template-columns: 1fr;
@@ -36,7 +57,7 @@
 	}
 }
 
-.marketing-info {
+.block-info {
 	margin: 18px 0 0 8px;
 
 	@media(max-width:1200px) {
@@ -46,7 +67,6 @@
 	&__text {
 		letter-spacing: 0.1em;
 		font-weight: 600;
-		font-size: rem(20);
 
 		@media(max-width:1200px) {
 			font-size: rem(16);
@@ -63,12 +83,10 @@
 			margin: 0;
 		}
 	}
-
 }
 
 
-
-.marketing-list {
+.block-list {
 	margin: 80px 0 0 0;
 
 	@media(max-width:1200px) {
@@ -83,9 +101,12 @@
 		flex-direction: row;
 		align-items: center;
 		position: relative;
-		margin: 0 0 40px 0;
+		margin: 0 0 35px 0;
 		cursor: pointer;
-		color: #fff;
+		font-size: rem(20);
+		line-height: 27px;
+		font-weight: 700;
+		text-transform: uppercase;
 
 		transition: all .3s linear;
 		white-space: nowrap;
@@ -103,7 +124,7 @@
 			color: $light-purple;
 		}
 
-		&:hover .marketing-list__icon {
+		&:hover .block-list__icon {
 			opacity: .6;
 		}
 
@@ -114,8 +135,8 @@
 			width: 100%;
 			height: 100%;
 			top: 7px;
-			right: 23px;
-			width: 30px;
+			right: 0px;
+			width: 50px;
 			margin: 0 0 0 10px;
 			align-items: center;
 

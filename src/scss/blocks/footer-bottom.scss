@@ -1,6 +1,18 @@
+.footer-bottom__wrapper {
+	width: 100%;
+	background-color: #231E46;
+	padding: 40px 0;
+
+
+	@media(max-width:1200px) {
+		padding: 25px 0 40px;
+	}
+}
+
 .footer-bottom {
 	display: grid;
 	grid-template-columns: 2fr 3fr 1fr;
+	align-items: center;
 
 	@media(max-width:1200px) {
 		grid-template-columns: 1fr;
@@ -37,6 +49,7 @@
 
 .copyright {
 	font-size: rem(14);
+	color: #fff;
 
 	@media(max-width:1200px) {
 		display: flex;
@@ -47,7 +60,6 @@
 	}
 
 	&__link {
-		color: #fff;
 		margin: 0 0 0 32px;
 		text-decoration: none;
 
@@ -70,14 +82,15 @@
 	display: flex;
 	align-items: center;
 	font-size: rem(14);
-}
+	color: #fff;
 
-.diez-icon {
-	width: 100%;
-	max-width: 81px;
-	height: 17px;
+	&__icon {
+		width: 100%;
+		max-width: 81px;
+		height: 17px;
 
-	margin: 0 0 0 8px;
+		margin: 0 0 0 8px;
+	}
 }
 
 .logo-footer {
