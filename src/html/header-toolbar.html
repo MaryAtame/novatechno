@@ -35,11 +35,11 @@
 	</div>
 	<nav class="menu-wrapper">
 		<div class="menu-inner">
-			<ul class="menu-list" data-menu>
-				<li class="menu-list__item"><a class="menu-list__link" href="#">О компании</a></li>
-				<li class="menu-list__item"><a class="menu-list__link" href="#services">наши
+			<ul class="menu-list" data-menu data-one-menu>
+				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#">О компании</a></li>
+				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#services">наши
 						услуги</a>
-					<ul class="menu-sublist dropdown-list menu-sublist--open" id="services" data-dropdown>
+					<ul class="menu-sublist dropdown-list menu-sublist--open" data-dropdown>
 						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#develop">Программирование</a></li>
 						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#design">Графический и
 								веб-дизайн</a></li>
@@ -62,31 +62,29 @@
 						</li>
 					</ul>
 				</li>
-				<li class="menu-list__item"><a class="menu-list__link" href="#sectors">отрасли</a></li>
-				<li class="menu-list__item"><a class="menu-list__link" href="#portfolio">проекты</a></li>
-				<li class="menu-list__item"><a class="menu-list__link" href="#clients">Наши клиенты</a></li>
-				<li class="menu-list__item"><a class="menu-list__link" href="#views">Отзывы</a></li>
+				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#sectors">отрасли</a></li>
+				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#portfolio">проекты</a></li>
+				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#clients">Наши клиенты</a></li>
+				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#views">Отзывы</a></li>
 			</ul>
-			<ul class="menu-list">
-				<li class="menu-list__item"><a class="menu-list__link" href="#prices">Цены</a></li>
-				<li class="menu-list__item"><a class="menu-list__link" href="#sales">Акции</a></li>
-				<li class="menu-list__item"><a class="menu-list__link" href="#guarantees">Гарантии</a></li>
-				<li class="menu-list__item" data-dropdown><a class="menu-list__link" href="#job">Вакансии</a>
-					<div class="dropdown-list">
-						<ul class="menu-sublist " id="job">
-							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Программисты</a>
-							</li>
-							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Веб-дизайнеры</a>
-							</li>
-							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#seo">SEO-продвижение</a>
-							</li>
-							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#marketers">Маркетологи</a>
-							</li>
-						</ul>
-					</div>
+			<ul class="menu-list" data-menu data-one-menu>
+				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#prices">Цены</a></li>
+				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#sales">Акции</a></li>
+				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#guarantees">Гарантии</a></li>
+				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#job">Вакансии</a>
+					<ul class="menu-sublist dropdown-list" data-dropdown>
+						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Программисты</a>
+						</li>
+						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Веб-дизайнеры</a>
+						</li>
+						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#seo">SEO-продвижение</a>
+						</li>
+						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#marketers">Маркетологи</a>
+						</li>
+					</ul>
 				</li>
-				<li class="menu-list__item"><a class="menu-list__link" href="#blog">Блог</a></li>
-				<li class="menu-list__item"><a class="menu-list__link" href="#contacts">Контакты</a></li>
+				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#blog">Блог</a></li>
+				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#contacts">Контакты</a></li>
 			</ul>
 			<button class="btn menu-list__btn">Партнерская программа</button>
 		</div>
