@@ -14,10 +14,17 @@ if (menuArray.length > 0) {
 
 function initMenu(menuArray) {
 	menuArray.forEach(element => {
-		const menuItem = element.hasAttribute(['data-menu-item']);
-		console.log(menuItem)
+		const menuItem = element.querySelector('.menu-list__item');
+		const dropdownList = element.querySelector('.menu-sublist');
+		console.log(dropdownList)
 
-
+		menuItem.onclick = () => {
+			if (!dropdownList.classList.contains('menu-sublist--open')) {
+				dropdownList.classList.add('menu-sublist--open')
+			} else {
+				dropdownList.classList.remove('menu-sublist--open');
+			}
+		};
 	});
 }
 
