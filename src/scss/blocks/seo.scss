@@ -38,7 +38,7 @@
 		}
 
 		&:hover {
-			border: 1px solid $purple;
+			outline: 1px solid $purple;
 		}
 	}
 
@@ -130,8 +130,8 @@
 			}
 
 			@media(max-width:1200px) {
-				top: 225px;
-				right: -154px;
+				top: 235px;
+				right: -130px;
 				background-size: 300px, 120px, 90px;
 				background-position: right calc(54% + 20px) top calc(95% + 4px), left calc(70% + 10px) bottom calc(28% + 20px), left calc(76% + 10px) top calc(67% + 54px);
 			}

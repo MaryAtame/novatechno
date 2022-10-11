@@ -1,9 +1,5 @@
 .reviews-wrapper {
 	padding: 100px 0 100px;
-
-	@media(max-width:1200px) {
-		// padding: 38px 0;
-	}
 }
 
 
@@ -80,27 +76,6 @@
 
 	&__video-wrapper {
 
-		&::after {
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			max-width: 60px;
-			max-height: 60px;
-			border-radius: 50%;
-			top: 130px;
-			left: 167px;
-
-			background-color: rgba(255, 255, 255, 0.8);
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: 60px 60px;
-
-			@media(max-width:1200px) {
-				left: 117px;
-			}
-		}
-
 		&::before {
 			content: "";
 			position: absolute;
@@ -151,9 +126,6 @@
 		font-size: rem(14);
 		line-height: 20px;
 
-		&:visited {
-			color: $purple;
-		}
 	}
 
 	&__video-wrapper {
@@ -162,6 +134,7 @@
 		border-radius: 20px;
 		overflow: hidden;
 		position: relative;
+		color: #fff;
 
 		@media(max-width:1200px) {
 			padding: 0;
@@ -169,13 +142,22 @@
 	}
 
 	&__video-info {
+		display: flex;
+		flex-direction: column;
 		color: #fff;
 		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 225px;
+		top: 200px;
 		left: 40px;
 		z-index: 10;
+		text-decoration: none;
+
+		@media(max-width:1200px) {
+			top: 150px;
+		}
+
+		&:hover {
+			text-decoration: none;
+		}
 	}
 
 	&__video-date {}
@@ -212,18 +194,31 @@
 
 }
 
-.video-play {
+.video-play-icon {
 	width: 16px;
 	height: 20px;
 	border-radius: 2px;
 
+	position: absolute;
+	bottom: 20px;
+	left: 23px;
+	z-index: 2;
+}
+
+.video-play-btn {
 	position: relative;
-	bottom: 75px;
-	left: 150px;
+	top: -50px;
+	left: 87%;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.8);
 
 	@media(max-width:1200px) {
-		left: 101px;
+		top: -45px;
+		left: 55%;
 	}
+
 }
 
 .reviews-video {
@@ -236,10 +231,12 @@
 .btn-orange {}
 
 .reviews-bottom__btn {
-	display: block;
+	display: flex;
 	margin: 60px auto 0;
 	padding: 15px 34px;
 	width: 198px;
 	max-height: 50px;
+	justify-content: center;
+	align-items: center;
 
 }

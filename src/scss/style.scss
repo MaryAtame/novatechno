@@ -8,10 +8,12 @@
 
 @import "../../node_modules/swiper/modules/navigation/navigation";
 @import "../../node_modules/swiper/swiper";
+@import "../../node_modules/@fancyapps/ui/dist/fancybox.css";
 
 @import "components/buttons";
 @import "components/cards";
 @import "components/sliders";
+@import "components/modals";
 
 
 @import "blocks/header-info";

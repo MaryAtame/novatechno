@@ -235,6 +235,7 @@
 		line-height: 49px;
 		text-transform: lowercase;
 		text-decoration: none;
+		background-color: transparent;
 
 		@media(max-width:1200px) {
 			font-size: rem(20);
@@ -249,6 +250,8 @@
 	&__link {}
 
 	&__btn {
+		grid-column: auto/span 2;
+		justify-self: center;
 		background-color: transparent;
 		border: 1px solid $purple;
 		color: $purple;
@@ -271,7 +274,17 @@
 }
 
 .menu-sublist {
-	display: none;
+	align-items: center;
+	position: static;
+
+	@media(min-width:1201px) {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 0;
+		left: 130%;
+		align-items: flex-start;
+	}
 
 	&__item {
 		position: relative;
@@ -303,19 +316,6 @@
 
 
 
-.menu-sublist--open {
-	align-items: center;
-	position: static;
-
-	@media(min-width:1201px) {
-		display: flex;
-		flex-direction: column;
-		position: absolute;
-		top: 0;
-		left: 130%;
-		align-items: flex-start;
-	}
-}
 
 .mobile-menu {
 	@media(min-width:1201px) {
@@ -350,5 +350,3 @@
 		}
 	}
 }
-
-.callback-form--mobile {}

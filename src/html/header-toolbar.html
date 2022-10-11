@@ -35,57 +35,167 @@
 	</div>
 	<nav class="menu-wrapper">
 		<div class="menu-inner">
-			<ul class="menu-list" data-menu data-one-menu>
-				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#">О компании</a></li>
-				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#services">наши
-						услуги</a>
-					<ul class="menu-sublist dropdown-list menu-sublist--open" data-dropdown>
-						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#develop">Программирование</a></li>
-						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#design">Графический и
-								веб-дизайн</a></li>
-						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#ad">Производство рекламы</a>
-						</li>
-						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#video">Видеосъемка</a></li>
-						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#">Продвижение на картах</a>
-						</li>
-						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#">SMM и таргетинг</a></li>
-						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#">Ведение Яндекс.Дзен</a>
-						</li>
-						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#">Контекстная реклама</a>
-						</li>
-						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#">SEO-продвижение</a></li>
-						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#">Продвижение на
-								маркетплейсах</a></li>
-						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#">SEO-продвижение
-								приложений</a></li>
-						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#">Маркетинговый надзор</a>
-						</li>
-					</ul>
-				</li>
-				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#sectors">отрасли</a></li>
-				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#portfolio">проекты</a></li>
-				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#clients">Наши клиенты</a></li>
-				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#views">Отзывы</a></li>
-			</ul>
-			<ul class="menu-list" data-menu data-one-menu>
-				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#prices">Цены</a></li>
-				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#sales">Акции</a></li>
-				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#guarantees">Гарантии</a></li>
-				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#job">Вакансии</a>
-					<ul class="menu-sublist dropdown-list" data-dropdown>
-						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Программисты</a>
-						</li>
-						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Веб-дизайнеры</a>
-						</li>
-						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#seo">SEO-продвижение</a>
-						</li>
-						<li class="menu-sublist__item"><a class="menu-sublist__link" href="#marketers">Маркетологи</a>
-						</li>
-					</ul>
-				</li>
-				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#blog">Блог</a></li>
-				<li class="menu-list__item" data-menu-item><a class="menu-list__link" href="#contacts">Контакты</a></li>
-			</ul>
+			<div class="menu-list">
+				<div class="dropdown" data-dropdown>
+					<button class="dropdown__header menu-list__item">
+						О компании
+					</button>
+					<div class="dropdown__content" data-dropdown-content hidden>
+						<ul class="menu-sublist dropdown-list" data-dropdown>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Программисты</a>
+							</li>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Веб-дизайнеры</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="dropdown" data-dropdown>
+					<button class="dropdown__header menu-list__item">
+						наши услуги
+					</button>
+					<div class="dropdown__content" data-dropdown-content hidden>
+						<ul class="menu-sublist dropdown-list" data-dropdown>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Программисты</a>
+							</li>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Маркетологи</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="dropdown" data-dropdown>
+					<button class="dropdown__header menu-list__item">
+						отрасли
+					</button>
+					<div class="dropdown__content" data-dropdown-content hidden>
+						<ul class="menu-sublist dropdown-list" data-dropdown>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Программисты</a>
+							</li>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Веб-дизайнеры</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="dropdown" data-dropdown>
+					<button class="dropdown__header menu-list__item">
+						проекты
+					</button>
+					<div class="dropdown__content" data-dropdown-content hidden>
+						<ul class="menu-sublist dropdown-list" data-dropdown>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Программисты</a>
+							</li>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">SEO-продвижение</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="dropdown" data-dropdown>
+					<button class="dropdown__header menu-list__item">
+						Наши клиенты
+					</button>
+					<div class="dropdown__content" data-dropdown-content hidden>
+						<ul class="menu-sublist dropdown-list" data-dropdown>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">SEO-продвижение</a>
+							</li>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Веб-дизайнеры</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="dropdown" data-dropdown>
+					<button class="dropdown__header menu-list__item">
+						Отзывы
+					</button>
+					<div class="dropdown__content" data-dropdown-content hidden>
+						<ul class="menu-sublist dropdown-list" data-dropdown>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Маркетологи</a>
+							</li>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Веб-дизайнеры</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="menu-list">
+				<div class="dropdown" data-dropdown>
+					<button class="dropdown__header menu-list__item">
+						Цены
+					</button>
+					<div class="dropdown__content" data-dropdown-content hidden>
+						<ul class="menu-sublist dropdown-list" data-dropdown>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Цены1</a>
+							</li>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Цены2</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="dropdown" data-dropdown>
+					<button class="dropdown__header menu-list__item">
+						Акции
+					</button>
+					<div class="dropdown__content" data-dropdown-content hidden>
+						<ul class="menu-sublist dropdown-list" data-dropdown>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Акции1</a>
+							</li>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Акции2</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="dropdown" data-dropdown>
+					<button class="dropdown__header menu-list__item">
+						Гарантии
+					</button>
+					<div class="dropdown__content" data-dropdown-content hidden>
+						<ul class="menu-sublist dropdown-list" data-dropdown>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Гарантии1</a>
+							</li>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Гарантии2</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="dropdown" data-dropdown>
+					<button class="dropdown__header menu-list__item">
+						Вакансии
+					</button>
+					<div class="dropdown__content" data-dropdown-content hidden>
+						<ul class="menu-sublist dropdown-list" data-dropdown>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Вакансии1</a>
+							</li>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Вакансии2</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="dropdown" data-dropdown>
+					<button class="dropdown__header menu-list__item">
+						Блог
+					</button>
+					<div class="dropdown__content" data-dropdown-content hidden>
+						<ul class="menu-sublist dropdown-list" data-dropdown>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Блог1</a>
+							</li>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Блог2</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="dropdown" data-dropdown>
+					<button class="dropdown__header menu-list__item">
+						Контакты
+					</button>
+					<div class="dropdown__content" data-dropdown-content hidden>
+						<ul class="menu-sublist dropdown-list" data-dropdown>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Контакты1</a>
+							</li>
+							<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Контакты2</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
 			<button class="btn menu-list__btn">Партнерская программа</button>
 		</div>
 

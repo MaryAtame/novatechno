@@ -92,12 +92,9 @@
 	height: rem(60);
 	justify-content: center;
 	align-items: center;
-	width: 60px;
-	height: 60px;
 	border-radius: 15px;
 	background-color: #F3F6FD;
-	padding: 22px 19px 22px 18px;
-	transition: all .4s linear;
+	transition: all .3s linear;
 
 	&--light {
 		background-color: #7932EF;
@@ -135,7 +132,7 @@
 
 .slider__wrapper--mobile-grid {
 	@media(max-width:1200px) {
-		display: flex;
+		display: block;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
