@@ -1849,7 +1849,7 @@ body {
   background-color: rgba(74, 106, 169, 0.5);
   -webkit-transform: translate3d(-50%, -50%, 0);
           transform: translate3d(-50%, -50%, 0);
-  background-image: url(../../img/icons/icons.svg#zoom);
+  background-image: url(../img/icons/icons.svg#zoom);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 60px;
