@@ -28,8 +28,13 @@
 		border-radius: 10px;
 		box-shadow: -40px 40px 100px rgba(42, 76, 129, 0.35);
 	}
+}
 
-
+.article-img {
+	width: 100%;
+	height: auto;
+	display: block;
+	transform: translateX(-50px);
 }
 
 .article-info {
@@ -78,6 +83,4 @@
 		max-width: 198px;
 		max-height: 50px;
 	}
-
-
 }
