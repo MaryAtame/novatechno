@@ -1,0 +1,107 @@
+.columns {
+    gap: rem(30);
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-rows: minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    //@include r(1200) {
+    //    gap: rem(15);
+    //}
+
+    &--10 {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    }
+
+    &__col {
+        &--1 {
+            grid-column: span 1;
+        }
+
+        &--2 {
+            grid-column: span 2;
+        }
+
+        &--3 {
+            grid-column: span 3;
+            //@include r(1200) {
+            //    grid-column: span 12;
+            //}
+        }
+
+        &--4 {
+            grid-column: span 4;
+            //@include r(1200) {
+            //    grid-column: span 12;
+            //}
+        }
+
+        &--5 {
+            grid-column: span 5;
+            //@include r(1200) {
+            //    grid-column: span 12;
+            //}
+        }
+
+        &--6 {
+            grid-column: span 6;
+            //@include r(1200) {
+            //    grid-column: span 12;
+            //}
+        }
+
+        &--7 {
+            grid-column: span 7;
+            //@include r(1200) {
+            //    grid-column: span 12;
+            //}
+        }
+
+        &--8 {
+            grid-column: span 8;
+            //@include r(1200) {
+            //    grid-column: span 12;
+            //}
+        }
+
+        &--9 {
+            grid-column: span 9;
+            //@include r(1200) {
+            //    grid-column: span 12;
+            //}
+        }
+
+        &--10 {
+            grid-column: span 10;
+            //@include r(1200) {
+            //    grid-column: span 12;
+            //}
+        }
+
+        &--11 {
+            grid-column: span 11;
+            //@include r(1200) {
+            //    grid-column: span 12;
+            //}
+        }
+
+        &--12 {
+            grid-column: span 12;
+        }
+
+        //&--tab {
+        //    &-6 {
+        //        @include r(1200) {
+        //            grid-column: span 6;
+        //        }
+        //    }
+        //}
+        //
+        //&--mob {
+        //    &-12 {
+        //        @include r(600) {
+        //            grid-column: span 12;
+        //        }
+        //    }
+        //}
+    }
+}
