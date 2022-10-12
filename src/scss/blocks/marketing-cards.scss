@@ -51,10 +51,11 @@
 	display: grid;
 	grid-template-columns: repeat(3, 390px);
 	grid-gap: 30px;
-	margin: 0 0 100px 0;
+	margin: 0 0 60px 0;
 
 	@media(max-width:1200px) {
 		display: flex;
+		margin: 0 0 30px 0;
 		gap: 30px;
 	}
 }
@@ -77,7 +78,14 @@
 	}
 }
 
+.slide-marketing {
+	@media(max-width:1200px) {
+		max-width: 240px;
+	}
+}
+
 .slider-slide {
+
 	&__card-title {
 		font-weight: 700;
 		font-size: rem(20);
@@ -123,10 +131,12 @@
 		flex-direction: column;
 		align-items: center;
 		width: 291px;
-		margin: 40px auto 0;
+		margin: 0 auto 100px;
+		gap: 15px;
 
 		@media(max-width:1200px) {
 			grid-column: 1;
+			margin: 0 auto 30px;
 		}
 	}
 

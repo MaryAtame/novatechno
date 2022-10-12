@@ -16,6 +16,8 @@
 		&:last-child {
 			margin: 0;
 		}
+
+		&:hover .cards-item__plate--services {}
 	}
 
 	&__item-wrapper {}
@@ -33,6 +35,7 @@
 	&__plate--services {
 		top: 15px;
 		left: -35px;
+
 	}
 
 	&__title {
