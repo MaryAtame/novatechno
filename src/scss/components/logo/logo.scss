@@ -1,0 +1,17 @@
+.logo {
+	max-width: rem(170);
+	max-height: rem(46);
+
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+}
+
+.logo--mobile {
+	@media(max-width:992px) {
+		max-width: rem(89);
+		max-height: rem(24);
+	}
+}

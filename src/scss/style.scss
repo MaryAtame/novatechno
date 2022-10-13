@@ -2,35 +2,42 @@
 @import "nullstyle";
 
 
-@import "commonClasses";
-@import "layout";
-
-
 @import "../../node_modules/swiper/modules/navigation/navigation";
 @import "../../node_modules/swiper/swiper";
 @import "../../node_modules/@fancyapps/ui/dist/fancybox.css";
 
+
+@import "blocks/layout/layout";
+@import "blocks/body/body";
+@import "commonClasses";
+
+@import "components/columns";
+@import "components/margins";
+@import "components/paddings";
+@import "components/logo/logo";
 @import "components/buttons";
 @import "components/cards";
 @import "components/sliders";
 @import "components/modals";
+@import "components/form-call";
 
 
-@import "blocks/header-info";
-@import "blocks/header-toolbar";
-@import "blocks/intro";
-@import "blocks/services";
-@import "blocks/article";
-@import "blocks/marketing";
-@import "blocks/marketing-cards";
-
-
-
-@import "blocks/gallery";
-@import "blocks/reviews";
-@import "blocks/credits";
-@import "blocks/seo";
-@import "blocks/portfolio";
-@import "blocks/blog";
-@import "blocks/footer-menu";
-@import "blocks/footer-bottom";
+@import "blocks/header/header-info";
+@import "blocks/header/header-toolbar";
+@import "blocks/header/header-dropdown-menu";
+@import "blocks/intro/intro";
+@import "blocks/cards-services/cards-services";
+@import "blocks/article-about/article-about";
+@import "blocks/article-marketing/article-marketing";
+@import "blocks/cards-marketing/cards-marketing";
+@import "blocks/slider-gallery/slider-gallery";
+@import "blocks/article-review/article-review";
+@import "blocks/article-credits/article-credits";
+@import "blocks/article-seo/article-seo";
+@import "blocks/cards-seo/cards-seo";
+@import "blocks/slider-clients/slider-clients";
+@import "blocks/article-portfolio/article-portfolio";
+@import "blocks/article-blog/article-blog";
+@import "blocks/footer/footer";
+@import "blocks/footer/footer-menu";
+@import "blocks/footer/footer-bottom";

@@ -1,5 +1,5 @@
 .btn {
-	padding: 14px 34px;
+	padding: rem(14) rem(34);
 	border-radius: 30px;
 	color: #fff;
 	font-size: rem(16);
@@ -85,8 +85,8 @@
 
 
 .button__icon {
-	max-width: 23px;
-	max-height: 16px;
+	max-width: rem(23);
+	max-height: rem(16);
 
 	&--prev {
 		transform: rotate(180deg);

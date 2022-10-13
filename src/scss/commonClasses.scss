@@ -45,10 +45,16 @@
 .content-text--20 {
 	font-size: rem(20);
 	line-height: 27px;
+
+	@media(max-width:1200px) {
+		font-size: rem(16);
+		line-height: 22px;
+	}
 }
 
 .content-text--16 {
 	font-size: rem(16);
+	line-height: rem(22);
 }
 
 .logo {
@@ -119,5 +125,39 @@
 		width: 81px;
 		height: 78px;
 		position: relative;
+	}
+}
+
+.align-center {
+	align-items: center;
+}
+
+.align-start {
+	align-items: start;
+}
+
+.text-align-start {
+	text-align: start;
+
+	&__mob {
+		@media(max-width:1200px) {
+			text-align: start;
+		}
+	}
+}
+
+.justify-center {
+	justify-items: center;
+}
+
+.mob-justify-center {
+	@media(max-width:1200px) {
+		justify-items: center;
+	}
+}
+
+.mob-justify-end {
+	@media(max-width:992px) {
+		justify-self: end;
 	}
 }

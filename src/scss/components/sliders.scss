@@ -28,13 +28,13 @@
 
 		&--mob-width-190 {
 			@media(max-width:1200px) {
-				width: 190px;
+				width: rem(190);
 			}
 		}
 
 		&--mob-width-240 {
 			@media(max-width:1200px) {
-				width: 240px;
+				width: rem(240);
 			}
 		}
 	}
@@ -42,7 +42,7 @@
 	&__pagination {
 		display: flex;
 		justify-content: center;
-		margin: 55px 0 0 0;
+		margin: rem(55) 0 0 0;
 	}
 }
 
@@ -72,10 +72,10 @@
 }
 
 .bullet {
-	width: 40px;
-	height: 2px;
+	width: rem(40);
+	height: rem(2);
 	background-color: #BEBFDB;
-	margin: 0 5px;
+	margin: 0 rem(5);
 	cursor: pointer;
 	transition: background-color 0.3s linear;
 
@@ -122,11 +122,11 @@
 	}
 
 	&--prev {
-		right: calc(100% + 50px);
+		right: calc(100% + rem(50));
 	}
 
 	&--next {
-		left: calc(100% + 50px);
+		left: calc(100% + rem(50));
 	}
 }
 

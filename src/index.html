@@ -23,28 +23,31 @@
 	<header class="header">
 		@@include('html/header-info.html', {})
 		@@include('html/header-toolbar.html')
+		@@include('html/header-dropdown-menu.html')
 	</header>
 	<main class="layout">
-		@@include('html/partials/intro.html', {})
+		@@include('html/intro.html', {})
 
 		<!-- slider mobile -->
-		@@include('html/partials/services.html', {})
-		@@include('html/partials/article.html', {})
-		@@include('html/partials/marketing.html', {})
+		@@include('html/cards-services.html', {})
+		@@include('html/article-about.html', {})
+		@@include('html/article-marketing.html', {})
 		<!-- slider mobile -->
-		@@include('html/partials/marketing-cards.html')
+		@@include('html/cards-marketing.html')
 
 		<!-- slider -->
-		@@include('html/partials/gallery.html', {})
+		@@include('html/slider-gallery.html', {})
 
 		<!-- slider desc -->
-		@@include('html/partials/reviews.html')
+		@@include('html/article-review.html')
 		<!-- slider -->
-		@@include('html/partials/credits.html')
-		@@include('html/partials/seo.html', {})
+		@@include('html/article-credits.html')
+		@@include('html/cards-seo.html', {})
+		@@include('html/article-seo.html', {})
+		@@include('html/slider-clients.html', {})
 		<!-- slider desc -->
-		@@include('html/partials/portfolio.html', {})
-		@@include('html/partials/blog.html', {})
+		@@include('html/article-portfolio.html', {})
+		@@include('html/article-blog.html', {})
 	</main>
 	<footer class="footer">
 		@@include('html/footer-menu.html', {})
