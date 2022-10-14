@@ -127,6 +127,16 @@
 }
 
 
+@media(max-width:768px) {
+	.columns {
+		gap: rem(15);
+		display: grid;
+		grid-auto-flow: dense;
+		grid-template-rows: minmax(0, 1fr);
+		grid-template-columns: 1fr;
+	}
+}
+
 @media(max-width:992px) {
 	.mob-gap-10 {
 		gap: rem(10);

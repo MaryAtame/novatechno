@@ -7,6 +7,8 @@
 
 
 	&__item {
+		display: flex;
+
 		max-width: rem(285);
 		max-height: rem(120);
 		background-color: $light-gray;
@@ -26,8 +28,7 @@
 		}
 
 		@media(max-width:768px) {
-			max-height: rem(60);
-			padding: rem(15) rem(10);
+			padding: rem(20) 0 rem(20) rem(30);
 		}
 
 		&:hover {
@@ -35,14 +36,6 @@
 		}
 	}
 
-	&__item-link {
-		display: flex;
-		align-items: center;
-
-		@media(max-width:768px) {
-			justify-content: start;
-		}
-	}
 
 	&__icon {
 		width: 100%;
@@ -54,8 +47,8 @@
 	}
 
 	&__item-btn {
-		max-width: rem(285);
 		max-height: rem(120);
+		width: 100%;
 		background-color: $light-gray;
 		border-radius: 5px;
 		padding: rem(44) 0 rem(45);
@@ -77,8 +70,7 @@
 		}
 
 		@media(max-width:768px) {
-			max-height: rem(60);
-			padding: rem(15) rem(10);
+			padding: rem(20) 0;
 		}
 	}
 

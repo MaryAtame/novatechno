@@ -11,20 +11,21 @@ document.addEventListener('DOMContentLoaded', () => {
 function createSlider(item) {
 	let swiper = Swiper;
 	let init = false;
-	const desktop = window.matchMedia('(min-width: 1200px)');
+	const desctop = window.matchMedia('(min-width: 1200px)');
 	const mobile = window.matchMedia('(min-width: 0px) and (max-width: 1199px)');
 
 	const slidesQuantity = item.getAttribute('data-slider-slides');
 	const pagination = item.querySelector('.slider__pagination');
-	const desktopOnly = !!(item.hasAttribute('data-slider-desktop'));
+	const desctopOnly = !!(item.hasAttribute('data-slider-desctop'));
+
 
 	function initSlider() {
-		if (!desktopOnly || desktopOnly && desktop.matches) {
+		if (!desctopOnly || desctopOnly && desctop.matches) {
 			if (!init) {
 				init = true;
 				swiper = callSlider();
 			}
-		} else if (desktopOnly && mobile.matches) {
+		} else if (desctopOnly && mobile.matches) {
 			if (init) {
 				swiper.destroy();
 				init = false;

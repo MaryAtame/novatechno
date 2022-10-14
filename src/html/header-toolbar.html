@@ -1,24 +1,24 @@
-<section class="header-toolbar">
+<section class="section">
 	<div class="container">
-		<div class="columns">
-			<div class="columns__col--3 columns__col--mob-2">
+		<div class="header-toolbar">
+			<div class="header-toolbar__logo">
 				<picture class="logo logo--mobile">
 					<img src="@img/svgicons/logo.svg" alt="logo">
 				</picture>
 			</div>
-			<div class="columns__col--3 columns__col--mob-2 mob-justify-end">
-				<div class="search">
-					<form class="form-search hidden--992" method="get" action="/search" target="_blank">
-						<input class="form-search__input hidden--992" type="text" placeholder="Поиск...">
-					</form>
-					<button class="form-search__btn" type="submit">
-						<svg class="form-search__icon">
-							<use xlink:href="img/icons/icons.svg#search"></use>
-						</svg>
-					</button>
-				</div>
+
+			<div class="header-toolbar__search">
+				<form class="form-search hidden--768" method="get" action="/search" target="_blank">
+					<input class="form-search__input hidden--768" type="text" placeholder="Поиск...">
+				</form>
+				<button class="form-search__btn" type="submit">
+					<svg class="form-search__icon">
+						<use xlink:href="img/icons/icons.svg#search"></use>
+					</svg>
+				</button>
 			</div>
-			<div class="columns__col--6 columns__col--mob-2">
+
+			<div class="header-toolbar__callback">
 				<div class="callback">
 					<div class="callback__wrapper callback__wrapper--desc">
 						<a class="callback-form tel" href="tel:+79133223911">

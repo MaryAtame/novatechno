@@ -105,6 +105,13 @@
 	}
 }
 
+.hidden--768 {
+	@media(max-width:768px) {
+		visibility: hidden;
+		display: none;
+	}
+}
+
 .align-center {
 	align-items: center;
 }
