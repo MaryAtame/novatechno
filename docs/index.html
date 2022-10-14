@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap&_v=20221014201619">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap&_v=20221015004222">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -15,7 +15,7 @@
 	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" href="css/style.min.css?_v=20221014201619">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221015004222">
 	<title>Novatechno</title>
 </head>
 
@@ -42,27 +42,27 @@
 		</div>
 	</div>
 </section>
-		<section class="header-toolbar">
+		<section class="section">
 	<div class="container">
-		<div class="columns">
-			<div class="columns__col--3 columns__col--mob-2">
+		<div class="header-toolbar">
+			<div class="header-toolbar__logo">
 				<picture class="logo logo--mobile">
 					<img src="img/svgicons/logo.svg" alt="logo">
 				</picture>
 			</div>
-			<div class="columns__col--3 columns__col--mob-2 mob-justify-end">
-				<div class="search">
-					<form class="form-search hidden--992" method="get" action="/search" target="_blank">
-						<input class="form-search__input hidden--992" type="text" placeholder="Поиск...">
-					</form>
-					<button class="form-search__btn" type="submit">
-						<svg class="form-search__icon">
-							<use xlink:href="img/icons/icons.svg#search"></use>
-						</svg>
-					</button>
-				</div>
+
+			<div class="header-toolbar__search">
+				<form class="form-search hidden--768" method="get" action="/search" target="_blank">
+					<input class="form-search__input hidden--768" type="text" placeholder="Поиск...">
+				</form>
+				<button class="form-search__btn" type="submit">
+					<svg class="form-search__icon">
+						<use xlink:href="img/icons/icons.svg#search"></use>
+					</svg>
+				</button>
 			</div>
-			<div class="columns__col--6 columns__col--mob-2">
+
+			<div class="header-toolbar__callback">
 				<div class="callback">
 					<div class="callback__wrapper callback__wrapper--desc">
 						<a class="callback-form tel" href="tel:+79133223911">
@@ -94,7 +94,7 @@
 							О компании
 						</button>
 						<div class="dropdown__content" data-dropdown-content hidden>
-							<ul class="menu-sublist dropdown-list" data-dropdown>
+							<ul class="menu-sublist dropdown-list">
 								<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Программисты</a>
 								</li>
 								<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Веб-дизайнеры</a>
@@ -107,7 +107,7 @@
 							наши услуги
 						</button>
 						<div class="dropdown__content" data-dropdown-content hidden>
-							<ul class="menu-sublist dropdown-list" data-dropdown>
+							<ul class="menu-sublist dropdown-list">
 								<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Программисты</a>
 								</li>
 								<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Маркетологи</a>
@@ -120,7 +120,7 @@
 							отрасли
 						</button>
 						<div class="dropdown__content" data-dropdown-content hidden>
-							<ul class="menu-sublist dropdown-list" data-dropdown>
+							<ul class="menu-sublist dropdown-list">
 								<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Программисты</a>
 								</li>
 								<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Веб-дизайнеры</a>
@@ -133,7 +133,7 @@
 							проекты
 						</button>
 						<div class="dropdown__content" data-dropdown-content hidden>
-							<ul class="menu-sublist dropdown-list" data-dropdown>
+							<ul class="menu-sublist dropdown-list">
 								<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Программисты</a>
 								</li>
 								<li class="menu-sublist__item"><a class="menu-sublist__link"
@@ -147,7 +147,7 @@
 							Наши клиенты
 						</button>
 						<div class="dropdown__content" data-dropdown-content hidden>
-							<ul class="menu-sublist dropdown-list" data-dropdown>
+							<ul class="menu-sublist dropdown-list">
 								<li class="menu-sublist__item"><a class="menu-sublist__link"
 										href="#developers">SEO-продвижение</a>
 								</li>
@@ -161,7 +161,7 @@
 							Отзывы
 						</button>
 						<div class="dropdown__content" data-dropdown-content hidden>
-							<ul class="menu-sublist dropdown-list" data-dropdown>
+							<ul class="menu-sublist dropdown-list">
 								<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Маркетологи</a>
 								</li>
 								<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Веб-дизайнеры</a>
@@ -176,7 +176,7 @@
 							Цены
 						</button>
 						<div class="dropdown__content" data-dropdown-content hidden>
-							<ul class="menu-sublist dropdown-list" data-dropdown>
+							<ul class="menu-sublist dropdown-list">
 								<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Цены1</a>
 								</li>
 								<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Цены2</a>
@@ -189,7 +189,7 @@
 							Акции
 						</button>
 						<div class="dropdown__content" data-dropdown-content hidden>
-							<ul class="menu-sublist dropdown-list" data-dropdown>
+							<ul class="menu-sublist dropdown-list">
 								<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Акции1</a>
 								</li>
 								<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Акции2</a>
@@ -202,7 +202,7 @@
 							Гарантии
 						</button>
 						<div class="dropdown__content" data-dropdown-content hidden>
-							<ul class="menu-sublist dropdown-list" data-dropdown>
+							<ul class="menu-sublist dropdown-list">
 								<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Гарантии1</a>
 								</li>
 								<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Гарантии2</a>
@@ -223,7 +223,7 @@
 							Вакансии
 						</button>
 						<div class="dropdown__content" data-dropdown-content hidden>
-							<ul class="menu-sublist dropdown-list" data-dropdown>
+							<ul class="menu-sublist dropdown-list">
 								<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Вакансии1</a>
 								</li>
 								<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Вакансии2</a>
@@ -236,7 +236,7 @@
 							Блог
 						</button>
 						<div class="dropdown__content" data-dropdown-content hidden>
-							<ul class="menu-sublist dropdown-list" data-dropdown>
+							<ul class="menu-sublist dropdown-list">
 								<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Блог1</a>
 								</li>
 								<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Блог2</a>
@@ -249,7 +249,7 @@
 							Контакты
 						</button>
 						<div class="dropdown__content" data-dropdown-content hidden>
-							<ul class="menu-sublist dropdown-list" data-dropdown>
+							<ul class="menu-sublist dropdown-list">
 								<li class="menu-sublist__item"><a class="menu-sublist__link" href="#developers">Контакты1</a>
 								</li>
 								<li class="menu-sublist__item"><a class="menu-sublist__link" href="#disigners">Контакты2</a>
@@ -314,7 +314,7 @@
 
 		<!-- slider mobile -->
 		<section class="section">
-	<div class="mt--100 mb--100 m-mb--30 mt--30">
+	<div class="mt--100 mb--100 m-mb--30 mt--30 mcenered">
 		<div class="container">
 			<div class="slider slider-services" data-slider data-slider-slides="3" data-slider-mobile>
 				<div class="swiper slider__main slider__main--overflow">
@@ -707,7 +707,7 @@
 		<section class="section bg-purple">
 	<div class="article-review">
 		<div class="container">
-			<div class="slider" data-slider data-slider-desktop data-slider-slides="3">
+			<div class="slider" data-slider data-slider-desctop data-slider-slides="3">
 				<div class="article-review__header section-header--btn">
 					<h2 class="content-title--55 article-review__header-title">Отзывы</h2>
 					<nav class="article-review__nav mobile--hidden">
@@ -726,24 +726,25 @@
 				<div class="swiper slider__main slider__main--overflow">
 					<div class="swiper-wrapper slider__wrapper--mobile-grid">
 						<div class="swiper-slide slider__slide">
-							<a class="article-review__wrapper" data-fancybox href="#review-1">
-								<div class="article-review__info">
-									<picture class="article-review__userpic">
-										<img src="img/reviews-item__img.jpg" alt="Фото: отзыв">
-									</picture>
-									<div class="article-review__info-content">
-										<p class="article-review__info-company">ООО “Литана”</p>
-										<p class="article-review__info-name">Анастасия Брут</p>
+							<div class="article-review__editor">
+								<a class="article-review__wrapper" data-fancybox href="#review-1">
+									<div class="article-review__info">
+										<picture class="article-review__userpic">
+											<img src="img/reviews-item__img.jpg" alt="Фото: отзыв">
+										</picture>
+										<div class="article-review__info-content">
+											<p class="article-review__info-company">ООО “Литана”</p>
+											<p class="article-review__info-name">Анастасия Брут</p>
+										</div>
 									</div>
-								</div>
-								<p class="article-review__text">ООО «Литана» занимается управлением строительных объектов,
-									изготовлением
-									металлоконструкций, проектированием промышленных и гражданских объектов.
-								</p>
-								<a class="article-review__link" href="#">Читать весь отзыв</a>
-							</a>
+									<p class="article-review__text">ООО «Литана» занимается управлением строительных объектов,
+										изготовлением
+										металлоконструкций, проектированием промышленных и гражданских объектов.
+									</p>
+									<a class="article-review__link" href="#">Читать весь отзыв</a>
+								</a>
+							</div>
 						</div>
-
 						<div class="modal article-review-modal" style="display: none;" id="review-1">
 							<div class="article-review__info">
 								<picture class="article-review__userpic">
@@ -765,26 +766,25 @@
 							</p>
 							<button class="carousel__button is-close" title="Close" tabindex="0"></button>
 						</div>
-
 						<div class="swiper-slide slider__slide">
-							<a class="article-review__wrapper" data-fancybox href="#review-2">
-								<div class="article-review__info">
-									<picture class="article-review__userpic">
-										<img src="img/reviews-item__img.jpg" alt="Фото: отзыв">
-									</picture>
-									<div class="article-review__info-content">
-										<p class="article-review__info-company">ООО “Литана”</p>
-										<p class="article-review__info-name">Анастасия Брут</p>
+							<div class="article-review__editor"><a class="article-review__wrapper" data-fancybox
+									href="#review-2">
+									<div class="article-review__info">
+										<picture class="article-review__userpic">
+											<img src="img/reviews-item__img.jpg" alt="Фото: отзыв">
+										</picture>
+										<div class="article-review__info-content">
+											<p class="article-review__info-company">ООО “Литана”</p>
+											<p class="article-review__info-name">Анастасия Брут</p>
+										</div>
 									</div>
-								</div>
-								<p class="article-review__text">ООО «Литана» занимается управлением строительных объектов,
-									изготовлением
-									металлоконструкций, проектированием промышленных и гражданских объектов.
-								</p>
-								<a class="article-review__link" href="#">Читать весь отзыв</a>
-							</a>
+									<p class="article-review__text">ООО «Литана» занимается управлением строительных объектов,
+										изготовлением
+										металлоконструкций, проектированием промышленных и гражданских объектов.
+									</p>
+									<a class="article-review__link" href="#">Читать весь отзыв</a>
+								</a></div>
 						</div>
-
 						<div class="modal article-review-modal" style="display: none;" id="review-2">
 							<div class="article-review__info">
 								<picture class="article-review__userpic">
@@ -806,7 +806,6 @@
 							</p>
 							<button class="carousel__button is-close" title="Close" tabindex="0"></button>
 						</div>
-
 						<div class="swiper-slide slider__slide">
 							<a class="article-review__wrapper article-review__video-wrapper" data-fancybox data-type="iframe"
 								href="https://www.youtube.com/watch?v=Na6imlcnBmc" data-width="810" data-height="410">
@@ -826,26 +825,26 @@
 								</video>
 							</a>
 						</div>
-
 						<div class="swiper-slide slider__slide">
-							<a class="article-review__wrapper" data-fancybox href="#review-4">
-								<div class="article-review__info">
-									<picture class="article-review__userpic">
-										<img src="img/reviews-item__img.jpg" alt="Фото: отзыв">
-									</picture>
-									<div class="article-review__info-content">
-										<p class="article-review__info-company">ООО “Литана”</p>
-										<p class="article-review__info-name">Анастасия Брут</p>
+							<div class="article-review__editor">
+								<a class="article-review__wrapper" data-fancybox href="#review-4">
+									<div class="article-review__info">
+										<picture class="article-review__userpic">
+											<img src="img/reviews-item__img.jpg" alt="Фото: отзыв">
+										</picture>
+										<div class="article-review__info-content">
+											<p class="article-review__info-company">ООО “Литана”</p>
+											<p class="article-review__info-name">Анастасия Брут</p>
+										</div>
 									</div>
-								</div>
-								<p class="article-review__text">ООО «Литана» занимается управлением строительных объектов,
-									изготовлением
-									металлоконструкций, проектированием промышленных и гражданских объектов.
-								</p>
-								<a class="article-review__link" href="#">Читать весь отзыв</a>
-							</a>
+									<p class="article-review__text">ООО «Литана» занимается управлением строительных объектов,
+										изготовлением
+										металлоконструкций, проектированием промышленных и гражданских объектов.
+									</p>
+									<a class="article-review__link" href="#">Читать весь отзыв</a>
+								</a>
+							</div>
 						</div>
-
 						<div class="modal article-review-modal" style="display: none;" id="review-4">
 							<div class="article-review__info">
 								<picture class="article-review__userpic">
@@ -962,89 +961,91 @@
 				<h2 class="section-header">Seo по тематикам</h2>
 			</div>
 			<div class="columns columns__col--12 mt--20">
-				<div class="cards-seo__item columns__col columns__col--3 columns__col--mob-12">
-					<a class="cards-seo__item-link" href="#">
+				<div class="columns__col columns__col--3">
+					<a class="cards-seo__item" href="#">
 						<svg class="cards-seo__icon">
 							<use xlink:href="img/icons/icons.svg#seo-market"></use>
 						</svg>
 						<p class="cards-seo__text">Интернет-магазины</p>
 					</a>
 				</div>
-				<div class="cards-seo__item columns__col columns__col--3 columns__col--mob-12">
-					<a class="cards-seo__item-link" href="#">
+				<div class="columns__col columns__col--3">
+					<a class="cards-seo__item" href="#">
 						<svg class="cards-seo__icon">
 							<use xlink:href="img/icons/icons.svg#seo-med"></use>
 						</svg>
 						<p class="cards-seo__text">Медицина</p>
 					</a>
 				</div>
-				<div class="cards-seo__item columns__col columns__col--3 columns__col--mob-12">
-					<a class="cards-seo__item-link" href="#">
+				<div class="columns__col columns__col--3">
+					<a class="cards-seo__item" href="#">
 						<svg class="cards-seo__icon">
 							<use xlink:href="img/icons/icons.svg#seo-build"></use>
 						</svg>
 						<p class="cards-seo__text">Строительство</p>
 					</a>
 				</div>
-				<div class="cards-seo__item columns__col columns__col--3 columns__col--mob-12">
-					<a class="cards-seo__item-link" href="#">
+				<div class="columns__col columns__col--3">
+					<a class="cards-seo__item" href="#">
 						<svg class="cards-seo__icon">
 							<use xlink:href="img/icons/icons.svg#seo-prom"></use>
 						</svg>
 						<p class="cards-seo__text">Промышленность</p>
 					</a>
 				</div>
-				<div class="cards-seo__item columns__col columns__col--3 columns__col--mob-12">
-					<a class="cards-seo__item-link" href="#">
+				<div class="columns__col columns__col--3">
+					<a class="cards-seo__item" href="#">
 						<svg class="cards-seo__icon">
 							<use xlink:href="img/icons/icons.svg#seo-logist"></use>
 						</svg>
 						<p class="cards-seo__text">Логистика</p>
 					</a>
 				</div>
-				<div class="cards-seo__item columns__col columns__col--3 columns__col--mob-12">
-					<a class="cards-seo__item-link" href="#">
+				<div class="columns__col columns__col--3">
+					<a class="cards-seo__item" href="#">
 						<svg class="cards-seo__icon">
 							<use xlink:href="img/icons/icons.svg#seo-house"></use>
 						</svg>
 						<p class="cards-seo__text">Недвижимость</p>
 					</a>
 				</div>
-				<div class="cards-seo__item columns__col columns__col--3 columns__col--mob-12">
-					<a class="cards-seo__item-link" href="#">
+				<div class="columns__col columns__col--3">
+					<a class="cards-seo__item" href="#">
 						<svg class="cards-seo__icon">
 							<use xlink:href="img/icons/icons.svg#seo-gov"></use>
 						</svg>
 						<p class="cards-seo__text">Госучреждения</p>
 					</a>
 				</div>
-				<div class="cards-seo__item columns__col columns__col--3 columns__col--mob-12">
-					<a class="cards-seo__item-link" href="#">
+				<div class="columns__col columns__col--3">
+					<a class="cards-seo__item" href="#">
 						<svg class="cards-seo__icon">
 							<use xlink:href="img/icons/icons.svg#seo-delivery"></use>
 						</svg>
 						<p class="cards-seo__text">Доставки</p>
 					</a>
 				</div>
-				<div class="cards-seo__item columns__col columns__col--3 columns__col--mob-12">
-					<a class="cards-seo__item-link" href="#">
+				<div class="columns__col columns__col--3">
+					<a class="cards-seo__item" href="#">
 						<svg class="cards-seo__icon">
 							<use xlink:href="img/icons/icons.svg#seo-franchise"></use>
 						</svg>
 						<p class="cards-seo__text">Франшизы</p>
 					</a>
 				</div>
-				<div class="cards-seo__item columns__col columns__col--3 columns__col--mob-12">
-					<a class="cards-seo__item-link" href="#">
+				<div class="columns__col columns__col--3">
+					<a class="cards-seo__item" href="#">
 						<svg class="cards-seo__icon">
 							<use xlink:href="img/icons/icons.svg#seo-school"></use>
 						</svg>
 						<p class="cards-seo__text">Онлайн школы</p>
 					</a>
 				</div>
-				<button class="columns__col columns__col--3 columns__col--mob-12 cards-seo__item-btn cards-seo__text">
-					Все отрасли
-				</button>
+				<div class="columns__col columns__col--3">
+					<button class="cards-seo__item cards-seo__item-btn cards-seo__text">
+						Все отрасли
+					</button>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -1415,7 +1416,7 @@
 </section>
 	</footer>
 	<!-- main JS -->
-	<script src="js/app.min.js?_v=20221014201619"></script>
+	<script src="js/app.min.js?_v=20221015004222"></script>
 </body>
 
 </html>
