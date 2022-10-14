@@ -1,0 +1,23 @@
+.header-info {
+	max-height: 35px;
+	padding: 8px 0;
+
+	font-size: rem(14);
+	line-height: 19px;
+	color: #949AA4;
+	font-weight: 400;
+
+
+	&__adress {
+		text-align: end;
+	}
+
+	&__adress-link {
+		color: #949AA4;
+	}
+
+	&__mail {
+		text-decoration: none;
+		color: #949AA4;
+	}
+}

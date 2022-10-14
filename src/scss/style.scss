@@ -1,0 +1,44 @@
+@import "helpers/vars/vars";
+@import "helpers/nullstyle/nullstyle";
+
+
+@import "../../node_modules/swiper/modules/navigation/navigation";
+@import "../../node_modules/swiper/swiper";
+@import "../../node_modules/@fancyapps/ui/dist/fancybox.css";
+
+
+@import "blocks/layout/layout";
+@import "blocks/body/body";
+@import "helpers/commonClasses/commonClasses";
+
+@import "helpers/columns/columns";
+@import "helpers/margins/margins";
+@import "helpers/paddings/paddings";
+@import "helpers/logo/logo";
+@import "helpers/buttons/buttons";
+// @import "helpers/cards";
+@import "helpers/sliders/sliders";
+@import "helpers/modals/modals";
+@import "helpers/form-call/form-call";
+@import "blocks/video-play/video-play";
+
+
+@import "blocks/header/header-info";
+@import "blocks/header/header-toolbar";
+@import "blocks/header/header-dropdown-menu";
+@import "blocks/intro/intro";
+@import "blocks/article-service/article-service";
+@import "blocks/article-about/article-about";
+@import "blocks/article-marketing/article-marketing";
+@import "blocks/cards-marketing/cards-marketing";
+@import "blocks/slider-gallery/slider-gallery";
+@import "blocks/article-review/article-review";
+@import "blocks/article-credits/article-credits";
+@import "blocks/article-seo/article-seo";
+@import "blocks/cards-seo/cards-seo";
+@import "blocks/slider-clients/slider-clients";
+@import "blocks/article-portfolio/article-portfolio";
+@import "blocks/article-blog/article-blog";
+@import "blocks/footer/footer";
+@import "blocks/footer/footer-menu";
+@import "blocks/footer/footer-bottom";
