@@ -1179,6 +1179,8 @@ body {
 
 .form__item-content-comment {
   display: none;
+  margin: 1.0625rem 0 0;
+  padding-right: 0.625rem;
 }
 
 .form__item-agreement {
@@ -1197,10 +1199,6 @@ body {
 .checkbox {
   display: none;
   visibility: hidden;
-}
-
-.checkbox:checked .form__item-content-comment {
-  display: block;
 }
 
 .checkbox__label {
@@ -1297,13 +1295,13 @@ body {
   opacity: 1;
 }
 
+.checkbox:checked + .form__item-content-comment {
+  display: block;
+}
+
 .checkbox__btn:checked + .checkbox__btn-label::before {
   opacity: 1;
   background-color: #833CFA;
-}
-
-.checkbox__btn:disabled + .checkbox__btn-label::before {
-  opacity: 0;
 }
 
 .modal-success {
@@ -3896,6 +3894,20 @@ body {
     grid-template-columns: 1fr;
     -ms-grid-rows: auto;
     grid-template-rows: auto;
+  }
+
+  .modal {
+    padding: 2.5rem 0.9375rem;
+  }
+
+  .form__btn-send {
+    -ms-flex-item-align: auto;
+        -ms-grid-row-align: auto;
+        align-self: auto;
+  }
+
+  .modal-success {
+    padding: 2.5rem 0.9375rem 21.875rem;
   }
 
   .header-toolbar__search {
