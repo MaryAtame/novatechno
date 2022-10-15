@@ -6,6 +6,10 @@
 	max-width: rem(600);
 	padding: rem(60) rem(105) rem(42) rem(94);
 
+	@media(max-width:768px) {
+		padding: rem(40) rem(15);
+	}
+
 	&__title {
 		font-size: rem(20);
 		line-height: rem(24);
@@ -60,8 +64,6 @@
 		}
 	}
 
-	&__item-content {}
-
 	&__item-content-btn {
 		display: flex;
 		gap: rem(25);
@@ -69,6 +71,9 @@
 
 	&__item-content-comment {
 		display: none;
+		margin: rem(17) 0 0;
+		padding-right: rem(10);
+
 	}
 
 	&__item-agreement {
@@ -80,6 +85,10 @@
 	&__btn-send {
 		margin: rem(40) 0 0;
 		align-self: flex-start;
+
+		@media(max-width:768px) {
+			align-self: auto;
+		}
 	}
 }
 
@@ -87,11 +96,6 @@
 	display: none;
 	visibility: hidden;
 
-	&:checked {
-		.form__item-content-comment {
-			display: block;
-		}
-	}
 
 	&__label {
 
@@ -168,6 +172,7 @@
 
 .checkbox:disabled+.checkbox__label {
 	background-color: #E3E9F2;
+
 }
 
 .checkbox:checked+.checkbox__label {
@@ -183,13 +188,12 @@
 	}
 }
 
-.checkbox:disabled+.checkbox__label::before {}
+.checkbox:checked+.form__item-content-comment {
+	display: block;
+}
+
 
 .checkbox__btn:checked+.checkbox__btn-label::before {
 	opacity: 1;
 	background-color: $purple;
-}
-
-.checkbox__btn:disabled+.checkbox__btn-label::before {
-	opacity: 0;
 }
