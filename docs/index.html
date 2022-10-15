@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap&_v=20221015073736">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap&_v=20221015111213">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -15,13 +15,63 @@
 	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" href="css/style.min.css?_v=20221015073736">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221015111213">
 	<title>Novatechno</title>
 </head>
 
 <body>
-	
-	
+	<section class="modal" id="modal-aplly">
+	<h3 class="modal__title">Оставьте заявку</h3>
+	<form class="form" action="/#" method="post" role="form" id="apply">
+
+		<div class="form__item form__item-site">
+			<label class="form__label" for="siteName">Введите адрес вашего сайта</label>
+			<input class="form__input form__site-input" type="text" name="feedback-site" id="siteName"
+				placeholder="www.site.ru" />
+		</div>
+
+		<div class="form__item form__item-mail">
+			<label class="form__label" for="userMail">Введите ваш email</label>
+			<input class="form__input form__mail-input" type="text" name="feedback-from" id="userMail"
+				placeholder="info@mail.ru" />
+		</div>
+
+		<div class="form__item form__item-phone">
+			<label class="form__label" for="userPhone">Введите ваш телефон</label>
+			<input class="form__input form__phone-input" type="text" name="feedback-phone" id="userPhone"
+				placeholder="+7 (___) ___-___-__-__" />
+		</div>
+
+		<div class="form__item form__item-content">
+			<div class="form__item-content-btn">
+				<input class="checkbox" type="checkbox" name="feedback-content" value="" id="setComment" />
+				<label class="checkbox__label" for="setComment"></label>
+
+				<label class="form__label" for="setComment">Хотите оставить комментарий?</label>
+			</div>
+			<textarea class="form__item-content-comment" name="feedback[content]" placeholder="Комментарий..."></textarea>
+		</div>
+		<div class="form__item-agreement">
+			<input class="checkbox__btn" type="checkbox" name="feedback-agreement" value="" id="setAgree" />
+			<label class="checkbox__btn-label" for="setAgree"></label>
+
+			<label class="form__label" for="setAgree">Я согласен с <a href="#">Политикой конфидециальности и Правилами
+					обработки персональных
+					данных</a></label>
+		</div>
+
+
+		<button class="btn btn--purple form__btn-send">Отправить</button>
+
+	</form>
+</section>
+	<section class="modal-success" id="modal-success">
+	<h3 class="modal-success__subtitle">Спасибо!</h3>
+	<h2 class="modal-success__title">Ваша заявка отправлена!</h2>
+	<div class="modal-success__text">
+		<p>В ближайшее время мы свяжемся с вами и обсудим ваши задачи!</p>
+	</div>
+</section>
 	<header class="header">
 		<section class="header-info bg-grey hidden--992">
 	<div class="container">
@@ -47,7 +97,7 @@
 		<section class="section">
 	<div class="container">
 		<div class="header-toolbar">
-			<div class="header-toolbar__logo">
+			<div class="header-toolbar__logo" data-fancybox data-src="#modal-success">
 				<picture class="logo logo--mobile">
 					<img src="img/svgicons/logo.svg" alt="logo">
 				</picture>
@@ -71,7 +121,8 @@
 							<svg class="callback-form__icon">
 								<use xlink:href="img/icons/icons.svg#phone"></use>
 							</svg>+7 (913) 322-3911</a>
-						<button class="btn btn--purple header-menu__btn">Заказать звонок</button>
+						<button class="btn btn--purple header-menu__btn" data-fancybox data-src="#modal-aplly">Заказать
+							звонок</button>
 					</div>
 
 					<nav class="menu">
@@ -1418,7 +1469,7 @@
 </section>
 	</footer>
 	<!-- main JS -->
-	<script src="js/app.min.js?_v=20221015073736"></script>
+	<script src="js/app.min.js?_v=20221015111213"></script>
 </body>
 
 </html>
