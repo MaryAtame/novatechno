@@ -6,3 +6,9 @@
 	padding: 50px 50px 30px 40px;
 	border-radius: 20px;
 }
+
+.carousel__button.is-close {
+	top: rem(40) !important;
+	right: rem(40) !important;
+	color: $text-gray  !important;
+}
