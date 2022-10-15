@@ -10,13 +10,15 @@
 
 	@media(max-width:992px) {
 		padding: rem(17) 0;
+		align-items: stretch;
+		grid-template-columns: repeat(6, minmax(0, 1fr));
 	}
 
 	&__logo {
 		grid-column: span 3;
 
-		@media(max-width:768px) {
-			grid-column: span 4;
+		@media(max-width:992px) {
+			grid-column: span 2;
 		}
 	}
 
@@ -24,36 +26,23 @@
 		grid-column: span 3;
 		position: relative;
 
-		@media(max-width:1200px) {
-			grid-column: 7/ span 4;
-			top: rem(-5);
-		}
-
 		@media(max-width:768px) {
-			grid-column: 6/ span 3;
+			grid-column: 5/ span 1;
 		}
-
 	}
 
 	&__callback {
 		grid-column: span 6;
 
-		@media(max-width:1200px) {
-			grid-column: 12/ span 1;
+		@media(max-width:992px) {
+			grid-column: 6/ span 1;
 		}
 
-		@media(max-width:768px) {
-			grid-column: 9/ span 4;
-		}
-
-		@media(max-width:576px) {
-			grid-column: 9/ span 2;
-		}
 	}
 
 
-
 }
+
 
 
 .search {

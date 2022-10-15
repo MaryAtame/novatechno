@@ -11,16 +11,19 @@
 @import "blocks/body/body";
 @import "helpers/commonClasses/commonClasses";
 
-@import "helpers/columns/columns";
+@import "blocks/columns/columns";
 @import "helpers/margins/margins";
 @import "helpers/paddings/paddings";
-@import "helpers/logo/logo";
-@import "helpers/buttons/buttons";
-// @import "helpers/cards";
-@import "helpers/sliders/sliders";
-@import "helpers/modals/modals";
-@import "helpers/form-call/form-call";
+@import "blocks/logo/logo";
+@import "blocks/buttons/buttons";
+@import "blocks/sliders/sliders";
+@import "blocks/modals-gallery/modals-gallery";
+@import "blocks/form-call/form-call";
 @import "blocks/video-play/video-play";
+
+
+@import "blocks/modal-apply/modal-apply";
+@import "blocks/modal-success/modal-success";
 
 
 @import "blocks/header/header-info";

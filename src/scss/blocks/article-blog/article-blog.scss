@@ -19,7 +19,6 @@
 
 		@media(max-width:1200px) {
 			grid-template-columns: repeat(2, 1fr);
-			// grid-template-rows: repeat(4, 345px);
 			margin: rem(30) 0;
 		}
 
@@ -103,6 +102,10 @@
 		@media(max-width:1200px) {
 			top: 65%;
 			padding: 0 rem(13) 0 rem(20);
+		}
+
+		@media(max-width:666px) {
+			top: 5%;
 		}
 	}
 

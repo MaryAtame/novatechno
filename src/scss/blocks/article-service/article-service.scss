@@ -2,7 +2,6 @@
 	z-index: 1;
 	width: 100%;
 	position: relative;
-	min-height: rem(339);
 	margin: 0 rem(30) 0 0;
 
 
@@ -58,8 +57,13 @@
 		position: relative;
 		border-radius: rem(20);
 		background-color: #ffffff;
+		min-height: rem(342);
 		padding: rem(44) rem(50) rem(50) rem(50);
 		box-shadow: -20px 10px 50px rgba(47, 62, 113, 0.15);
+
+		@media(max-width:1200px) {
+			min-height: rem(420);
+		}
 	}
 
 	&__icon {
