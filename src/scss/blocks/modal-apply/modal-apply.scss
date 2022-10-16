@@ -70,7 +70,7 @@
 	}
 
 	&__item-content-comment {
-		display: none;
+		display: block;
 		margin: rem(17) 0 0;
 		padding-right: rem(10);
 
@@ -189,9 +189,8 @@
 }
 
 .checkbox:checked+.form__item-content-comment {
-	display: block;
+	display: none
 }
-
 
 .checkbox__btn:checked+.checkbox__btn-label::before {
 	opacity: 1;

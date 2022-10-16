@@ -10,7 +10,6 @@
 
 	@media(max-width:992px) {
 		padding: rem(17) 0;
-		align-items: stretch;
 		grid-template-columns: repeat(6, minmax(0, 1fr));
 	}
 
@@ -27,6 +26,7 @@
 		position: relative;
 
 		@media(max-width:768px) {
+			top: rem(-5);
 			grid-column: 5/ span 1;
 		}
 	}
