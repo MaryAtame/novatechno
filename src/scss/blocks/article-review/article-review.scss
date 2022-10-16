@@ -47,7 +47,6 @@
 		@media(max-width:1200px) {
 			margin: 0 auto;
 			width: 100%;
-			height: auto;
 			padding: rem(30) rem(30) rem(184) rem(30);
 			gap: rem(20);
 		}
@@ -110,9 +109,6 @@
 		font-weight: 400;
 		font-size: rem(14);
 		line-height: rem(20);
-
-		top: rem(300);
-		left: rem(40);
 	}
 
 	&__video {
