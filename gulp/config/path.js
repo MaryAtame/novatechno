@@ -1,7 +1,7 @@
 import * as nodePath from 'path';
 const rootFolder = nodePath.basename(nodePath.resolve());
 
-const buildFolder = `./dist`;
+const buildFolder = `./docs`;
 const srcFolder = `./src`;
 
 export const path = {
@@ -18,7 +18,8 @@ export const path = {
 		svg: `${srcFolder}/img/**/*.svg`,
 		scss: `${srcFolder}/scss/style.scss`,
 		html: `${srcFolder}/*.html`,  //.pug
-		files: `${srcFolder}/files/**/*.*`
+		files: `${srcFolder}/files/**/*.*`,
+		svgicons: `${srcFolder}/img/svgicons/*.svg`
 	},
 	watch: {
 		js: `${srcFolder}/js/**/*.js`,
