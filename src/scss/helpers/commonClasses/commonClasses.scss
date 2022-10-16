@@ -130,8 +130,10 @@
 	}
 }
 
-.justify-center {
-	justify-items: center;
+.justify-center-desc {
+	@media(min-width:1200px) {
+		justify-items: center;
+	}
 }
 
 .mob-justify-center {
@@ -144,4 +146,11 @@
 	@media(max-width:992px) {
 		justify-self: end;
 	}
+}
+
+.m700-col-6 {
+	@media(max-width:700px) {
+		grid-column: span 6;
+	}
+
 }

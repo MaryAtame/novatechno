@@ -100,27 +100,27 @@
 			}
 
 			&--mob-7 {
-				grid-column: span 7;
+				grid-column: span 6;
 			}
 
 			&--mob-8 {
-				grid-column: span 8;
+				grid-column: span 6;
 			}
 
 			&--mob-9 {
-				grid-column: span 9;
+				grid-column: span 6;
 			}
 
 			&--mob-10 {
-				grid-column: span 10;
+				grid-column: span 6;
 			}
 
 			&--mob-11 {
-				grid-column: span 11;
+				grid-column: span 6;
 			}
 
 			&--mob-12 {
-				grid-column: span 12;
+				grid-column: span 6;
 			}
 		}
 	}
@@ -128,7 +128,7 @@
 
 
 @media(max-width:768px) {
-	.columns {
+	.columns-1 {
 		gap: rem(15);
 		display: grid;
 		grid-auto-flow: dense;
