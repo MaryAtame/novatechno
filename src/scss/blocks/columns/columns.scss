@@ -1,0 +1,144 @@
+.columns {
+	gap: rem(30);
+	display: grid;
+	grid-auto-flow: dense;
+	grid-template-rows: minmax(0, 1fr);
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+
+	&--10 {
+		grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+	}
+
+
+	&__col {
+		&--1 {
+			grid-column: span 1;
+		}
+
+		&--2 {
+			grid-column: span 2;
+		}
+
+		&--3 {
+			grid-column: span 3;
+
+		}
+
+		&--4 {
+			grid-column: span 4;
+
+		}
+
+		&--5 {
+			grid-column: span 5;
+		}
+
+		&--6 {
+			grid-column: span 6;
+		}
+
+		&--7 {
+			grid-column: span 7;
+		}
+
+		&--8 {
+			grid-column: span 8;
+		}
+
+		&--9 {
+			grid-column: span 9;
+		}
+
+		&--10 {
+			grid-column: span 10;
+		}
+
+		&--11 {
+			grid-column: span 11;
+		}
+
+		&--12 {
+			grid-column: span 12;
+		}
+	}
+}
+
+@media(max-width:1200px) {
+	.columns {
+		gap: rem(15);
+		display: grid;
+		grid-auto-flow: dense;
+		grid-template-rows: minmax(0, 1fr);
+		grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+
+
+		&__col {
+			&--mob-1 {
+				grid-column: span 1;
+			}
+
+			&--mob-2 {
+				grid-column: span 2;
+			}
+
+			&--mob-3 {
+				grid-column: span 3;
+
+			}
+
+			&--mob-4 {
+				grid-column: span 4;
+
+			}
+
+			&--mob-5 {
+				grid-column: span 5;
+			}
+
+			&--mob-6 {
+				grid-column: span 6;
+			}
+
+			&--mob-7 {
+				grid-column: span 6;
+			}
+
+			&--mob-8 {
+				grid-column: span 6;
+			}
+
+			&--mob-9 {
+				grid-column: span 6;
+			}
+
+			&--mob-10 {
+				grid-column: span 6;
+			}
+
+			&--mob-11 {
+				grid-column: span 6;
+			}
+
+			&--mob-12 {
+				grid-column: span 6;
+			}
+		}
+	}
+}
+
+
+@media(max-width:768px) {
+	.columns-1 {
+		gap: rem(15);
+		display: grid;
+		grid-auto-flow: dense;
+		grid-template-rows: minmax(0, 1fr);
+		grid-template-columns: 1fr;
+	}
+}
+
+@media(max-width:992px) {
+	.mob-gap-10 {
+		gap: rem(10);
+	}
+}

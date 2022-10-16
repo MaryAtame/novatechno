@@ -1,0 +1,88 @@
+.cards-seo {
+	padding: rem(100) 0;
+
+	@media(max-width:992px) {
+		padding: rem(20) 0;
+	}
+
+
+	&__item {
+		display: flex;
+
+		max-width: rem(285);
+		max-height: rem(120);
+		background-color: $light-gray;
+		border-radius: 5px;
+		padding: rem(44) 0 rem(45) rem(35);
+		transition: all .3s linear;
+
+		font-weight: 600;
+		font-size: rem(18);
+		line-height: rem(22);
+
+		@media(max-width:1200px) {
+			font-size: rem(16);
+			line-height: rem(28);
+			max-width: 100%;
+			padding: rem(44) 0 rem(45) 20%;
+		}
+
+		@media(max-width:768px) {
+			padding: rem(20) 0 rem(20) rem(30);
+		}
+
+		&:hover {
+			box-shadow: -20px 20px 30px rgba(65, 79, 131, 0.25);
+		}
+	}
+
+
+	&__icon {
+		width: 100%;
+		height: 100%;
+		max-width: 31px;
+		max-height: 31px;
+
+		margin: 0 26px 0 0;
+	}
+
+	&__item-btn {
+		max-height: rem(120);
+		width: 100%;
+		background-color: $light-gray;
+		border-radius: 5px;
+		padding: rem(44) 0 rem(45);
+		justify-content: center;
+		outline: 1px $purple solid;
+		transition: all .3s linear;
+		font-weight: 600;
+		font-size: rem(18);
+		line-height: rem(28);
+
+		@media(max-width:1200px) {
+			justify-content: center;
+			max-width: 100%;
+			max-height: auto;
+			padding: rem(44) 0 rem(45);
+			font-weight: 700;
+			font-size: rem(16);
+			line-height: rem(22);
+		}
+
+		@media(max-width:768px) {
+			padding: rem(20) 0;
+		}
+	}
+
+	&__text {
+		font-size: rem(18);
+		line-height: rem(28);
+		font-weight: 600;
+		color: #000;
+
+		@media(max-width:992px) {
+			font-size: rem(16);
+			line-height: rem(22);
+		}
+	}
+}
