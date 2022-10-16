@@ -1,0 +1,41 @@
+<svg width="1230" height="424" viewBox="0 0 1230 424" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_68_495" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1230" height="424">
+<rect width="1230" height="424" rx="30" fill="#833CFA"/>
+</mask>
+<g mask="url(#mask0_68_495)">
+<circle cx="1123" cy="70" r="4" fill="#9251FF"/>
+<circle cx="1141" cy="70" r="4" fill="#9251FF"/>
+<circle cx="1159" cy="70" r="4" fill="#9251FF"/>
+<circle cx="1177" cy="70" r="4" fill="#9251FF"/>
+<circle cx="1123" cy="88" r="4" fill="#9251FF"/>
+<circle cx="1141" cy="88" r="4" fill="#9251FF"/>
+<circle cx="1159" cy="88" r="4" fill="#9251FF"/>
+<circle cx="1177" cy="88" r="4" fill="#9251FF"/>
+<circle cx="1123" cy="106" r="4" fill="#9251FF"/>
+<circle cx="1141" cy="106" r="4" fill="#9251FF"/>
+<circle cx="1159" cy="106" r="4" fill="#9251FF"/>
+<circle cx="1177" cy="106" r="4" fill="#9251FF"/>
+<circle cx="1123" cy="124" r="4" fill="#9251FF"/>
+<circle cx="1141" cy="124" r="4" fill="#9251FF"/>
+<circle cx="1159" cy="124" r="4" fill="#9251FF"/>
+<circle cx="1177" cy="124" r="4" fill="#9251FF"/>
+<circle cx="1051" cy="70" r="4" fill="#9251FF"/>
+<circle cx="1069" cy="70" r="4" fill="#9251FF"/>
+<circle cx="1087" cy="70" r="4" fill="#9251FF"/>
+<circle cx="1105" cy="70" r="4" fill="#9251FF"/>
+<circle cx="1051" cy="88" r="4" fill="#9251FF"/>
+<circle cx="1069" cy="88" r="4" fill="#9251FF"/>
+<circle cx="1087" cy="88" r="4" fill="#9251FF"/>
+<circle cx="1105" cy="88" r="4" fill="#9251FF"/>
+<circle cx="1051" cy="106" r="4" fill="#9251FF"/>
+<circle cx="1069" cy="106" r="4" fill="#9251FF"/>
+<circle cx="1087" cy="106" r="4" fill="#9251FF"/>
+<circle cx="1105" cy="106" r="4" fill="#9251FF"/>
+<circle cx="1051" cy="124" r="4" fill="#9251FF"/>
+<circle cx="1069" cy="124" r="4" fill="#9251FF"/>
+<circle cx="1087" cy="124" r="4" fill="#9251FF"/>
+<circle cx="1105" cy="124" r="4" fill="#9251FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M952 633C1138.12 633 1289 482.12 1289 296C1289 109.88 1138.12 -41 952 -41C765.88 -41 615 109.88 615 296C615 482.12 765.88 633 952 633ZM952 636C1139.78 636 1292 483.777 1292 296C1292 108.223 1139.78 -44 952 -44C764.223 -44 612 108.223 612 296C612 483.777 764.223 636 952 636Z" fill="#9556FD"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M668 155C854.12 155 1005 4.11993 1005 -182C1005 -368.12 854.12 -519 668 -519C481.88 -519 331 -368.12 331 -182C331 4.11993 481.88 155 668 155ZM668 158C855.777 158 1008 5.77679 1008 -182C1008 -369.777 855.777 -522 668 -522C480.223 -522 328 -369.777 328 -182C328 5.77679 480.223 158 668 158Z" fill="#9556FD"/>
+</g>
+</svg>
