@@ -2244,8 +2244,6 @@ body {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  top: 18.75rem;
-  left: 2.5rem;
 }
 
 .article-review__video {
@@ -3528,7 +3526,6 @@ body {
   .article-review__wrapper {
     margin: 0 auto;
     width: 100%;
-    height: auto;
     padding: 1.875rem 1.875rem 11.5rem 1.875rem;
     gap: 1.25rem;
   }
