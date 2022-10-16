@@ -1174,7 +1174,7 @@ body {
 }
 
 .form__item-content-comment {
-  display: none;
+  display: block;
   margin: 1.0625rem 0 0;
   padding-right: 0.625rem;
 }
@@ -1292,7 +1292,7 @@ body {
 }
 
 .checkbox:checked + .form__item-content-comment {
-  display: block;
+  display: none;
 }
 
 .checkbox__btn:checked + .checkbox__btn-label::before {
@@ -3813,9 +3813,6 @@ body {
 
   .header-toolbar {
     padding: 1.0625rem 0;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
     -ms-grid-columns: (minmax(0, 1fr))[6];
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -3913,6 +3910,7 @@ body {
   }
 
   .header-toolbar__search {
+    top: -0.3125rem;
     -ms-grid-column: 5;
     -ms-grid-column-span: 1;
     grid-column: 5/span 1;
