@@ -11,12 +11,16 @@
 
 	&__img {
 		width: 100%;
-		max-width: 600px;
-		max-height: 346px;
-		margin: 0 0 60px 0;
+		max-width: rem(600);
+		max-height: rem(346);
+		margin: 0 0 rem(60) 0;
 		object-fit: contain;
 		border-radius: 10px;
 		box-shadow: -40px 40px 100px rgba(42, 76, 129, 0.35);
+
+		@media(max-width:1200px) {
+			margin: 0 0 rem(20) 0;
+		}
 
 		img {
 			width: 100%;

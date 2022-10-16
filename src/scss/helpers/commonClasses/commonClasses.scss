@@ -2,11 +2,11 @@
 	text-align: center;
 	font-size: rem(55);
 	font-weight: 800;
-	line-height: 65px;
+	line-height: rem(65);
 
 	@media(max-width:1200px) {
 		font-size: rem(28);
-		line-height: 40px;
+		line-height: rem(40);
 	}
 
 	&--btn {
@@ -20,7 +20,7 @@
 	font-size: rem(55);
 	color: #784CD7;
 	font-weight: 700;
-	line-height: 75px;
+	line-height: rem(75);
 
 	@media(max-width:1200px) {
 		font-size: calc(2rem + 1vw);
@@ -31,10 +31,10 @@
 .content-title--55 {
 	font-size: rem(55);
 	font-weight: 800;
-	line-height: 65px;
+	line-height: rem(65);
 
 	@media(max-width:1200px) {
-		font-size: calc(2rem + 1vw);
+		font-size: calc(1.5rem + 1vw);
 		line-height: calc(2.3rem + 1vw);
 	}
 }
@@ -42,11 +42,11 @@
 
 .content-text--20 {
 	font-size: rem(20);
-	line-height: 27px;
+	line-height: rem(27);
 
 	@media(max-width:1200px) {
 		font-size: rem(16);
-		line-height: 22px;
+		line-height: rem(22);
 	}
 }
 
@@ -59,12 +59,12 @@
 	&__icon {
 		width: 100%;
 		height: 100%;
-		max-height: 50px;
-		max-width: 170px;
+		max-height: rem(50);
+		max-width: rem(170);
 
 		@media(max-width:1200px) {
-			max-height: 24px;
-			max-width: 89px;
+			max-height: rem(24);
+			max-width: rem(89);
 		}
 	}
 }

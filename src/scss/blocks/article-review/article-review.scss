@@ -1,6 +1,11 @@
 .article-review {
 	padding: rem(100) 0;
 
+	@media(max-width:1200px) {
+		padding: rem(30) 0;
+
+	}
+
 	&__header {
 		color: #fff;
 		margin: 0 0 rem(50) 0;
