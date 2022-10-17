@@ -1,0 +1,150 @@
+.slider {
+	&__toolbar {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__main {
+		overflow: visible;
+
+		&--overflow {
+			overflow: visible;
+
+			.slider__slide {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__slide {
+		opacity: 0;
+		transition: 0.3s opacity;
+
+		&--visible {
+			opacity: 1;
+			visibility: visible;
+		}
+
+
+		&--mob-width-190 {
+			@media(max-width:1200px) {
+				width: rem(190);
+			}
+		}
+
+		&--mob-width-240 {
+			@media(max-width:1200px) {
+				width: rem(240);
+			}
+		}
+	}
+
+	&__pagination {
+		display: flex;
+		justify-content: center;
+		margin: rem(55) 0 0 0;
+	}
+}
+
+@media(max-width:1200px) {
+	.slider {
+		&__wrapper {
+			&--mobile-grid {
+				gap: rem(20);
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: auto;
+			}
+		}
+	}
+}
+
+@media(max-width:768px) {
+	.slider {
+		&__wrapper {
+			&--mobile-grid {
+				gap: rem(15);
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-template-rows: auto;
+			}
+		}
+	}
+}
+
+
+
+
+// NAVIGATION
+
+.swiper-button-next::after {
+	display: none;
+}
+
+.swiper-button-prev::after {
+	display: none;
+}
+
+.bullet {
+	width: rem(40);
+	height: rem(2);
+	background-color: #BEBFDB;
+	margin: 0 rem(5);
+	cursor: pointer;
+	transition: background-color 0.3s linear;
+
+	&--active {
+		background-color: $purple;
+	}
+}
+
+
+.button-slider {
+	display: flex;
+	cursor: pointer;
+	width: rem(60);
+	height: rem(60);
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px;
+	background-color: #F3F6FD;
+	transition: all .3s linear;
+
+	&--light {
+		background-color: #7932EF;
+		transition: all .3s linear;
+
+		&:hover,
+		&:active {
+			background-color: #F3F6FD;
+
+			svg {
+				stroke: $purple;
+			}
+		}
+	}
+
+	&--grey {
+		background-color: #E5EAF5;
+
+		&:hover,
+		&:active {
+			background-color: #fff;
+		}
+	}
+
+	&--inner {
+		z-index: 1;
+		top: rem(100);
+		position: absolute;
+		transform: translateY(100%);
+	}
+
+	&--prev {
+		right: calc(100% + rem(50));
+	}
+
+	&--next {
+		left: calc(100% + rem(50));
+	}
+}
