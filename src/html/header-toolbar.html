@@ -1,0 +1,44 @@
+<section class="section">
+	<div class="container">
+		<div class="header-toolbar">
+			<a class="header-toolbar__logo" href="#">
+				<picture class="logo logo--mobile">
+					<img src="@img/svgicons/logo.svg" alt="logo">
+				</picture>
+			</a>
+
+			<div class="header-toolbar__search">
+				<form class="form-search hidden--768" method="get" action="/search" target="_blank">
+					<input class="form-search__input hidden--768" type="text" placeholder="Поиск...">
+				</form>
+				<button class="form-search__btn" type="submit">
+					<svg class="form-search__icon">
+						<use xlink:href="img/icons/icons.svg#search"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="header-toolbar__callback">
+				<div class="callback">
+					<div class="callback__wrapper callback__wrapper--desc">
+						<a class="callback-form tel" href="tel:+79133223911">
+							<svg class="callback-form__icon">
+								<use xlink:href="@img/icons/icons.svg#phone"></use>
+							</svg>+7 (913) 322-3911</a>
+						<button class="btn btn--purple header-menu__btn" data-fancybox data-src="#modal-aplly">Заказать
+							звонок</button>
+						<div class="modal-success" data-fancybox data-src="#modal-success"></div>
+					</div>
+
+					<nav class="menu">
+						<div class="menu__menu menu-icon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

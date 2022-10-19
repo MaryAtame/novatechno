@@ -1,0 +1,46 @@
+<section class="modal" id="modal-aplly">
+	<h3 class="modal__title">Оставьте заявку</h3>
+	<form class="form" action="/#" method="post" role="form" id="apply">
+
+		<div class="form__item form__item-site">
+			<label class="form__label" for="siteName">Введите адрес вашего сайта</label>
+			<input class="form__input form__site-input" type="text" name="feedback-site" id="siteName"
+				placeholder="www.site.ru" />
+		</div>
+
+		<div class="form__item form__item-mail">
+			<label class="form__label" for="userMail">Введите ваш email</label>
+			<input class="form__input form__mail-input" type="text" name="feedback-from" id="userMail"
+				placeholder="info@mail.ru" />
+		</div>
+
+		<div class="form__item form__item-phone">
+			<label class="form__label" for="userPhone">Введите ваш телефон</label>
+			<input class="form__input form__phone-input" type="text" name="feedback-phone" id="userPhone" data-tel
+				placeholder="+7 (___) ___-___-__-__" />
+		</div>
+
+		<div class="form__item form__item-content">
+			<div class="form__item-content-btn">
+				<input class="checkbox" type="checkbox" name="feedback-content" value="" id="setComment" />
+				<label class="checkbox__label" for="setComment"></label>
+
+				<label class="form__label" for="setComment">Хотите оставить комментарий?</label>
+			</div>
+			<textarea class="form__input form__item-content-comment" name="feedback[content]"
+				placeholder="Комментарий..."></textarea>
+		</div>
+		<div class="form__item-agreement">
+			<input class="checkbox__btn" type="checkbox" name="feedback-agreement" value="" id="setAgree" />
+			<label class="checkbox__btn-label" for="setAgree"></label>
+
+			<label class="form__label" for="setAgree">Я согласен с <a href="#">Политикой конфидециальности и Правилами
+					обработки персональных
+					данных</a></label>
+		</div>
+
+
+		<button class="btn btn--purple form__btn-send">Отправить</button>
+
+	</form>
+</section>
